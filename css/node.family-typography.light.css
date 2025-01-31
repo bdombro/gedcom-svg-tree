@@ -1,0 +1,176 @@
+body {
+    font-family: 'open_sanslight', sans-serif;
+    font-size: 14px;
+}
+
+body, h1, h2, text, .B h3, h4 {
+    font-weight: 300;
+}
+h1 {
+    font-size: 3em;
+}
+h2, .B h2, .B h3, p.logo {
+    font-size: 2em;
+    text-transform: none;
+}
+h4, .R#about h2, .enhanced ul {
+    font-size: 1.5em;
+}
+p, #footer {
+    font-size:1.2em;
+    line-height:1.4em;
+}
+#footer p.logo {
+    font-size: 1em;
+}
+h1 sup, #copyright {
+    font-size: 0.6em;
+}
+#copyright {
+    text-align: center;
+}
+sup {
+    font-size: 0.55em;
+}
+text {
+    font-size: 14px;
+}
+.R#faq, .R#about, .R#contactForm, #faq h3, #footer {
+    text-align: left;
+}
+h1, h2, h3, .R#credits, .R#credits h2, figcaption, .label, .B h3, .enhanced .B, div.buttonsWrapper, #aboutPage h1, #aboutPage h2  {
+    text-align: center;
+}
+#header .C.C2, #footer .C.C3:first-child  {
+    text-align: center;
+}
+#header .C.C2:nth-child(2) {
+    text-align: right;
+}
+button {
+    font-size: 1em;
+    font-family: 'open_sanslight', sans-serif;
+}
+form button {
+    text-align: center;
+}
+a, a:hover, a:visited, .button a, .button label, #footer a:hover {
+    text-decoration:none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ul {
+    list-style: none;
+}
+#faq ul {
+    list-style: inside circle;
+}
+#header p.logo img {
+    vertical-align: top;
+}
+#footer p.logo img {
+    vertical-align: top;
+}
+h1 img {
+    vertical-align: bottom;
+    margin-right: 0.3em;
+}
+.wait {
+    cursor: wait;
+}
+.pointer {
+    cursor: pointer;
+}
+.zoomIn {
+    cursor: zoom-in;
+}
+.contextMenu {
+    cursor: context-menu;
+}
+svg {
+    cursor: zoom-in;
+}
+#toggleForm:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f4ff';
+}
+#children div, #spouses div {
+    padding-left:30%;
+}
+#husbandName, #wifeName, #familyName, #spouses legend, #children legend, .spouse, .child {
+    cursor: pointer;
+}
+#toggleExportForm:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f56d';
+}
+#togglePersonList:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f0c0';
+}
+#editForm .fa-times::before, #exportForm .fa-times::before, #editFamilyForm .fa-times::before, #personList .fa-times::before {
+    position: absolute;
+    left: 31%;
+    cursor: pointer;
+    padding-top: 0.5em;
+}
+#editForm::before, #editFamilyForm::before, #exportForm::before, #personList::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 1.3%;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+}
+#personList::before {
+    content: "\f0c0";
+}
+#editForm::before {
+    content: "\f4ff";
+}
+#editForm figure figcaption {
+    font-style: italic;
+    font-size: smaller;
+    text-align: center;
+    width: 100%;
+    line-height: 1.2em;
+}
+#editFamilyForm::before {
+    content: "\f500";
+}
+#exportForm::before {
+    content: "\f56d";
+}
+#personWww::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f360";
+}
+input[type=text], textarea {
+    font-size: 1em;
+    border-radius: 1em;
+    font-family: monospace;
+}
+form label {
+    font-size: 0.75em;
+}
+#personList ul li {
+    cursor: pointer;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.legend p {
+    font-size: smaller;
+}
+.legend p:first-child:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f0eb";
+}
+#familyName.filled, #husbandName.filled, #wifeName.filled, .spouse, .child {
+    font-family: monospace;
+}
+
