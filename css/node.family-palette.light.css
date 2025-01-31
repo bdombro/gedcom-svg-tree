@@ -1,0 +1,176 @@
+:root {
+  --primary: #5ea40c;
+  --on-primary: #fff;
+  --inverse-primary: #c3d500;
+  --filling: #fdfdf9;
+  --on-filling: #333;
+  --filling2: #eee;
+  --on-filling2: #333;
+  --filling3: #fff;
+  --outline: #eee;
+  --accent: #e7294eff;
+  --accent-container: #ffebee;
+  --header-shadow: #b3aca78c;
+  --arrow-stroke: #ddd;
+  --arrow-fill: #aaa;
+}
+a, a:hover, a:visited {
+    color: var(--primary);
+}
+a.run, .button label {
+    background-color: var(--primary);
+}
+button, .button a, .button label {
+    background-color: var(--primary);
+}
+.tooltip .tooltiptext, #familyName ~ .tooltiptext {
+    background-color: var(--accent-container);
+    border: 1px solid var(--outline);
+}
+.node:hover {
+    color: var(--filling) !important;
+}
+.node:hover rect, .node:hover circle {
+    fill: var(--primary) !important;
+}
+#editForm .fa-times::before, #exportForm .fa-times::before, #editFamilyForm .fa-times::before, #personList .fa-times::before {
+    color: var(--primary);
+}
+.switch.active:before {
+    color: var(--primary);
+}
+body, #header a.home {
+    color: var(--on-filling);
+}
+.button a, .button label, button {
+    color: var(--on-primary);
+}
+#personWww::after {
+    color: var(--primary);
+}
+#footer {
+    background-color: var(--on-filling);
+}
+.tooltip .tooltiptext::after {
+    border-style: solid;
+    border-color: transparent transparent var(--on-filling) transparent;
+}
+fieldset {
+    border: 1px dashed var(--on-primary);
+}
+#editForm, #exportForm, #editFamilyForm, #personList {
+    background-color: var(--filling2);
+    color: var(--on-filling2);
+}
+#editForm::before, #editFamilyForm::before, #exportForm::before, #personList::before {
+    color: var(--on-filling);
+    opacity: 30%;
+}
+.button a:hover, .button label:hover,   button:hover {
+    background-color: var(--inverse-primary);
+}
+.button label.gray:hover {
+    color: var(--inverse-primary);
+    border: 1px solid var(--inverse-primary);
+}
+.R#credits h2, .B h1, .B h3 {
+    color: 	var(--accent);
+}
+#footer, #footer a.home {
+    color: #ccc;
+}
+#footer a:hover {
+    color: var(--primary);
+}
+#search a {
+    color: var(--primary);
+}
+
+.R, .R#faq, #footer p.logo img {
+    background-color: var(--filling3);
+}
+
+.R#about, .R.mono {
+    background-color: var(--filling2);
+}
+.R#credits, .R#contactForm, .R#privacy-terms, svg {
+    background-color: var(--filling);
+}
+.R#content {
+    background-color: var(--filling);
+}
+
+.R.enhanced {
+    background-color: vae(--filling);
+}
+.slider:before {
+    background-color: var(--filling3);
+}
+input:checked + .slider {
+    background-color: #ccc;
+}
+.button label.gray {
+    background-color: var(--filling);
+    border: 1px solid var(--outline);
+    color: var(--primary);
+}
+#header {
+    position: relative;
+    box-shadow: 0 0 15px -4px var(--header-shadow);
+
+}
+#header p.logo img, #footer p.logo img {
+    border-color: var(--filling3);
+}
+.edgePath path {
+    stroke: var(--arrow-stroke);
+    fill: var(--arrow-fill);
+}
+input[type="search"] {
+    background-color: var(--filling3);
+    border: 1px solid var(--outline);
+}
+.legend {
+    background-color: var(--accent-container);
+}
+input, #personList ul li {
+    border-bottom: 1px dashed var(--on-primary);
+}
+input:read-only {
+    color: var(--on-filling);
+    border-bottom: 0;
+}
+input:hover, select:hover, #personList ul li:hover  {
+    border-radius: 1em;
+    color: var(--primary);
+    background-color: var(--on-primary);
+}
+#editForm h3, #exportForm h3, #editFamilyForm h3, #personList h3 {
+    text-transform: uppercase;
+}
+.fa-tags {
+    color: var(--on-filling);
+    opacity: 30%;
+}
+select {
+    border-image: none;
+    border: 1px solid var(--outline);
+}
+input, textarea {
+    background-color: var(--filling2);
+}
+input:focus, select:focus {
+    outline: none;
+}
+input:read-only:focus {
+    border: 0;
+}
+.swal-button, .swal-button:not([disabled]):hover {
+    background-color: var(--primary);
+}
+#familyName.filled, #husbandName.filled, #wifeName.filled, .spouse, .child {
+    color: var(--primary);
+}
+.R.workspace .C {
+    scrollbar-color: #ddd var(--filling);
+ }
