@@ -1,0 +1,77 @@
+/*
+-----------------------------------------------
+   RS3CB grid style sheet
+   Author:   Michal Amerek
+   Date:     29 Jan 2025
+----------------------------------------------- */
+/* Page Body
+----------------------------------------------- */
+BODY {
+   margin: 0px auto;
+   overflow-x: hidden;
+}
+
+/* Page Print Slip
+----------------------------------------------- */
+.R .S {
+   margin: 0px auto;
+   width: 100%;
+}
+
+/* Clearfix for Page Print Slip
+----------------------------------------------- */
+.R .S:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.R .S {display: inline-block;}
+* html .R .S {height: 1%;}
+.R .S {display: block;}
+
+/* Row class and Boxes width equal columns width
+----------------------------------------------- */
+.R, .R .S .C .B {
+   width: 100%;
+}
+
+/* Column classes
+----------------------------------------------- */
+.R .S .C {
+   float: left;
+   width: 33.3%;
+}
+@media only screen and (orientation: portrait) {
+   body {
+      position: absolute;
+   }
+   .R .S .C {
+      width: 100%;
+   }
+}
+@media only screen and (max-width: 1024px) {
+   body {
+      position: absolute;
+   }
+}
+/* Block level elements within Box
+----------------------------------------------- */
+.B P, .B H1, .B H2, .B H3, .B H4, .B H5, .B H6,
+.B TABLE, .B DIV, .B UL {
+   padding: 0px;
+}
+
+/* Clearfix
+----------------------------------------------- */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
