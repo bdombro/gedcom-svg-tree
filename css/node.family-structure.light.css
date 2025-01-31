@@ -1,0 +1,336 @@
+body {
+    margin:0;
+}
+.button a {
+    padding: 0.6em;
+    border-radius: 1.2em;
+    border-style: solid;
+    border-width: 0px;
+}
+h1 img {
+  margin-right: 0.3em;
+}
+.R#header {
+    padding-bottom: 1em;
+}
+.R#about h1 {
+    padding: 0;
+}
+.R#credits {
+    height: auto;
+}
+.R#credits .C.C1 {
+    padding-top:0;
+}
+#footer {
+    height: auto;
+}
+#copyright {
+    padding-top: 3em;
+}
+figure {
+  display: inline-block;
+  vertical-align: top;
+}
+figcaption .button {
+    padding: 1em;
+}
+.node {
+  cursor: pointer;
+  line-height: 1.5em;
+}
+.node text {
+  pointer-events: none;
+}
+input[type="file"] {
+  opacity: 0;
+  width: 0;
+}
+button, .button label {
+    padding: 0.6em;
+    border-radius: 1.2em;
+    cursor: pointer;
+    border: 0px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#header .C.C2:first-child {
+    width: 33%;
+}
+#header .C.C2:nth-child(2) {
+    width: 67%;
+}
+.B {
+    padding-bottom: 1em;
+}
+.B H1, .B H2, .B H3, .B H4, .B P{
+    padding-left: 1em;
+}
+#header .C.C2 .B {
+     padding-top: 1em;
+     padding-left: 0px;
+     paddinng-right: 0px;
+     padding-bottom: 0px;
+}
+#header .C.C2 .B .button {
+    display: inline-block;
+}
+.B#controls {
+    display: none;
+    margin-top: 1em;
+    padding-top: 0 !important;
+}
+#editForm, #exportForm, #editFamilyForm, #personList {
+    display: none;
+}
+#editForm figure, #editFamilyForm figure {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+#editForm h3, #editFamilyForm h3, #personList h3 {
+    padding-left: 0px;
+    margin: 0px;
+    margin-bottom: 1em;
+}
+.B#controls.active  {
+    display: block;
+}
+#editForm.active, #exportForm.active, #editFamilyForm.active, #personList.active {
+    display: block;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    width: 48%;
+    margin-left: 1em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+}
+.B#controls DIV {
+    display: inline-block;
+}
+#toggleControls:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f1de';
+}
+#exportImage:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f030';
+}
+#exportSvg:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f121';
+}
+#header .C.C2 .B .button:nth-child(6) {
+    width: 50%;
+}
+#people, #peopleListSearch {
+    width: 100%;
+}
+#footer .C.C3:first-child {
+    width: 23%;
+}
+#footer .C.C3:nth-child(2) {
+    width: 32%;
+}
+#footer .C.C3:nth-child(3) {
+    width: 45%;
+}
+.B p, .B ul {
+    padding: 1em;
+    padding-bottom: 0;
+    margin: 0;
+}
+.R .S {
+    height: 100%;
+}
+.R .C.C2 {
+    width: 50%;
+}
+.R .C.C1 {
+    width: 100%;
+    padding-top: 3em;
+}
+.R.enhanced {
+    line-height: 1.75em;
+}
+.B h1 {
+    padding: 2em;
+}
+.B h2 {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+p.logo {
+    padding: 0;
+}
+#header p.logo img {
+    width: 36px;
+    vertical-align: sub;
+    border-width: 0.1em;
+    border-style: solid;
+}
+#footer p.logo {
+    padding-top: 1.9em;
+}
+#footer p.logo img {
+    width: 23px;
+    border-radius:15px;
+    vertical-align:bottom;
+    border-width: 0.1em;
+    border-style: solid;
+}
+@media only screen and (max-width: 1023px) {
+   .R .S, .R .S .C.C1, .R .S .C.C2, .R .S .C.C3{
+      width: 100%;
+   }
+}
+p {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+div.buttonsWrapper {
+    width:100%;
+    padding-top:2em;
+}
+div.buttonsWrapper .button {
+    display: inline;
+}
+#gedcom .C .B .button {
+    display: inline-flex;
+}
+#about .C.C2:first-child {
+    width: 30%;
+}
+#about .C.C2:nth-child(2) {
+    width: 70%;
+}
+#aboutPage h1, #aboutPage h2 {
+    padding-left:0px;
+    padding-right:0px;
+}
+#contactForm .C.C1 {
+    width: 100%;
+}
+.switch {
+  position: relative;
+  width: 20px;
+}
+.switch input {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.switch:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f204';
+}
+.switch.active:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f205';
+}
+input[type="search"] {
+    line-height: 3.1em;
+    border-radius: 2em;
+    padding-left: 2em;
+   -moz-appearance: none;/* older firefox */
+   -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
+   appearance: none; /* rest */
+}
+input[type=text], textarea {
+    width: 68%;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+}
+form input[type=checkbox] {
+    width: 60%;
+}
+
+#familyName ~ .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    display: inline-block;
+}
+#familyName:hover ~ .tooltiptext {
+    visibility: visible;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1em;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+}
+#BIRT-DATE-AND, #DEAT-DATE-AND, #MARR-DATE-AND, #DEAT, #BURI, #personList .buttonsWrapper {
+    display:none;
+}
+#BIRT-DATE-AND.active, #DEAT-DATE-AND.active, #MARR-DATE-AND.active, #DEAT.active, #BURI.active, #personList .buttonsWrapper.active {
+    display:block;
+}
+#editForm form label, #editFamilyForm form label, #exportForm form label{
+  display: inline-block;
+  width: 30%;
+}
+.R.workspace .C {
+    max-height: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+svg {
+    display: block;
+}
+#datalist {
+    display:none;
+}
+#datalist.active {
+    display:block;
+    position: absolute;
+}
+#datalist option {
+    padding: 0.5em;
+}
+#personList .legend {
+    padding: 1em;
+    margin-top: 2em;
+}
+.legend {
+    padding-bottom: 1em;
+}
