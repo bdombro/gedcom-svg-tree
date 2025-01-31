@@ -1,0 +1,2216 @@
+0 HEAD
+1 SOUR NODE_FAMILY
+2 NAME Node.Family
+2 VERS 0.6.0
+2 WWW https://node.family
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+1 DATE 27 Apr 2020
+1 SUBM 
+2 NAME Michał Amerek
+1 FILE Królowie-Polscy-Dynastia-Piastów-2020-04-27.ged
+0 @I1@ INDI
+1 NAME Lestek
+2 GIVN Lestek
+1 SEX M
+1 DEAT Y
+2 DATE BET 930 AND 940
+1 FAMS @F1@
+1 TITL książę Polan
+1 WWW https://pl.wikipedia.org/wiki/Lestek
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/e/e7/Lestek.jpg
+3 FORM jpg
+2 TITL Lestek / Austrian National Library / domena publiczna
+0 @I2@ INDI
+1 NAME Siemomysł
+2 GIVN Siemomysł
+1 SEX M
+1 DEAT Y
+2 DATE BET 950 AND 960
+1 FAMS @F4@
+1 FAMC @F1@
+1 TITL książę Polan
+1 WWW https://pl.wikipedia.org/wiki/Siemomys%C5%82_(ksi%C4%85%C5%BC%C4%99_Polan)
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/0/01/Siemomys%C5%82.jpg
+2 TITL Siemomysł / Austrian National Library / domena publiczna
+0 @I3@ INDI
+1 NAME Mieszko I
+2 GIVN Mieszko I
+1 SEX M
+1 BIRT
+2 DATE BET 922 AND 945
+1 DEAT Y
+2 DATE 25 MAY 992
+1 FAMS @F2@
+1 FAMS @F3@
+1 FAMC @F4@
+1 TITL książę Polski
+1 WWW https://pl.wikipedia.org/wiki/Mieszko_I
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/f/f6/Mieszko1.jpg
+2 TITL Mieszko I / Jan Matejko / domena publiczna
+0 @I4@ INDI
+1 NAME Czcibor
+2 GIVN Czcibbor
+1 SEX M
+1 DEAT Y
+2 DATE AFT 24 JUN 972
+1 FAMC @F4@
+1 WWW https://pl.wikipedia.org/wiki/Czcibor
+0 @I5@ INDI
+1 NAME Dobrawa
+2 GIVN Dobrawa
+2 SURN Przemyślidka
+1 SEX F
+1 BIRT
+2 DATE ABT 930
+1 DEAT Y
+2 DATE 977
+1 FAMS @F3@
+1 TITL księżna polska, księżniczka czeska
+1 WWW https://pl.wikipedia.org/wiki/Dobrawa_Przemy%C5%9Blidka
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/9/9f/Dobrawa.jpg
+2 TITL Dobrawa / Jan Matejko / public domain
+0 @I6@ INDI
+1 NAME Bolesław I Chrobry
+2 GIVN Bolesław I Chrobry
+1 SEX M
+1 BIRT
+2 DATE 967
+1 DEAT Y
+2 DATE 17 JUN 1025
+1 FAMS @F5@
+1 FAMS @F6@
+1 FAMS @F9@
+1 FAMC @F3@
+1 TITL król Polski, książę Czech, książę Polski
+1 WWW https://pl.wikipedia.org/wiki/Boles%C5%82aw_I_Chrobry
+1 BURI Y
+2 PLAC katedra poznańska
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/f/fe/Boleslaus_I.jpg
+2 TITL Bolesław Chrobry / Jan Matejko / domena publiczna
+0 @I7@ INDI
+1 NAME Sygryda Storråda
+2 GIVN Świętosława
+2 NICK Świętosława
+1 SEX F
+1 BIRT
+2 DATE BET 960 AND 972
+1 DEAT Y
+2 DATE AFT 1016
+1 FAMS @F7@
+1 FAMS @F8@
+1 FAMC @F3@
+1 TITL królowa Szwecji, Dani, Norwegii i Anglii, księżniczka polska
+1 WWW https://pl.wikipedia.org/wiki/Sygryda_Storr%C3%A5da
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/d/d9/%C5%9Awi%C4%99tos%C5%82awa_of_Poland.jpg
+2 TITL Świętosława / Erik Werenskiold / Public domain
+0 @I8@ INDI
+1 NAME Mieszko Mieszkowic
+2 GIVN Mieszko
+1 SEX M
+1 BIRT
+2 DATE BET 978 AND 984
+1 DEAT Y
+2 DATE AFT 25 MAY 992
+1 FAMC @F2@
+1 TITL książę
+1 WWW https://pl.wikipedia.org/wiki/Mieszko_Mieszkowic
+0 @I9@ INDI
+1 NAME Oda Dytrykówna
+2 GIVN Oda
+1 SEX F
+1 BIRT
+2 DATE ABT 955
+1 DEAT Y
+2 DATE 1023
+1 FAMS @F2@
+1 WWW https://pl.wikipedia.org/wiki/Oda_Dytryk%C3%B3wna
+0 @I10@ INDI
+1 NAME Świętopełk Mieszkowic
+2 GIVN Świętopełk
+1 SEX M
+1 BIRT
+2 DATE BET 979 AND 985
+1 DEAT Y
+2 DATE BEF 25 MAY 992
+1 FAMC @F2@
+1 WWW https://pl.wikipedia.org/wiki/%C5%9Awi%C4%99tope%C5%82k_Mieszkowic
+0 @I11@ INDI
+1 NAME Lambert Mieszkowic
+2 GIVN Lambert
+1 SEX M
+1 BIRT
+2 DATE BET 980 AND 986
+1 DEAT Y
+2 DATE ABT 1030
+1 FAMC @F2@
+1 TITL książę
+1 WWW https://pl.wikipedia.org/wiki/Lambert_Mieszkowic
+0 @I12@ INDI
+1 NAME Emnilda
+2 GIVN Emnilda
+1 SEX F
+1 BIRT
+2 DATE BET 970 AND 975
+1 DEAT Y
+2 DATE BET 1016 AND 1017
+1 FAMS @F6@
+1 TITL księżna polska
+1 WWW https://pl.wikipedia.org/wiki/Emnilda_s%C5%82owia%C5%84ska
+0 @I13@ INDI
+1 NAME Bezprym
+2 GIVN Bezprym
+1 SEX M
+1 BIRT
+2 DATE BET 986 AND 987
+1 DEAT Y
+2 DATE 1032
+1 FAMC @F9@
+1 WWW https://pl.wikipedia.org/wiki/Bezprym
+1 TITL książę
+0 @I14@ INDI
+1 NAME Regelinda
+2 GIVN Regelinda
+1 SEX F
+1 BIRT
+2 DATE EST 989
+1 DEAT Y
+2 DATE 21 MAR 1030
+1 FAMC @F6@
+1 TITL polska księżniczka, margrabina miśnieńska
+1 WWW https://pl.wikipedia.org/wiki/Regelinda
+0 @I15@ INDI
+1 NAME Mieszko II Lambert
+2 GIVN Mieszko II Lambert
+1 SEX M
+1 BIRT
+2 DATE 990
+1 DEAT Y
+2 DATE 10 MAY 1034
+1 BURI Y
+2 PLAC katedra poznańska
+1 FAMS @F10@
+1 FAMC @F6@
+1 TITL król Polski
+1 WWW https://pl.wikipedia.org/wiki/Mieszko_II_Lambert
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/d/d3/Mieszko_II_Lambert.jpg
+2 TITL Mieszko II Lambert / Jan Matejko / domena publiczna
+0 @I16@ INDI
+1 NAME Otto Bolesławowic
+2 GIVN Otto
+1 SEX M
+1 BIRT
+2 DATE ABT 1000
+1 DEAT Y
+2 DATE 1033
+1 FAMC @F6@
+1 TITL książę
+1 WWW https://pl.wikipedia.org/wiki/Otto_Boles%C5%82awowic
+0 @I17@ INDI
+1 NAME Oda Miśnieńska
+2 GIVN Oda
+1 SEX F
+1 BIRT
+2 DATE BET 966 AND 1002
+1 DEAT Y
+2 DATE AFT 1018
+1 FAMS @F5@
+1 WWW https://pl.wikipedia.org/wiki/Oda_Mi%C5%9Bnie%C5%84ska
+0 @I18@ INDI
+1 NAME Matylda Bolesławówna
+2 GIVN Matylda
+1 SEX F
+1 BIRT
+2 DATE BET 1018 AND 1025
+1 DEAT Y
+2 DATE AFT 1036
+1 FAMC @F5@
+1 TITL królewna polska
+1 WWW https://pl.wikipedia.org/wiki/Matylda_Boles%C5%82aw%C3%B3wna
+0 @I19@ INDI
+1 NAME Erik Segersäll
+2 NICK Eryk Zwycięski
+1 SEX M
+1 BIRT
+2 DATE ABT 945
+1 DEAT Y
+2 DATE 995
+1 FAMS @F8@
+1 TITL król Szwecji
+1 WWW https://pl.wikipedia.org/wiki/Eryk_Zwyci%C4%99ski
+0 @I20@ INDI
+1 NAME Olof I Skötkonung
+2 GIVN Olof I Skötkonung
+1 SEX M
+1 BIRT
+2 DATE ABT 980
+1 DEAT Y
+2 DATE BET 1021 AND 1022
+1 FAMC @F8@
+1 TITL król Szwecji
+1 WWW https://pl.wikipedia.org/wiki/Olaf_Sk%C3%B6tkonung
+0 @I21@ INDI
+1 NAME Holmfryda
+2 GIVN Holmfryda
+1 SEX F
+1 DEAT Y
+1 FAMC @F8@
+0 @I22@ INDI
+1 NAME Svend Tveskæg
+2 NICK Swen Widłobrody
+1 SEX M
+1 BIRT
+2 DATE BET 950 AND 960
+1 DEAT Y
+2 DATE 2 FEB 1014
+1 FAMS @F7@
+1 TITL król Dani, Anglii i Norwegii
+1 WWW https://pl.wikipedia.org/wiki/Swen_Wid%C5%82obrody
+0 @I23@ INDI
+1 NAME Harald I Svensson
+2 GIVN Harald I Svensson
+1 SEX M
+1 DEAT Y
+2 DATE 1018
+1 FAMC @F7@
+1 TITL król Danii
+1 WWW https://pl.wikipedia.org/wiki/Harald_Svensson
+0 @I24@ INDI
+1 NAME Kanut Wielki
+2 GIVN Kanut Wielki
+1 SEX M
+1 BIRT
+2 DATE BET 996 AND 997
+1 DEAT Y
+2 DATE 12 NOV 1035
+1 FAMC @F7@
+1 TITL król Anglii, Danii i Norwegii
+1 WWW https://pl.wikipedia.org/wiki/Knut_Wielki
+0 @I25@ INDI
+1 NAME Estryda Małgorzata
+2 GIVN Estryda Małgorzata
+1 SEX F
+1 BIRT
+2 DATE 995
+1 DEAT Y
+2 DATE 9 MAY BET 1057 AND 1073
+1 FAMC @F7@
+1 WWW https://pl.wikipedia.org/wiki/Estryda_Ma%C5%82gorzata
+1 TITL królewna duńska
+0 @I26@ INDI
+1 NAME Świętosława
+2 GIVN Świętosława
+2 NICK duńska
+1 SEX F
+1 BIRT
+2 DATE BET 995 AND 999
+1 DEAT Y
+2 DATE AFT 1031
+1 FAMC @F7@
+1 TITL królewna duńska
+1 WWW https://pl.wikipedia.org/wiki/%C5%9Awi%C4%99tos%C5%82awa_du%C5%84ska
+0 @I27@ INDI
+1 NAME Rycheza Lotaryńska
+2 GIVN Rycheza
+2 NICK Ryksa
+1 SEX F
+1 BIRT
+2 DATE ABT 993
+1 DEAT Y
+2 DATE 21 MAR 1063
+2 PLAC Brauweiler
+1 FAMS @F10@
+1 TITL królowa Polski
+1 WWW https://pl.wikipedia.org/wiki/Rycheza_Lotary%C5%84ska
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/0/03/Rycheza-Matejko.jpg
+2 TITL Rycheza / Jan Matejko / public domain
+0 @I28@ INDI
+1 NAME Gertruda Mieszkówna
+2 GIVN Gertruda
+1 SEX F
+1 BIRT
+2 DATE ABT 1025
+1 DEAT Y
+2 DATE 4 JAN 1108
+1 FAMC @F10@
+1 TITL wielka księżna kijowska
+1 WWW https://pl.wikipedia.org/wiki/Gertruda_Mieszk%C3%B3wna
+0 @I29@ INDI
+1 NAME Kazimierz I Odnowiciel
+2 GIVN Kazimierz I Odnowiciel
+1 SEX M
+1 BIRT
+2 DATE 25 JUL 1016
+1 DEAT Y
+2 DATE 19 MAR 1058
+2 PLAC Poznań
+1 FAMS @F11@
+1 FAMC @F10@
+1 TITL książę Polski
+1 BURI Y
+2 PLAC katedra poznańska
+1 WWW https://pl.wikipedia.org/wiki/Kazimierz_I_Odnowiciel
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/c/c7/Kazimierz_I_Odnowiciel.jpg
+2 TITL Kazimierz Odnowiciel / Jan Matejko / domena publiczna
+0 @I30@ INDI
+1 NAME Dobroniega Maria
+2 GIVN Dobroniega
+1 SEX F
+1 BIRT
+2 DATE BET 1010 AND 1016
+1 DEAT Y
+2 DATE 13 DEC 1087
+1 FAMS @F11@
+1 WWW https://pl.wikipedia.org/wiki/Dobroniega_Maria
+1 TITL księżna polska
+0 @I31@ INDI
+1 NAME Bolesław II Śmiały
+2 GIVN Bolesław II Śmiały
+2 NICK Szczodry
+1 SEX M
+1 BIRT
+2 DATE ABT 1042
+1 DEAT Y
+2 DATE 3 APR 1082
+2 PLAC Węgry
+1 FAMS @F15@
+1 FAMC @F11@
+1 TITL król Polski
+1 WWW https://pl.wikipedia.org/wiki/Boles%C5%82aw_II_Szczodry
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/a/a7/Boleslaw_Smialy.jpg
+2 TITL Bolesław Śmiały / Jan Matejko / public domain
+0 @I32@ INDI
+1 NAME Władysław I Herman
+2 GIVN Władysław I Herman
+1 SEX M
+1 BIRT
+2 DATE ABT 1043
+1 DEAT Y
+2 DATE 4 JUN 1102
+2 PLAC Płock
+1 FAMS @F12@
+1 FAMS @F13@
+1 FAMS @F14@
+1 FAMC @F11@
+1 TITL książę Polski
+1 BURI Y
+2 PLAC katedra płocka
+1 WWW https://pl.wikipedia.org/wiki/W%C5%82adys%C5%82aw_I_Herman
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/f/f7/Wladyslaw_Herman.jpg
+2 TITL Władysław Herman / Jan Matejko / domena publiczna
+0 @I33@ INDI
+1 NAME Mieszko
+2 GIVN Mieszko
+1 SEX M
+1 BIRT
+2 DATE 16 APR 1045
+1 DEAT Y
+2 DATE 28 JAN 1065
+1 FAMC @F11@
+0 @I34@ INDI
+1 NAME Świętosława Swatawa
+2 GIVN Świętosława Swatawa
+1 SEX F
+1 BIRT
+2 DATE 1046
+1 DEAT Y
+2 DATE 1 SEP 1126
+1 FAMC @F11@
+0 @I35@ INDI
+1 NAME Otto
+2 GIVN Otto
+1 SEX M
+1 BIRT
+2 DATE 1047
+1 DEAT Y
+2 DATE 1048
+1 FAMC @F11@
+0 @I36@ INDI
+1 NAME Mieszko Bolesławowic
+2 GIVN Mieszko Bolesławowic
+1 SEX M
+1 BIRT
+2 DATE 1069
+1 DEAT Y
+2 DATE 1089
+1 FAMC @F15@
+1 TITL książę polski
+1 WWW https://pl.wikipedia.org/wiki/Mieszko_Boles%C5%82awowic
+0 @I37@ INDI
+1 NAME Przecława /Prawdziców/
+2 GIVN Przecława
+2 SURN Prawdziców
+1 SEX F
+1 DEAT Y
+1 FAMS @F13@
+0 @I38@ INDI
+1 NAME Zbigniew
+2 GIVN Zbigniew
+1 SEX M
+1 BIRT
+2 DATE BET 1070 AND 1073
+1 DEAT Y
+2 DATE 8 JUL 1113
+1 FAMC @F13@
+1 TITL polski książę dzielnicowy
+1 WWW https://pl.wikipedia.org/wiki/Zbigniew_(polski_ksi%C4%85%C5%BC%C4%99)
+0 @I39@ INDI
+1 NAME Judyta Przemyślidka
+2 GIVN Judyta
+2 NICK czeska
+1 SEX F
+1 BIRT
+2 DATE BET 1056 AND 1058
+1 DEAT Y
+2 DATE 25 DEC 1086
+1 FAMS @F14@
+1 WWW https://pl.wikipedia.org/wiki/Judyta_Przemy%C5%9Blidka_(zm._1086)
+1 TITL księżna Polski
+0 @I40@ INDI
+1 NAME Bolesław III Krzywousty
+2 GIVN Bolesław III Krzywousty
+1 SEX M
+1 BIRT
+2 DATE 20 AUG 1086
+1 DEAT Y
+2 DATE 28 OCT 1138
+1 FAMS @F16@
+1 FAMS @F17@
+1 FAMC @F14@
+1 TITL polski książę dzielnicowy
+1 BURI Y
+2 PLAC klasztor Benedyktynów, Tyniec
+1 WWW https://pl.wikipedia.org/wiki/Boles%C5%82aw_III_Krzywousty
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/d/dc/Boleslav_III_of_Poland.jpg
+2 TITL Bolesław Krzywousty / Jan Matejko / domena publiczna
+0 @I41@ INDI
+1 NAME Judyta Maria /Salicka/
+2 GIVN Judyta Maria
+2 SURN Salicka
+1 SEX F
+1 BIRT
+2 DATE 9 APR 1047
+2 PLAC Rawenna
+1 DEAT Y
+2 DATE AFT 14 MAR 1092
+1 FAMS @F12@
+1 WWW https://pl.wikipedia.org/wiki/Judyta_Salicka
+0 @I42@ INDI
+1 NAME Agnieszka Władysławówna
+2 GIVN Agnieszka
+1 SEX F
+1 BIRT
+2 DATE 1090
+1 DEAT Y
+2 DATE 25 DEC 1125
+1 FAMC @F12@
+1 WWW https://pl.wikipedia.org/wiki/Agnieszka_W%C5%82adys%C5%82aw%C3%B3wna
+0 @I43@ INDI
+1 NAME Zbysława /Światopełkówna/
+2 GIVN Zbysława
+2 SURN Światopełkówna
+2 NICK kijowska
+1 SEX F
+1 BIRT
+2 DATE BET 1085 AND 1090
+1 DEAT Y
+2 DATE ABT 1114
+1 FAMS @F17@
+1 TITL księżna polski
+1 WWW https://pl.wikipedia.org/wiki/Zbys%C5%82awa_kijowska
+0 @I44@ INDI
+1 NAME Władysław II Wygnaniec
+2 GIVN Władysław II Wygnaniec
+1 SEX M
+1 BIRT
+2 DATE 1105
+1 DEAT Y
+2 DATE 30 MAY 1159
+1 FAMS @F18@
+1 FAMC @F17@
+1 TITL książę senior (zwierzchni) Polski
+1 WWW https://pl.wikipedia.org/wiki/W%C5%82adys%C5%82aw_II_Wygnaniec
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/0/05/Wladyslaw_II_Wygnaniec.jpg
+2 TITL Władysław Wygnaniec / Jan Matejko / domena publiczna
+0 @I45@ INDI
+1 NAME Salomea z Bergu
+2 GIVN Salomea
+1 SEX F
+1 BIRT
+2 DATE BET 1093 AND 1101
+1 DEAT Y
+2 DATE 27 JUL 1144
+2 PLAC Łęczyca
+1 FAMS @F16@
+1 TITL księżna Polski
+1 WWW https://pl.wikipedia.org/wiki/Salomea_z_Bergu
+0 @I46@ INDI
+1 NAME Leszek Bolesławowic
+2 GIVN Leszek
+1 SEX M
+1 BIRT
+2 DATE BET 1115 AND 1116
+1 DEAT Y
+2 DATE BEF 26 AUG 1131
+1 FAMC @F16@
+1 TITL książę polski
+1 WWW https://pl.wikipedia.org/wiki/Leszek_Boles%C5%82awowic_(1115%E2%80%93przed_1131)
+0 @I47@ INDI
+1 NAME Ryksa Bolesławówna
+2 GIVN Ryksa
+1 SEX F
+1 BIRT
+2 DATE 1116
+1 DEAT Y
+2 DATE AFT 25 DEC 1155
+1 FAMC @F16@
+1 TITL królowa Szwecji
+1 WWW https://pl.wikipedia.org/wiki/Ryksa_Boles%C5%82aw%C3%B3wna
+0 @I48@ INDI
+1 NAME Kazimierz
+2 GIVN Kazimierz
+1 SEX M
+1 BIRT
+2 DATE BET 1117 AND 1122
+1 DEAT Y
+2 DATE 19 OCT 1131
+1 FAMC @F16@
+0 @I49@ INDI
+1 NAME Bolesław IV Kędzierzawy
+2 GIVN Bolesław IV Kędzierzawy
+1 SEX M
+1 BIRT
+2 DATE ABT 1122
+1 DEAT Y
+2 DATE 5 JAN 1173
+1 FAMS @F19@
+1 FAMS @F20@
+1 FAMC @F16@
+1 BURI Y
+2 PLAC katedra płocka
+1 WWW https://pl.wikipedia.org/wiki/Boles%C5%82aw_IV_K%C4%99dzierzawy
+1 TITL książę senior (zwierzchni) Polski
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/7/7a/Boleslaw_IV_Kedzierzawy.jpg
+2 TITL Bolesław Kędzierzawy / Jan Matejko / domena publiczna
+0 @I50@ INDI
+1 NAME Mieszko III Stary
+2 GIVN Mieszko III Stary
+1 SEX M
+1 BIRT
+2 DATE BET 1122 AND 1125
+1 DEAT Y
+2 DATE 13 MAR 1202
+2 PLAC Kalisz
+1 FAMS @F21@
+1 FAMS @F22@
+1 FAMC @F16@
+1 TITL książę zwierzchni Polski
+1 BURI Y
+2 PLAC Kolegiata św. Pawła Apostoła, Kalisz
+1 WWW https://pl.wikipedia.org/wiki/Mieszko_III_Stary
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/7/71/Mieszko_III_Stary.jpg
+2 TITL Mieszko Stary / Jan Mtejko / domena publiczna
+0 @I51@ INDI
+1 NAME Gertruda
+2 GIVN Gertruda
+1 SEX F
+1 BIRT
+2 DATE 1126
+1 DEAT Y
+2 DATE 7 MAY 1160
+1 FAMC @F16@
+0 @I52@ INDI
+1 NAME Henryk Sandomierski
+2 GIVN Henryk Sandomierski
+1 SEX M
+1 BIRT
+2 DATE ABT 1130
+1 DEAT Y
+2 DATE 18 OCT 1166
+1 FAMC @F16@
+1 TITL książę sandomierski
+1 WWW https://pl.wikipedia.org/wiki/Henryk_Sandomierski
+0 @I53@ INDI
+1 NAME Dobroniega Ludgarda
+2 GIVN Dobroniega Ludgarda
+1 SEX F
+1 BIRT
+2 DATE BET 1128 AND 1135
+1 DEAT Y
+2 DATE AFT 1160
+1 FAMC @F16@
+1 TITL księżniczka polska
+1 WWW https://pl.wikipedia.org/wiki/Dobroniega_Ludgarda
+0 @I54@ INDI
+1 NAME Judyta Bolesławówna
+2 GIVN Judyta
+1 SEX F
+1 BIRT
+2 DATE BET 1130 AND 1135
+1 DEAT Y
+2 DATE 8 JUL BET 1171 AND 1175
+1 FAMC @F16@
+1 TITL margrabina brandenburska
+1 WWW https://pl.wikipedia.org/wiki/Judyta_Boles%C5%82aw%C3%B3wna
+0 @I55@ INDI
+1 NAME Agnieszka Bolesławówna
+2 GIVN Agnieszka
+1 SEX F
+1 BIRT
+2 DATE 1137
+1 DEAT Y
+2 DATE AFT 1182
+1 FAMC @F16@
+1 TITL księżniczka polska
+1 WWW https://pl.wikipedia.org/wiki/Agnieszka_Boles%C5%82aw%C3%B3wna
+0 @I56@ INDI
+1 NAME Kazimierz II Sprawiedliwy
+2 GIVN Kazimierz II Sprawiedliwy
+1 SEX M
+1 BIRT
+2 DATE 1138
+1 DEAT Y
+2 DATE 5 MAY 1194
+2 PLAC Kraków
+1 FAMS @F23@
+1 FAMC @F16@
+1 TITL książę zwierzchni Polski
+1 WWW https://pl.wikipedia.org/wiki/Kazimierz_II_Sprawiedliwy
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/4/43/Kazimierz_II_Sprawiedliwy_2.jpg
+2 TITL Kazimierz Sprawiedliwy / Jan Matejko / domena publiczna
+0 @I57@ INDI
+1 NAME Agnieszka /Babenberg/
+2 GIVN Agnieszka
+2 SURN Babenberg
+1 SEX F
+1 BIRT
+2 DATE 1111
+1 DEAT Y
+2 DATE 24 JAN 1160
+1 FAMS @F18@
+0 @I58@ INDI
+1 NAME Bolesław I Wysoki
+2 GIVN Bolesław I Wysoki
+1 SEX M
+1 BIRT
+2 DATE 1127
+1 DEAT Y
+2 DATE 7 DEC 1201
+1 FAMS @F24@
+1 FAMS @F25@
+1 FAMC @F18@
+0 @I59@ INDI
+1 NAME Ryksa
+2 GIVN Ryksa
+1 SEX F
+1 BIRT
+2 DATE 1130
+1 DEAT Y
+2 DATE 16 JUN 1185
+1 FAMC @F18@
+0 @I60@ INDI
+1 NAME Mieszko I Plątonogi
+2 GIVN Mieszko I Plątonogi
+1 SEX M
+1 BIRT
+2 DATE 1131
+1 DEAT Y
+2 DATE 15 MAY 1211
+1 FAMC @F18@
+0 @I61@ INDI
+1 NAME Konrad Laskonogi
+2 GIVN Konrad Laskonogi
+1 SEX M
+1 BIRT
+2 DATE 1146
+1 DEAT Y
+2 DATE 17 JAN 1180
+1 FAMC @F18@
+0 @I62@ INDI
+1 NAME Albert
+2 GIVN Albert
+1 SEX M
+1 DEAT Y
+1 FAMC @F18@
+0 @I63@ INDI
+1 NAME Wierzchosława (Anastazja)
+2 GIVN Wierzchosława
+2 NICK nowogrodzka
+1 SEX F
+1 BIRT
+2 DATE ABT 1125
+1 DEAT Y
+2 DATE BET 1158 AND 1166
+1 FAMS @F20@
+1 WWW https://pl.wikipedia.org/wiki/Wierzchos%C5%82awa_nowogrodzka
+0 @I64@ INDI
+1 NAME Leszek Bolesławowic
+2 GIVN Leszek
+1 SEX M
+1 BIRT
+2 DATE ABT 1160
+1 DEAT Y
+2 DATE 1186
+1 FAMC @F20@
+1 TITL książę mazowiecki
+1 WWW https://pl.wikipedia.org/wiki/Leszek_Boles%C5%82awowic_(zm._1186)
+0 @I65@ INDI
+1 NAME Bolesław Bolesławowic
+2 GIVN Bolesław Bolesławowic
+1 SEX M
+1 BIRT
+2 DATE ABT 1150
+1 DEAT Y
+2 DATE 1172
+1 FAMC @F20@
+0 @I66@ INDI
+1 NAME Wierzchosława
+2 GIVN Wierzchosława
+1 SEX F
+1 DEAT Y
+1 FAMC @F20@
+0 @I67@ INDI
+1 NAME
+1 SEX F
+1 DEAT Y
+1 FAMC @F20@
+0 @I68@ INDI
+1 NAME Maria
+2 GIVN Maria
+1 SEX F
+1 DEAT Y
+1 FAMS @F19@
+0 @I69@ INDI
+1 NAME Elżbieta
+2 GIVN Elżbieta
+2 NICK węgierska
+1 SEX F
+1 BIRT
+2 DATE ABT 1128
+1 DEAT Y
+2 DATE 21 JUL BET 1150 AND 1154
+1 FAMS @F22@
+1 WWW https://pl.wikipedia.org/wiki/El%C5%BCbieta_w%C4%99gierska_(zm._1150%E2%80%931154)
+1 TITL królewna węgierska
+0 @I70@ INDI
+1 NAME Odon Mieszkowic
+2 GIVN Odon
+2 NICK poznański, wielkopolski
+1 SEX M
+1 BIRT
+2 DATE BET 1141 AND 1149
+1 DEAT Y
+2 DATE 20 APR 1194
+1 FAMS @F26@
+1 FAMC @F22@
+1 TITL książę
+1 BURI Y
+2 PLAC katedra poznańska
+1 WWW https://pl.wikipedia.org/wiki/Odon_Mieszkowic
+0 @I71@ INDI
+1 NAME Stefan Mieszkowic
+2 GIVN Stefan
+1 SEX M
+1 BIRT
+2 DATE ABT 1150
+1 DEAT Y
+2 DATE BET 18 OCT 1166 AND 1177
+1 FAMC @F22@
+1 WWW https://pl.wikipedia.org/wiki/Stefan_Mieszkowic
+0 @I72@ INDI
+1 NAME Wierzchosława Ludmiła
+2 GIVN Wierzchosława Ludmiła
+1 SEX F
+1 BIRT
+2 DATE BEF 1152
+1 DEAT Y
+2 DATE ABT 1223
+1 FAMC @F22@
+1 TITL księżniczka wielkopolska, księżna lotaryńska
+1 WWW https://pl.wikipedia.org/wiki/Wierzchos%C5%82awa_Ludmi%C5%82a
+0 @I73@ INDI
+1 NAME Judyta
+2 GIVN Judyta
+1 SEX F
+1 BIRT
+2 DATE BEF 1154
+1 DEAT Y
+2 DATE 12 DEC 1201
+1 FAMC @F22@
+0 @I74@ INDI
+1 NAME Elżbieta Mieszkówna
+2 GIVN Elżbieta
+1 SEX F
+1 BIRT
+2 DATE 1154
+1 DEAT Y
+2 DATE 2 APR 1209
+1 FAMC @F22@
+1 TITL księżniczka wielkopolska, księżna czeska
+1 WWW https://pl.wikipedia.org/wiki/El%C5%BCbieta_Mieszk%C3%B3wna
+0 @I75@ INDI
+1 NAME Eudoksja Izjasławówna
+2 GIVN Eudoksja
+1 SEX F
+1 BIRT
+2 DATE ABT 1140
+1 DEAT Y
+2 DATE AFT 1187
+1 FAMS @F21@
+1 TITL księżniczka ruska
+1 WWW https://pl.wikipedia.org/wiki/Eudoksja_Izjas%C5%82aw%C3%B3wna
+0 @I76@ INDI
+1 NAME Bolesław Mieszkowic
+2 GIVN Bolesław
+2 NICK kujawski
+1 SEX M
+1 BIRT
+2 DATE 1159
+1 DEAT Y
+2 DATE 3 SEP 1195
+1 FAMC @F21@
+1 TITL książę kujawski
+1 WWW https://pl.wikipedia.org/wiki/Boles%C5%82aw_Mieszkowic
+0 @I77@ INDI
+1 NAME Mieszko Młodszy
+2 GIVN Mieszko Młodszy
+2 NICK kaliski
+1 SEX M
+1 BIRT
+2 DATE BET 1160 AND 1165
+1 DEAT Y
+2 DATE 2 AUG 1193
+2 PLAC Kalisz
+1 FAMC @F21@
+1 BURI Y
+2 PLAC Kolegiata św. Pawła Apostoła, Kalisz
+1 WWW https://pl.wikipedia.org/wiki/Mieszko_M%C5%82odszy
+0 @I78@ INDI
+1 NAME Władysław III Laskonogi
+2 GIVN Władysław III Laskonogi
+1 SEX M
+1 BIRT
+2 DATE BET 1161 AND 1166
+1 DEAT Y
+2 DATE 3 NOV 1231
+2 PLAC Środa Śląska
+1 FAMC @F21@
+1 TITL książę zwierzchni Polski
+1 WWW https://pl.wikipedia.org/wiki/W%C5%82adys%C5%82aw_III_Laskonogi
+0 @I79@ INDI
+1 NAME Salomea
+2 GIVN Salomea
+1 SEX F
+1 BIRT
+2 DATE BET 1161 AND 1162
+1 DEAT Y
+2 DATE AFT 1183
+1 FAMC @F21@
+0 @I80@ INDI
+1 NAME Anastazja Mieszkówna
+2 GIVN Anastazja
+1 SEX F
+1 BIRT
+2 DATE BEF 1164
+1 DEAT Y
+2 DATE AFT 31 MAY 1240
+1 FAMC @F21@
+1 TITL księżniczka wielkopolska
+1 WWW https://pl.wikipedia.org/wiki/Anastazja_Mieszk%C3%B3wna
+0 @I81@ INDI
+1 NAME Helena Znojemska
+2 GIVN Helena Znojemska
+1 SEX F
+1 DEAT Y
+2 DATE BET 1202 AND 1206
+1 FAMS @F23@
+1 TITL księżniczka morawska
+1 WWW https://pl.wikipedia.org/wiki/Helena_znojemska
+0 @I82@ INDI
+1 NAME
+1 SEX F
+1 DEAT Y
+1 FAMC @F23@
+0 @I83@ INDI
+1 NAME Kazimierz
+2 GIVN Kazimierz
+1 SEX M
+1 DEAT Y
+2 DATE 1 MAR 1168
+1 FAMC @F23@
+0 @I84@ INDI
+1 NAME Bolesław
+2 GIVN Bolesław
+1 SEX M
+1 BIRT
+2 DATE 1168
+1 DEAT Y
+2 DATE 16 APR 1182
+1 FAMC @F23@
+0 @I85@ INDI
+1 NAME Odon
+2 GIVN Odon
+1 SEX M
+1 DEAT Y
+1 FAMC @F23@
+0 @I86@ INDI
+1 NAME Adelajda Kazimierzówna
+2 GIVN Adelajda
+1 SEX F
+1 DEAT Y
+2 DATE 8 DEC 1211
+1 FAMC @F23@
+1 TITL księżniczka małopolska
+1 WWW https://pl.wikipedia.org/wiki/Adelajda_Kazimierz%C3%B3wna
+0 @I87@ INDI
+1 NAME Leszek Biały
+2 GIVN Leszek Biały
+1 SEX M
+1 BIRT
+2 DATE BET 1184 AND 1185
+1 DEAT Y
+2 DATE 24 NOV 1227
+2 PLAC Marcinkowo Górne
+1 FAMS @F27@
+1 FAMC @F23@
+1 TITL książę zwierzchni Polski
+1 BURI Y
+2 PLAC katedra wawelska
+1 WWW https://pl.wikipedia.org/wiki/Leszek_Bia%C5%82y
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/b/b4/Leszek_Bialy.jpg
+2 TITL Leszek Biały / Jan Matejko / domena publiczna
+0 @I88@ INDI
+1 NAME Konrad I
+2 GIVN Konrad I
+2 NICK mazowiecki
+1 SEX M
+1 BIRT
+2 DATE BET 1187 AND 1188
+1 DEAT Y
+2 DATE 31 AUG 1247
+1 FAMS @F28@
+1 FAMC @F23@
+1 TITL książę mazowiecki, książę krakowski
+1 WWW https://pl.wikipedia.org/wiki/Konrad_I_mazowiecki
+1 BURI Y
+2 PLAC katedra płocka
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/2/2c/Konrad_I_Mazowiecki.jpg
+2 TITL Konrad mazowiecki / Jan Matejko / domena publiczna
+0 @I89@ INDI
+1 NAME Grzymisława
+2 GIVN Grzymisława
+1 SEX F
+1 BIRT
+2 DATE BET 1185 AND 1195
+1 DEAT Y
+2 DATE 8 NOV 1258
+1 FAMS @F27@
+1 TITL księżniczka ruska, księżna krakowska
+1 BURI Y
+2 PLAC klasztor klarysek, Zawichost
+1 WWW https://pl.wikipedia.org/wiki/Grzymis%C5%82awa_(zm._1258)
+0 @I90@ INDI
+1 NAME Bolesław V Wstydliwy
+2 GIVN Bolesław V Wstydliwy
+1 SEX M
+1 BIRT
+2 DATE 21 JUN 1226
+2 PLAC Stary Korczyn
+1 DEAT Y
+2 DATE 7 DEC 1279
+1 FAMS @F29@
+1 FAMC @F27@
+1 TITL książę krakowski, książę sandomierski
+1 BURI Y
+2 PLAC Kościół św. Franciszka z Asyżu, Kraków
+1 WWW https://pl.wikipedia.org/wiki/Boles%C5%82aw_V_Wstydliwy
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/4/4a/Boleslaw_V_Wstydliwy.jpg
+2 TITL Bolesław Wstydliwy / Jan Matejko / domena publiczna
+0 @I91@ INDI
+1 NAME Salomea
+2 GIVN Salomea
+2 NICK Piastówna
+1 SEX F
+1 BIRT
+2 DATE BET 1211 AND 1212
+2 PLAC Kraków
+1 DEAT Y
+2 DATE 17 NOV 1268
+2 PLAC Skała
+1 FAMC @F27@
+1 TITL błogosławiona, księżna halicka
+1 BURI Y
+2 PLAC Kościół św. Franciszka z Asyżu, Kraków
+1 WWW https://pl.wikipedia.org/wiki/B%C5%82ogos%C5%82awiona_Salomea
+0 @I92@ INDI
+1 NAME Kinga
+2 GIVN Kinga
+2 NICK Kunegunda
+1 SEX F
+1 BIRT
+2 DATE 5 MAR 1234
+2 PLAC Ostrzyhom
+1 DEAT Y
+2 DATE 24 JUL 1292
+2 PLAC Stary Sącz
+1 FAMS @F29@
+1 TITL święta, węgierska królewna
+1 WWW https://pl.wikipedia.org/wiki/%C5%9Awi%C4%99ta_Kinga
+0 @I93@ INDI
+1 NAME Zwinisława
+2 GIVN Zwinisława
+1 SEX F
+1 DEAT Y
+2 DATE 1155
+1 FAMS @F25@
+0 @I94@ INDI
+1 NAME Jarosław
+2 GIVN Jarosław
+1 SEX M
+1 BIRT
+2 DATE 1143
+1 DEAT Y
+2 DATE 22 MAR 1201
+1 FAMC @F25@
+0 @I95@ INDI
+1 NAME Olga
+2 GIVN Olga
+1 SEX F
+1 BIRT
+2 DATE 1155
+1 DEAT Y
+2 DATE 1170
+1 FAMC @F25@
+0 @I96@ INDI
+1 NAME Krystyna
+2 GIVN Krystyna
+1 SEX F
+1 DEAT Y
+2 DATE 23 FEB 1204
+1 FAMS @F24@
+0 @I97@ INDI
+1 NAME Berta
+2 GIVN Berta
+1 SEX F
+1 BIRT
+2 DATE 1160
+1 DEAT Y
+2 DATE 7 MAY 1174
+1 FAMC @F24@
+0 @I98@ INDI
+1 NAME Bolesław
+2 GIVN Bolesław
+1 SEX M
+1 BIRT
+2 DATE 1157
+1 DEAT Y
+2 DATE 2 MAY 1175
+1 FAMC @F24@
+0 @I99@ INDI
+1 NAME Konrad
+2 GIVN Konrad
+1 SEX M
+1 BIRT
+2 DATE 1160
+1 DEAT Y
+2 DATE 5 JUL 1175
+1 FAMC @F24@
+0 @I100@ INDI
+1 NAME Jan
+2 GIVN Jan
+1 SEX M
+1 BIRT
+2 DATE 1161
+1 DEAT Y
+2 DATE 10 MAR 1174
+1 FAMC @F24@
+0 @I101@ INDI
+1 NAME Adelajda Zbysława
+2 GIVN Adelajda Zbysława
+1 SEX F
+1 BIRT
+2 DATE 1157
+1 DEAT Y
+2 DATE 29 MAR 1213
+1 FAMC @F24@
+0 @I102@ INDI
+1 NAME Henryk I Brodaty
+2 GIVN Henryk I Brodaty
+1 SEX M
+1 BIRT
+2 DATE 1165
+1 DEAT Y
+2 DATE 19 MAR 1238
+1 FAMS @F30@
+1 FAMC @F24@
+0 @I103@ INDI
+1 NAME Władysław
+2 GIVN Władysław
+1 SEX M
+1 BIRT
+2 DATE 1180
+1 DEAT Y
+2 DATE 1199
+1 FAMC @F24@
+0 @I104@ INDI
+1 NAME Jadwiga Śląska
+2 GIVN Jadwiga Śląska
+1 SEX F
+1 DEAT Y
+2 DATE 1243
+1 FAMS @F30@
+0 @I105@ INDI
+1 NAME Henryk II Pobożny
+2 GIVN Henryk II Pobożny
+1 SEX M
+1 BIRT
+2 DATE 1196
+1 DEAT Y
+2 DATE 9 APR 1241
+1 FAMS @F31@
+1 FAMC @F30@
+0 @I106@ INDI
+1 NAME Konrad Kędzierzawy
+2 GIVN Konrad Kędzierzawy
+1 SEX M
+1 BIRT
+2 DATE 1198
+1 DEAT Y
+2 DATE 4 NOV 1213
+1 FAMC @F30@
+0 @I107@ INDI
+1 NAME Bolesław
+2 GIVN Bolesław
+1 SEX M
+1 DEAT Y
+1 FAMC @F30@
+0 @I108@ INDI
+1 NAME Agnieszka
+2 GIVN Agnieszka
+1 SEX F
+1 DEAT Y
+1 FAMC @F30@
+0 @I109@ INDI
+1 NAME Zofia
+2 GIVN Zofia
+1 SEX F
+1 DEAT Y
+1 FAMC @F30@
+0 @I110@ INDI
+1 NAME Gertruda
+2 GIVN Gertruda
+1 SEX F
+1 DEAT Y
+1 FAMC @F30@
+0 @I111@ INDI
+1 NAME Anna Przemyślidka
+2 GIVN Anna Przemyślidka
+1 SEX F
+1 BIRT
+2 DATE 1201
+1 DEAT Y
+2 DATE 23 JUN 1265
+1 FAMS @F31@
+0 @I112@ INDI
+1 NAME Henryk III Biały
+2 GIVN Henryk III Biały
+1 SEX M
+1 DEAT Y
+2 DATE 3 DEC 1266
+1 FAMS @F32@
+1 FAMC @F31@
+0 @I113@ INDI
+1 NAME Judyta
+2 GIVN Judyta
+1 SEX F
+1 DEAT Y
+1 FAMS @F32@
+0 @I114@ INDI
+1 NAME Henryk Probus
+2 GIVN Henryk Probus
+1 SEX M
+1 BIRT
+2 DATE 1257
+1 DEAT Y
+2 DATE 1290
+1 FAMC @F32@
+0 @I115@ INDI
+1 NAME Wyszesława
+2 GIVN Wyszesława
+2 NICK halicka
+1 SEX F
+1 DEAT Y
+2 DATE 3 DEC 1194
+1 FAMS @F26@
+1 TITL księżniczka halicka, księżna poznańska
+1 BIRT
+2 DATE BET 1167 AND 1170
+1 WWW https://pl.wikipedia.org/wiki/Wyszes%C5%82awa_halicka
+0 @I116@ INDI
+1 NAME Władysław Odonic
+2 GIVN Władysław Odonic
+1 SEX M
+1 DEAT Y
+2 DATE 5 JUN 1239
+1 FAMS @F33@
+1 FAMC @F26@
+1 BIRT
+2 DATE ABT 1190
+1 BURI Y
+2 PLAC katedra poznańska
+1 WWW https://pl.wikipedia.org/wiki/W%C5%82adys%C5%82aw_Odonic
+1 TITL książę
+0 @I117@ INDI
+1 NAME Jadwiga
+2 GIVN Jadwiga
+2 NICK gdańska
+1 SEX F
+1 DEAT Y
+2 DATE 29 DEC 1249
+1 FAMS @F33@
+1 BURI Y
+2 PLAC katedra gnieźnieńska
+1 WWW https://pl.wikipedia.org/wiki/Jadwiga_(%C5%BCona_W%C5%82adys%C5%82awa_Odonica)
+1 TITL księżna wielkopolska
+0 @I118@ INDI
+1 NAME Przemysł I
+2 GIVN Przemysł I
+1 SEX M
+1 DEAT Y
+2 DATE 4 JUN 1257
+2 PLAC Poznań
+1 FAMS @F34@
+1 FAMC @F33@
+1 TITL książę wielkopolski
+1 BIRT
+2 DATE BET 5 JUN 1220 AND 4 JUN 1221
+2 PLAC Trzebnica
+1 BURI Y
+2 PLAC katedra poznańska
+1 WWW https://pl.wikipedia.org/wiki/Przemys%C5%82_I
+0 @I119@ INDI
+1 NAME Bolesław Pobożny
+2 GIVN Bolesław Pobożny
+1 SEX M
+1 DEAT Y
+2 DATE 13 APR 1279
+2 PLAC Kalisz
+1 FAMC @F33@
+1 TITL książę
+1 BIRT
+2 DATE BET 1224 AND 1227
+1 BURI Y
+2 PLAC katedra poznańska
+1 WWW https://pl.wikipedia.org/wiki/Boles%C5%82aw_Pobo%C5%BCny
+0 @I120@ INDI
+1 NAME Elżbieta
+2 GIVN Elżbieta
+2 NICK wrocławska
+1 SEX F
+1 BIRT
+2 DATE BET 1224 AND 1232
+1 DEAT Y
+2 DATE 16 JAN 1265
+2 PLAC Modrze
+1 FAMS @F34@
+1 BURI Y
+2 PLAC katedra poznańska
+1 WWW https://pl.wikipedia.org/wiki/El%C5%BCbieta_wroc%C5%82awska
+0 @I121@ INDI
+1 NAME Konstancja Przemysłówna
+2 GIVN Konstancja
+2 NICK poznańska
+1 SEX F
+1 BIRT
+2 DATE BET 1245 AND 1246
+1 DEAT Y
+2 DATE 10 OCT 1281
+1 FAMC @F34@
+1 BURI Y
+2 PLAC Chorin
+1 WWW https://pl.wikipedia.org/wiki/Konstancja_Przemys%C5%82%C3%B3wna
+0 @I122@ INDI
+1 NAME Eufrozyna Przemysłówna
+2 GIVN Eufrozyna
+1 SEX F
+1 BIRT
+2 DATE ABT 1247
+1 DEAT Y
+2 DATE ABT MAY 1298
+1 FAMC @F34@
+1 WWW https://pl.wikipedia.org/wiki/Eufrozyna_Przemys%C5%82%C3%B3wna
+1 TITL ksieni cysterek
+0 @I123@ INDI
+1 NAME Anna Przemysłówna
+2 GIVN Anna
+1 SEX F
+1 BIRT
+2 DATE 1253
+2 PLAC Poznań
+1 DEAT Y
+2 DATE 26 JUN 1295
+1 FAMC @F34@
+1 TITL księżniczka wielkopolska, ksieni cysterek
+1 WWW https://pl.wikipedia.org/wiki/Anna_Przemys%C5%82%C3%B3wna
+0 @I124@ INDI
+1 NAME Eufemia Przemysłówna
+2 GIVN Eufemia
+1 SEX F
+1 BIRT
+2 DATE 1253
+2 PLAC Poznań
+1 DEAT Y
+2 DATE 5 SEP 1298
+2 PLAC Wrocław
+1 FAMC @F34@
+1 TITL księżniczka wielkopolska, klaryska wrocławska
+1 BURI Y
+2 PLAC klasztor klarysek, Wrocław
+1 WWW https://pl.wikipedia.org/wiki/Eufemia_Przemys%C5%82%C3%B3wna
+0 @I125@ INDI
+1 NAME Przemysł II
+2 GIVN Przemysł II
+1 SEX M
+1 BIRT
+2 DATE 14 OCT 1257
+2 PLAC Poznań
+1 DEAT Y
+2 DATE 8 FEB 1296
+2 PLAC Rogoźno
+1 FAMS @F35@
+1 FAMS @F36@
+1 FAMS @F37@
+1 FAMC @F34@
+1 TITL król Polski, książę Pomorza
+1 BURI Y
+2 PLAC opactwo cystersów, Oliwa
+1 WWW https://pl.wikipedia.org/wiki/Przemys%C5%82_II
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/b/ba/Przemysl_II.jpg
+2 TITL Przemysł II / Jan Matejko / domena publiczna
+0 @I126@ INDI
+1 NAME Ludgarda
+2 GIVN Ludgarda
+2 NICK meklemburska
+1 SEX F
+1 BIRT
+2 DATE BET 1260 AND 1261
+1 DEAT Y
+2 DATE BET 11 AND 14 DEC 1283
+1 FAMS @F36@
+1 TITL księżna wielkopolska
+1 BURI Y
+2 PLAC katedra gnieźnieńska
+1 WWW https://pl.wikipedia.org/wiki/Ludgarda_meklemburska
+0 @I127@ INDI
+1 NAME Ryksa
+2 GIVN Ryksa
+2 NICK szwedzka
+1 SEX F
+1 BIRT
+2 DATE BET 1265 AND 1270
+1 DEAT Y
+2 DATE BET 1289 AND 1293
+1 FAMS @F37@
+1 TITL księżna wielkopolska
+1 BURI Y
+2 PLAC katedra poznańska
+1 WWW https://pl.wikipedia.org/wiki/Ryksa_szwedzka
+0 @I128@ INDI
+1 NAME Ryksa Elżbieta
+2 GIVN Ryksa Elżbieta
+1 SEX F
+1 BIRT
+2 DATE 1 SEP 1288
+2 PLAC Poznań
+1 DEAT Y
+2 DATE 19 OCT 1335
+2 PLAC Brno
+1 FAMC @F37@
+1 TITL królowa Czech, królowa Polski
+1 WWW https://pl.wikipedia.org/wiki/Ryksa_El%C5%BCbieta
+0 @I129@ INDI
+1 NAME Małgorzata
+2 GIVN Małgorzata
+2 NICK brandeburska
+1 SEX F
+1 BIRT
+2 DATE 1270
+1 DEAT Y
+2 DATE 1315
+2 PLAC Ratzeburg
+1 FAMS @F35@
+1 TITL Królowa Polski, księżna Pomorza
+1 BURI Y
+2 PLAC katedra, Ratzeburg
+1 WWW https://pl.wikipedia.org/wiki/Ma%C5%82gorzata_Brandenburska
+0 @I130@ INDI
+1 NAME Agafia Światosławówna
+2 GIVN Agafia Światosławówna
+1 SEX F
+1 BIRT
+2 DATE BET 1190 AND 1195
+1 DEAT Y
+2 DATE 2 JUN 1248
+1 FAMS @F28@
+1 TITL księżna mazowiecka
+1 WWW https://pl.wikipedia.org/wiki/Agafia_%C5%9Awiatos%C5%82aw%C3%B3wna
+0 @I131@ INDI
+1 NAME Bolesław I
+2 GIVN Bolesław I
+2 NICK mazowiecki
+1 SEX M
+1 BIRT
+2 DATE ABT 1208
+1 DEAT Y
+2 DATE AFT 25 FEB 1248
+1 FAMC @F28@
+1 TITL książę sandomierski, książę mazowiecki
+1 WWW https://pl.wikipedia.org/wiki/Boles%C5%82aw_I_mazowiecki
+0 @I132@ INDI
+1 NAME Kazimierz I
+2 GIVN Kazimierz I
+2 NICK kujawski, Kazimierz Konradowic
+1 SEX M
+1 BIRT
+2 DATE ABT 1211
+1 DEAT Y
+2 DATE 14 DEC 1267
+2 PLAC Inowrocław
+1 FAMS @F38@
+1 FAMS @F39@
+1 FAMC @F28@
+1 TITL książę kujawski
+1 WWW https://pl.wikipedia.org/wiki/Kazimierz_I_kujawski
+1 BURI Y
+2 PLAC katedra wrocławska
+0 @I133@ INDI
+1 NAME Siemowit I Mazowiecki
+2 GIVN Siemowit I Mazowiecki
+1 SEX M
+1 BIRT
+2 DATE 1213
+1 DEAT Y
+2 DATE 24 JUN 1262
+1 FAMC @F28@
+0 @I134@ INDI
+1 NAME Eudoksja
+2 GIVN Eudoksja
+1 SEX F
+1 DEAT Y
+1 FAMC @F28@
+0 @I135@ INDI
+1 NAME Ludmiła
+2 GIVN Ludmiła
+1 SEX F
+1 DEAT Y
+1 FAMC @F28@
+0 @I136@ INDI
+1 NAME Ziemomysł
+2 GIVN Ziemomysł
+1 SEX M
+1 DEAT Y
+1 FAMC @F28@
+0 @I137@ INDI
+1 NAME Salomea
+2 GIVN Salomea
+1 SEX F
+1 DEAT Y
+1 FAMC @F28@
+0 @I138@ INDI
+1 NAME Judyta
+2 GIVN Judyta
+1 SEX F
+1 DEAT Y
+1 FAMC @F28@
+0 @I139@ INDI
+1 NAME Dubrawka
+2 GIVN Dubrawka
+1 SEX F
+1 DEAT Y
+1 FAMC @F28@
+0 @I140@ INDI
+1 NAME Mieszko
+2 GIVN Mieszko
+1 SEX M
+1 DEAT Y
+1 FAMC @F28@
+0 @I141@ INDI
+1 NAME Konstancja
+2 GIVN Konstancja
+2 NICK wrocławska
+1 SEX F
+1 BIRT
+2 DATE 1227
+1 DEAT Y
+2 DATE 23 FEB 1257
+1 FAMS @F39@
+1 TITL księżniczka śląska, księżna kujawska
+1 WWW https://pl.wikipedia.org/wiki/Konstancja_wroc%C5%82awska
+0 @I142@ INDI
+1 NAME Leszek Czarny
+2 GIVN Leszek Czarny
+1 SEX M
+1 BIRT
+2 DATE ABT 1241
+1 DEAT Y
+2 DATE 30 SEP 1288
+1 FAMC @F39@
+1 TITL książę
+1 WWW https://pl.wikipedia.org/wiki/Leszek_Czarny
+0 @I143@ INDI
+1 NAME Ziemomysł
+2 GIVN Ziemomysł
+2 NICK Siemomysł Kujawski
+1 SEX M
+1 BIRT
+2 DATE ABT 1247
+1 DEAT Y
+2 DATE 1287
+1 FAMC @F39@
+1 TITL książę inowrocławski
+1 BURI Y
+2 PLAC kościół franciszkanów, Inowrocław
+1 WWW https://pl.wikipedia.org/wiki/Ziemomys%C5%82_inowroc%C5%82awski
+0 @I144@ INDI
+1 NAME Eufrozyna
+2 GIVN Eufrozyna
+2 NICK opolska
+1 SEX F
+1 BIRT
+2 DATE BET 1228 AND 1230
+1 DEAT Y
+2 DATE 4 NOV 1292
+1 FAMS @F38@
+1 TITL księżna kujawska i pomorska
+1 WWW https://pl.wikipedia.org/wiki/Eufrozyna_opolska
+1 BURI Y
+2 PLAC kościół dominikanów, Brześć Kujawski
+0 @I145@ INDI
+1 NAME Władysław I Łokietek
+2 GIVN Władysław I Łokietek
+1 SEX M
+1 BIRT
+2 DATE BET 1260 AND 1261
+1 DEAT Y
+2 DATE 2 MAR 1333
+2 PLAC Kraków
+1 FAMS @F40@
+1 FAMC @F38@
+1 TITL król Polski
+1 BURI Y
+2 PLAC katedra wawelska
+1 WWW https://pl.wikipedia.org/wiki/W%C5%82adys%C5%82aw_I_%C5%81okietek
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/1/15/Wladyslaw_Lokietek.jpg
+2 TITL Władysław Łokietek / Jan Matejko / domena publiczna
+0 @I146@ INDI
+1 NAME Kazimierz II
+2 GIVN Kazimierz II
+2 NICK łęczycki
+1 SEX M
+1 BIRT
+2 DATE BET 1262 AND 1265
+1 DEAT Y
+2 DATE 10 JUN 1294
+1 FAMC @F38@
+1 TITL książę
+1 WWW https://pl.wikipedia.org/wiki/Kazimierz_II_%C5%82%C4%99czycki
+0 @I147@ INDI
+1 NAME Siemowit
+2 GIVN Siemowit
+2 NICK Ziemowit, dobrzyński
+1 SEX M
+1 BIRT
+2 DATE ABT 1265
+1 DEAT Y
+2 DATE 1312
+1 FAMC @F38@
+1 TITL książę
+1 WWW https://pl.wikipedia.org/wiki/Siemowit_dobrzy%C5%84ski
+0 @I148@ INDI
+1 NAME Eufemia
+2 GIVN Eufemia
+2 NICK kujawska
+1 SEX F
+1 BIRT
+2 DATE ABT 1265
+1 DEAT Y
+2 DATE 18 MAR 1308
+1 FAMC @F38@
+1 TITL księżna halicka
+1 WWW https://pl.wikipedia.org/wiki/Eufemia_kujawska
+0 @I149@ INDI
+1 NAME Jadwiga Bolesławówna
+2 GIVN Jadwiga Bolesławówna
+2 NICK kaliska
+1 SEX F
+1 BIRT
+2 DATE BET 1266 AND 1275
+2 PLAC Kalisz
+1 DEAT Y
+2 DATE 10 DEC 1339
+2 PLAC Stary Sącz
+1 FAMS @F40@
+1 TITL królowa Polski
+1 WWW https://pl.wikipedia.org/wiki/Jadwiga_Boles%C5%82aw%C3%B3wna
+0 @I150@ INDI
+1 NAME Kunegunda Łokietkówna
+2 GIVN Kunegunda
+1 SEX F
+1 BIRT
+2 DATE ABT 1295
+1 DEAT Y
+2 DATE 9 APR 1331
+1 FAMC @F40@
+1 TITL księżna świdnicka, księżna Saksonii
+1 WWW https://pl.wikipedia.org/wiki/Kunegunda_%C5%81okietk%C3%B3wna
+0 @I151@ INDI
+1 NAME Stefan
+2 GIVN Stefan
+1 SEX M
+1 DEAT Y
+1 FAMC @F40@
+0 @I152@ INDI
+1 NAME Władysław
+2 GIVN Władysław
+1 SEX M
+1 DEAT Y
+1 FAMC @F40@
+0 @I153@ INDI
+1 NAME Elżbieta Łokietkówna
+2 GIVN Elżbieta
+1 SEX F
+1 BIRT
+2 DATE 1305
+1 DEAT Y
+2 DATE 29 DEC 1380
+2 PLAC Budapeszt
+1 FAMC @F40@
+1 TITL królowa Węgier
+1 BURI Y
+2 PLAC klasztor klarysek, Budapeszt
+1 WWW https://pl.wikipedia.org/wiki/El%C5%BCbieta_%C5%81okietk%C3%B3wna
+0 @I154@ INDI
+1 NAME Kazimierz III Wielki
+2 GIVN Kazimierz III Wielki
+1 SEX M
+1 BIRT
+2 DATE 30 APR 1310
+2 PLAC Kowal
+1 DEAT Y
+2 DATE 5 NOV 1370
+2 PLAC Kraków
+1 FAMS @F41@
+1 FAMS @F42@
+1 FAMS @F43@
+1 FAMS @F44@
+1 FAMC @F40@
+1 TITL król Polski
+1 BURI Y
+2 PLAC bazylika św. Stanisława i św. Wacława, Kraków
+1 WWW https://pl.wikipedia.org/wiki/Kazimierz_III_Wielki
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/b/b1/Kazimierz_III_Wielki.jpg
+2 TITL Kazimierz Wielki / Jan Matejko / domena publiczna
+0 @I155@ INDI
+1 NAME Jadwiga
+2 GIVN Jadwiga
+1 SEX F
+1 DEAT Y
+1 FAMC @F40@
+0 @I156@ INDI
+1 NAME Aldona Anna Giedyminówna
+2 GIVN Aldona Anna Giedyminówna
+1 SEX F
+1 BIRT
+2 DATE BET 1311 AND 1313
+1 DEAT Y
+2 DATE 25 MAY 1339
+2 PLAC Kraków
+1 FAMS @F42@
+1 TITL królowa Polski
+1 BURI Y
+2 PLAC katedra wawelska
+1 WWW https://pl.wikipedia.org/wiki/Aldona_Anna_Giedymin%C3%B3wna
+0 @I157@ INDI
+1 NAME Elżbieta Kazimierzówna
+2 GIVN Elżbieta Kazimierzówna
+1 SEX F
+1 BIRT
+2 DATE ABT 1326
+1 DEAT Y
+2 DATE 1361
+1 FAMC @F42@
+1 TITL księżna wołogoska
+1 WWW https://pl.wikipedia.org/wiki/El%C5%BCbieta_Kazimierz%C3%B3wna
+0 @I158@ INDI
+1 NAME Kunegunda Kazimierzówna
+2 GIVN Kunegunda Kazimierzówna
+1 SEX F
+1 BIRT
+2 DATE ABT 1328
+1 DEAT Y
+2 DATE 1357
+1 FAMC @F42@
+1 TITL księżna Bawarii
+1 WWW https://pl.wikipedia.org/wiki/Kunegunda_Kazimierz%C3%B3wna
+0 @I159@ INDI
+1 NAME Adelajda Heska
+2 GIVN Adelajda Heska
+1 SEX F
+1 BIRT
+2 DATE ABT 1324
+1 DEAT Y
+2 DATE 25 MAY 1371
+1 FAMS @F43@
+1 TITL królowa Polski
+1 WWW https://pl.wikipedia.org/wiki/Adelajda_Heska
+1 OBJE
+2 FILE https://upload.wikimedia.org/wikipedia/commons/1/15/Jan_Matejko_-_Adelajda_Heska_1865.jpg
+2 TITL Adelajda Heska / Jan Matejko / domena publiczna
+0 @I160@ INDI
+1 NAME Krystyna Rokiczana
+2 GIVN Krystyna Rokiczana
+1 SEX F
+1 BIRT
+2 DATE BEF 1330
+2 PLAC Praga
+1 DEAT Y
+2 DATE AFT 1365
+1 FAMS @F44@
+1 WWW https://pl.wikipedia.org/wiki/Krystyna_Rokiczana
+0 @I161@ INDI
+1 NAME Jadwiga Żagańska
+2 GIVN Jadwiga Żagańska
+1 SEX F
+1 BIRT
+2 DATE BET 1340 AND 1350
+1 DEAT Y
+2 DATE 27 MAR 1390
+2 PLAC Legnica
+1 FAMS @F41@
+1 TITL królowa Polski
+1 BURI Y
+2 PLAC kolegiata, Legnica
+1 WWW https://pl.wikipedia.org/wiki/Jadwiga_%C5%BCaga%C5%84ska
+0 @I162@ INDI
+1 NAME Anna Kazimierzówna
+2 GIVN Anna Kazimierzówna
+1 SEX F
+1 BIRT
+2 DATE 1366
+1 DEAT Y
+2 DATE 1425
+1 FAMC @F41@
+1 TITL królewna polska
+1 WWW https://pl.wikipedia.org/wiki/Anna_Kazimierz%C3%B3wna
+0 @I163@ INDI
+1 NAME Kunegunda Kazimierzówna
+2 GIVN Kunegunda
+1 SEX F
+1 DEAT Y
+1 FAMC @F41@
+0 @I164@ INDI
+1 NAME Jadwiga Kazimierzówna
+2 GIVN Jadwiga Kazimierzówna
+1 SEX F
+1 DEAT Y
+1 FAMC @F41@
+0 @F1@ FAM
+1 HUSB @I1@
+1 CHIL @I2@
+0 @F4@ FAM
+1 HUSB @I2@
+1 CHIL @I3@
+1 CHIL @I4@
+1 MARR
+2 DATE 965
+0 @F9@ FAM
+1 HUSB @I6@
+1 CHIL @I13@
+0 @F15@ FAM
+1 HUSB @I31@
+1 CHIL @I36@
+0 @F2@ FAM
+1 HUSB @I3@
+1 WIFE @I9@
+1 CHIL @I8@
+1 CHIL @I10@
+1 CHIL @I11@
+1 MARR
+2 DATE BET 978 AND 980
+0 @F3@ FAM
+1 HUSB @I3@
+1 WIFE @I5@
+1 CHIL @I6@
+1 CHIL @I7@
+1 MARR
+2 DATE 965
+1 EVEN
+0 @F5@ FAM
+1 HUSB @I6@
+1 WIFE @I17@
+1 CHIL @I18@
+1 MARR
+2 DATE 3 FEB 1018
+1 _CURRENT Y
+0 @F6@ FAM
+1 HUSB @I6@
+1 WIFE @I12@
+1 CHIL @I14@
+1 CHIL @I15@
+1 CHIL @I16@
+1 MARR
+2 DATE BET 987 AND 989
+1 EVEN
+0 @F7@ FAM
+1 HUSB @I22@
+1 WIFE @I7@
+1 CHIL @I23@
+1 CHIL @I24@
+1 CHIL @I25@
+1 CHIL @I26@
+1 MARR
+2 DATE 996
+0 @F8@ FAM
+1 HUSB @I19@
+1 WIFE @I7@
+1 CHIL @I20@
+1 CHIL @I21@
+1 MARR
+2 DATE BET 980 AND 984
+1 EVEN
+0 @F10@ FAM
+1 HUSB @I15@
+1 WIFE @I27@
+1 CHIL @I28@
+1 CHIL @I29@
+1 MARR
+2 DATE 1013
+1 _CURRENT Y
+0 @F11@ FAM
+1 HUSB @I29@
+1 WIFE @I30@
+1 CHIL @I31@
+1 CHIL @I32@
+1 CHIL @I33@
+1 CHIL @I34@
+1 CHIL @I35@
+1 MARR
+2 DATE ABT 1041
+0 @F12@ FAM
+1 HUSB @I32@
+1 WIFE @I41@
+1 CHIL @I42@
+1 MARR
+2 DATE ABT 1089
+0 @F13@ FAM
+1 HUSB @I32@
+1 WIFE @I37@
+1 CHIL @I38@
+1 MARR
+2 DATE ABT 1070
+1 EVEN
+0 @F14@ FAM
+1 HUSB @I32@
+1 WIFE @I39@
+1 CHIL @I40@
+1 MARR
+2 DATE ABT 1080
+1 EVEN
+0 @F16@ FAM
+1 HUSB @I40@
+1 WIFE @I45@
+1 CHIL @I46@
+1 CHIL @I47@
+1 CHIL @I48@
+1 CHIL @I49@
+1 CHIL @I50@
+1 CHIL @I51@
+1 CHIL @I52@
+1 CHIL @I53@
+1 CHIL @I54@
+1 CHIL @I55@
+1 CHIL @I56@
+1 MARR
+2 DATE 1115
+1 _CURRENT Y
+0 @F17@ FAM
+1 HUSB @I40@
+1 WIFE @I43@
+1 CHIL @I44@
+1 MARR
+2 DATE 1103
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F18@ FAM
+1 HUSB @I44@
+1 WIFE @I57@
+1 CHIL @I58@
+1 CHIL @I59@
+1 CHIL @I60@
+1 CHIL @I61@
+1 CHIL @I62@
+1 MARR
+2 DATE 1125
+1 _CURRENT Y
+0 @F19@ FAM
+1 HUSB @I49@
+1 WIFE @I68@
+1 MARR
+2 DATE 1166
+1 _CURRENT Y
+0 @F20@ FAM
+1 HUSB @I49@
+1 WIFE @I63@
+1 CHIL @I64@
+1 CHIL @I65@
+1 CHIL @I66@
+1 CHIL @I67@
+1 MARR
+2 DATE BET 1136 AND 1137
+1 EVEN
+0 @F21@ FAM
+1 HUSB @I50@
+1 WIFE @I75@
+1 CHIL @I76@
+1 CHIL @I77@
+1 CHIL @I78@
+1 CHIL @I79@
+1 CHIL @I80@
+1 MARR
+2 DATE 1151
+1 _CURRENT Y
+0 @F22@ FAM
+1 HUSB @I50@
+1 WIFE @I69@
+1 CHIL @I70@
+1 CHIL @I71@
+1 CHIL @I72@
+1 CHIL @I73@
+1 CHIL @I74@
+1 MARR
+2 DATE 1136
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F23@ FAM
+1 HUSB @I56@
+1 WIFE @I81@
+1 CHIL @I82@
+1 CHIL @I83@
+1 CHIL @I84@
+1 CHIL @I85@
+1 CHIL @I86@
+1 CHIL @I87@
+1 CHIL @I88@
+1 MARR
+2 DATE BET 1160 AND 1165
+0 @F24@ FAM
+1 HUSB @I58@
+1 WIFE @I96@
+1 CHIL @I97@
+1 CHIL @I98@
+1 CHIL @I99@
+1 CHIL @I100@
+1 CHIL @I101@
+1 CHIL @I102@
+1 CHIL @I103@
+1 MARR
+2 DATE 1160
+1 _CURRENT Y
+0 @F25@ FAM
+1 HUSB @I58@
+1 WIFE @I93@
+1 CHIL @I94@
+1 CHIL @I95@
+1 MARR
+2 DATE 1141
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F26@ FAM
+1 HUSB @I70@
+1 WIFE @I115@
+1 CHIL @I116@
+1 MARR
+2 DATE AFT 1184
+0 @F27@ FAM
+1 HUSB @I87@
+1 WIFE @I89@
+1 CHIL @I90@
+1 CHIL @I91@
+1 MARR
+2 DATE BET 1210 AND 1211
+0 @F28@ FAM
+1 HUSB @I88@
+1 WIFE @I130@
+1 CHIL @I131@
+1 CHIL @I132@
+1 CHIL @I133@
+1 CHIL @I134@
+1 CHIL @I135@
+1 CHIL @I136@
+1 CHIL @I137@
+1 CHIL @I138@
+1 CHIL @I139@
+1 CHIL @I140@
+1 MARR
+2 DATE BET 1207 AND 1210
+0 @F29@ FAM
+1 HUSB @I90@
+1 WIFE @I92@
+1 MARR
+2 DATE 1239
+1 _CURRENT Y
+0 @F30@ FAM
+1 HUSB @I102@
+1 WIFE @I104@
+1 CHIL @I105@
+1 CHIL @I106@
+1 CHIL @I107@
+1 CHIL @I108@
+1 CHIL @I109@
+1 CHIL @I110@
+1 MARR
+1 _CURRENT Y
+0 @F31@ FAM
+1 HUSB @I105@
+1 WIFE @I111@
+1 CHIL @I112@
+1 MARR
+2 DATE 1214
+1 _CURRENT Y
+0 @F32@ FAM
+1 HUSB @I112@
+1 WIFE @I113@
+1 CHIL @I114@
+1 _CURRENT Y
+0 @F33@ FAM
+1 HUSB @I116@
+1 WIFE @I117@
+1 CHIL @I118@
+1 CHIL @I119@
+1 MARR
+1 _CURRENT Y
+0 @F34@ FAM
+1 HUSB @I118@
+1 WIFE @I120@
+1 CHIL @I121@
+1 CHIL @I122@
+1 CHIL @I123@
+1 CHIL @I124@
+1 CHIL @I125@
+1 MARR
+2 DATE 1244
+1 _CURRENT Y
+0 @F35@ FAM
+1 HUSB @I125@
+1 WIFE @I129@
+1 MARR
+2 DATE 13 APR 1293
+1 _CURRENT Y
+0 @F36@ FAM
+1 HUSB @I125@
+1 WIFE @I126@
+1 MARR
+2 DATE 1273
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F37@ FAM
+1 HUSB @I125@
+1 WIFE @I127@
+1 CHIL @I128@
+1 MARR
+2 DATE 11 OCT 1285
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F38@ FAM
+1 HUSB @I132@
+1 WIFE @I144@
+1 CHIL @I145@
+1 CHIL @I146@
+1 CHIL @I147@
+1 CHIL @I148@
+1 MARR
+2 DATE BET 1257 AND 1259
+0 @F39@ FAM
+1 HUSB @I132@
+1 WIFE @I141@
+1 CHIL @I142@
+1 CHIL @I143@
+1 MARR
+2 DATE 1239
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F40@ FAM
+1 HUSB @I145@
+1 WIFE @I149@
+1 CHIL @I150@
+1 CHIL @I151@
+1 CHIL @I152@
+1 CHIL @I153@
+1 CHIL @I154@
+1 CHIL @I155@
+1 MARR
+2 DATE 6 JAN 1293
+1 _CURRENT Y
+0 @F41@ FAM
+1 HUSB @I154@
+1 WIFE @I161@
+1 CHIL @I162@
+1 CHIL @I163@
+1 CHIL @I164@
+1 MARR
+2 DATE 25 FEB 1365
+2 PLAC Wschowa
+0 @F42@ FAM
+1 HUSB @I154@
+1 WIFE @I156@
+1 CHIL @I157@
+1 CHIL @I158@
+1 MARR
+2 DATE 16 OCT 1325
+2 PLAC Kraków
+1 EVEN
+0 @F44@ FAM
+1 HUSB @I154@
+1 WIFE @I160@
+1 MARR
+1 EVEN
+2 TYPE Ending
+1 _CURRENT N
+0 @F43@ FAM
+1 HUSB @I154@
+1 WIFE @I159@
+1 MARR
+2 DATE 29 SEP 1341
+2 PLAC Poznań
+1 EVEN
+0 TRLR
