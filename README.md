@@ -44,7 +44,7 @@ SVG is a universal format of two-dimensional vector graphics, which was created 
 The tool uses SVG to visualize the tree and allows to save the generated graphics as a .svg file so that the user can freely use it.
 
 ## HOW TO USE IT
-
+- Just go to [live version](https://ameros.github.io/gedcom-svg-tree/) (or choose [its polish version](https://ameros.github.io/gedcom-svg-tree/?lang=pl)) and open the GEDCOM file
 
 ## Dependencies and Credits
 After some research:
