@@ -17,6 +17,7 @@
   "plus": "<strong>+</strong> before each word that the result must have",
   "star": "<strong>*</strong> before or after to end or begin accordingly the matched word with",
   "person":"Person",
+  "family": "Family",
   "ID": "ID",
   "title": "Title",
   "name": "Name (now)",
