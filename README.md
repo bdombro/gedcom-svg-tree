@@ -38,6 +38,9 @@ The tool makes use of such GEDCOM tags:
 
 Its does however try to display all the data from the file.
 
+####
+Some sample files can be found in [ged folder](https://github.com/ameros/gedcom-svg-tree/tree/main/ged) or in some public Internet repositories.
+
 ### Output
 SVG is a universal format of two-dimensional vector graphics, which was created for use on WWW.
 
