@@ -45,6 +45,7 @@ The tool uses SVG to visualize the tree and allows to save the generated graphic
 
 ## HOW TO USE IT
 - Just go to [live version](https://ameros.github.io/gedcom-svg-tree/) (or choose [its polish version](https://ameros.github.io/gedcom-svg-tree/?lang=pl)) and open the GEDCOM file
+- or just [download lastest version](https://github.com/ameros/gedcom-svg-tree/releases/latest) and open with your browser
 
 ## Dependencies and Credits
 After some research:
