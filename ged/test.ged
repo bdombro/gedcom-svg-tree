@@ -1,0 +1,34 @@
+﻿0 HEAD
+1 SOUR FTM
+0 @I1@ INDI
+1 NAME FirstName /LastName/
+1 FAMS @F1@
+2 NOTE @N@
+1 FAMC @F2@
+2 PEDI adopted
+0 @I2@ INDI
+1 NAME Wife /Name/
+1 FAMS @F1@
+1 FAMC @F3@
+0 @I3@ INDI
+1 NAME Child1
+0 @I4@ INDI
+1 NAME Child2
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 CHIL @I3@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I4@
+2 _FREL Natural
+2 _MREL Natural
+0 @F2@ FAM
+1 CHIL @I1@
+2 _FREL Natural
+2 _MREL Natural
+0 @F3@ FAM
+1 CHIL @I2@
+2 _FREL Natural
+2 _MREL Natural
+0 TRLR
