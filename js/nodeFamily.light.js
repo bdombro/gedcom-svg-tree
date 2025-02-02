@@ -1,6 +1,6 @@
 'use strict'
 /**
- * nodeFamily v0.9.3 | (c) 2020 Michał Amerek, Node.Family
+ * nodeFamily.light v1.1.0 | (c) 2025 Michał Amerek, Node.Family
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this file and associated files (the "Software"), unless otherwise specified,
@@ -28,7 +28,7 @@ const NF_VALUE = "nfValue";
 const NF_KEYS = [NF_TYPE, NF_RECORD, NF_VALUE];
 const Gedcom = function(gedcomData) {
     const _contents = gedcomData;
-    const lines = _contents.split(/[\r\n]+/g);
+    const lines = _contents.split(/[\n]+/g);
     let _tags = [];
     for (let i = 0; i < lines.length; i++) {
         _tags.push(new Gedcom.Tag(lines[i], lines[i+1]));
@@ -93,8 +93,8 @@ Gedcom.Tag = function(line, nextLine) {
     const _value = tagValues.slice(2, tagValues.length).join(" ");
 
     const _IDENTIFIERS = ["FAM","INDI","OBJE","REPO","SOUR","SUBM","SUBN"]; // "NOTE" ?
-    const _OBJECT_TAGS = ["ADDR","BIRT","BURI","DEAT","MARR","NAME","NOTE","SOUR", "FAMC"];
-    const _COLLECTION_TAGS = ["CHIL","CONT", "FAMS"]; // SUBM, EVEN ?
+    const _OBJECT_TAGS = ["ADDR","BIRT","BURI","DEAT","MARR","NAME","NOTE","SOUR", "FAMC", "CHIL", "FAMS"];
+    const _COLLECTION_TAGS = ["CONT"]; // SUBM, EVEN ?
     const _AT = "@";
 
     this.isHead = function() {
@@ -195,7 +195,7 @@ Gedcom.Tag.Record.identifier = function(tag, parentRecord, context) {
 Gedcom.Tag.Record.object = function(tag, parentRecord, context) {
     const c = {};
     c[NF_VALUE] = tag.getValue();
-    if (tag.getTag() == "FAMC") {
+    if (tag.getTag() == "FAMC" || tag.getTag() == "CHIL" || tag.getTag() == "FAMS") {
         c[NF_VALUE] = c[NF_VALUE].replace(/@/g, "");
     }
     c[NF_RECORD] = tag.getLevel() + " " + tag.getTag();
@@ -210,6 +210,9 @@ Gedcom.Tag.Record.object = function(tag, parentRecord, context) {
                 parentContext[tag.getTag()] = [];
                 parentContext[tag.getTag()].push(previous);
             }
+            parentContext[tag.getTag()].push(c);
+        } else if (tag.getTag() == "CHIL" || tag.getTag() == "FAMS") {
+            parentContext[tag.getTag()] = parentContext[tag.getTag()] || [];
             parentContext[tag.getTag()].push(c);
         } else {
             parentContext[tag.getTag()] = c;
@@ -379,7 +382,7 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
     let _personList;
 
     this.getName = function(id) {
-        if (_familyData[id].NAME) {
+        if (_familyData[id] && _familyData[id].NAME) {
             return _familyData[id].NAME[NF_VALUE].replace(/\//g, " ");
         }
         return "";
@@ -676,6 +679,9 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
         if (event.target.tagName.toLowerCase() == "li") {
             id = event.target.getAttribute("data-id");
         }
+        if (_familyData[id] == undefined) {
+            return;
+        }
         if (id == "" || _familyData[id][NF_TYPE] != 'INDI') {
             return;
         }
@@ -865,7 +871,7 @@ NodeFamily.PersonForm = function(presenter, formSection) {
                         familyName.classList.add("filled");
                     }
                 } else if(value.trim() != "") {
-                    if (inputName.indexOf("FAMS.") != -1 && inputName.indexOf(NF_VALUE) != -1) {
+                    if (inputName.indexOf("FAMS.") != -1 && inputName.split('.').length < 4) {
                         let div = document.createElement("div");
                         let span = document.createElement("span");
                         span.setAttribute("class", "spouse");
@@ -1225,7 +1231,7 @@ NodeFamily.FamilyForm = function(presenter, formSection) {
                           NodeFamily.form.fillDatePhrase("MARR.DATE", value);
                     }
                 } else if(value.trim() != "") {
-                    if (inputName.indexOf("CHIL.") != -1) {
+                    if (inputName.indexOf("CHIL.") != -1 && inputName.split('.').length < 4) {
                         let div = document.createElement("div");
                         let extraInput = document.createElement("input");
                         extraInput.setAttribute("type", "text");
