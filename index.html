@@ -36,12 +36,12 @@ let lang = "en";
 if (params.has("lang")) {
     lang = params.get("lang");
 }
-if (params.has("preview")) {
+if (params.has("ged")) {
     let file = "ged/Krolowie-Polscy-Dynastia-Piastow2020-04-27.ged";
-    if (params.get("preview") == "royals") {
+    if (params.get("ged") == "royals") {
         file = "ged/royal-families2020-04-28.ged";
     }
-    if (params.get("preview") == "usa") {
+    if (params.get("ged") == "usa") {
         file = "ged/usa-presidents2020-04-28.ged";
     }
     NodeFamily.init('../', lang, function() {
