@@ -36,7 +36,31 @@ let lang = "en";
 if (params.has("lang")) {
     lang = params.get("lang");
 }
-NodeFamily.init('', lang);
+if (params.has("preview")) {
+    let file = "ged/Krolowie-Polscy-Dynastia-Piastow2020-04-27.ged";
+    if (params.get("preview") == "royals") {
+        file = "ged/royal-families2020-04-28.ged";
+    }
+    if (params.get("preview") == "usa") {
+        file = "ged/usa-presidents2020-04-28.ged";
+    }
+    NodeFamily.init('../', lang, function() {
+        document.getElementById("intro").style.display = "none";
+        fetch(file)
+            .then(response => response.text())
+            .then((data) => {
+                    NodeFamily.fromData(data, "I1",
+                        {rankdir: "TB", edgesep: 10, ranksep: 25, nodesep: 10});
+                    document.getElementById('gedcomFileInput').disabled = true;
+                    document.getElementById("gedcomFileInput").parentElement.addEventListener('click',
+                    function() {
+                        if (confirm("You clicked to open new GEDCOM file. We are to refresh the page first. You will lose the current tree view.")) window.location.replace(location.pathname);
+                    });
+            });
+    });
+} else {
+    NodeFamily.init('', lang);
+}
 </script>
 </body>
 </html>
