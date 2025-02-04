@@ -38,9 +38,6 @@ The tool makes use of such GEDCOM tags:
 
 Its does however try to display all the data from the file.
 
-####
-Some sample files can be found in [ged folder](https://github.com/ameros/gedcom-svg-tree/tree/main/ged) or in some public Internet repositories.
-
 ### Output
 SVG is a universal format of two-dimensional vector graphics, which was created for use on WWW.
 
@@ -50,6 +47,11 @@ The tool uses SVG to visualize the tree and allows to save the generated graphic
 - Just go to [live version](https://ameros.github.io/gedcom-svg-tree/) (or choose [its polish version](https://ameros.github.io/gedcom-svg-tree/?lang=pl)) and open the GEDCOM file
 - or just [download lastest version](https://github.com/ameros/gedcom-svg-tree/releases/latest) and open with your browser
 
+### EXAMPLES
+- [Piast Dynasty](https://ameros.github.io/gedcom-svg-tree/?lang=pl&preview)
+- [British Royal Family](https://ameros.github.io/gedcom-svg-tree/?preview=royals)
+- [USA Presidents](https://ameros.github.io/gedcom-svg-tree/?preview=usa)
+
 ## Dependencies and Credits
 After some research:
 - GEDCOM (5.5.1) as a de facto standard to store family tree data https://en.wikipedia.org/wiki/GEDCOM
@@ -58,3 +60,10 @@ After some research:
     - instead of typical data tree that can have only one parent
     - instead of typical family trees that display parents separately, only as a relation 
 - dagre-d3 to draw DAG https://github.com/dagrejs/dagre-d3
+- lunr.js for searching https://lunrjs.com/
+
+---
+
+The tool is listed @ https://www.cyndislist.com/gedcom/gedcom-software/.
+
+Here you can add a link to the list: http://www.cyndislist.com/create-a-link-to-cyndis-list/
