@@ -347,24 +347,29 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
             "givn": givn.replace(/[.,]/g, "")
         });
     }
-    const _lunrIndex = lunr(function () {
-      this.ref('id')
-      this.field('name')
-      this.field('surname')
-      this.field('nick')
-      this.field('birtDate')
-      this.field('birtPlace')
-      this.field('deathDate')
-      this.field('deathPlace')
-      this.field('burialPlace')
-      this.field('title')
-      this.field('occupation')
-      this.field('givn')
-      this.pipeline.remove(lunr.trimmer)
-      _personsToIndex.forEach(function (person) {
-        this.add(person)
-      }, this)
-    })
+
+    let _lunrIndex = null;
+    const regenerateIndex = function(documents) {
+    	_lunrIndex = lunr(function() {
+            this.ref('id')
+            this.field('name')
+            this.field('surname')
+            this.field('nick')
+            this.field('birtDate')
+            this.field('birtPlace')
+            this.field('deathDate')
+            this.field('deathPlace')
+            this.field('burialPlace')
+            this.field('title')
+            this.field('occupation')
+            this.field('givn')
+            this.pipeline.remove(lunr.trimmer)
+            _personsToIndex.forEach(function (person) {
+                this.add(person)
+            }, this)
+        })
+    };
+    regenerateIndex(_personsToIndex);
     const _d3 = d3;
     const _graphlib = new dagreD3.graphlib.Graph();
     const _Renderer = new dagreD3.render();
@@ -807,8 +812,7 @@ NodeFamily.PersonForm = function(presenter, formSection) {
             fieldset.removeChild(fieldset.children[1]);
         }
         const img = _formSection.querySelector('figure img');
-        img.setAttribute("src", "");
-        img.setAttribute("alt", "");
+        img.style.display = "none";
         const caption = _formSection.querySelector('figure figcaption');
         caption.innerHTML = "";
         _formSection.querySelector("#submitterName").innerHTML = "";
@@ -836,9 +840,9 @@ NodeFamily.PersonForm = function(presenter, formSection) {
                 inputName = key;
             }
             if (typeof value === 'string' || value instanceof String) {
-                NodeFamily.form.fillPhoto("photo", inputName, value);
                 let inputElement = _form[inputName];
                 if (inputElement) {
+                    NodeFamily.form.fillPhoto("photo", inputName, value);
                     inputElement.value = value;
                     if (inputName == "BIRT.DATE.nfValue") {
                           NodeFamily.form.fillDatePhrase("BIRT.DATE", value);
@@ -1092,15 +1096,32 @@ NodeFamily.form.fillPhoto = function(prefix, dataKey, value) {
     }
     const inputElement = document.querySelector("input[name='" + dataKey + "']");
     if (inputElement) {
-        const img = document.querySelector("#" + prefix + ' img');
-        const caption = document.querySelector("#" + prefix + ' figcaption');
         if (dataKey == "OBJE.FILE.nfValue" || dataKey == "OBJE.0.FILE.nfValue") {
-            img.setAttribute("src", value);
+            if (!document.getElementById(value)) {
+                const img = document.createElement("img");
+                img.setAttribute("src", value);
+                img.setAttribute("id", value);
+//                img.setAttribute("display", "none");
+                document.body.appendChild(img);
+            }
+            const photo = document.getElementById("photo");
+            photo.insertBefore(document.getElementById(value), photo.firstChild);
+            document.getElementById(value).style.display = "inline-block";
+//            photo.appendChild(document.getElementById(value));
         }
-        if (dataKey == "OBJE.TITL.nfValue" || dataKey == "OBJE.0.TITL.nfValue") {
-            img.setAttribute("alt", value);
-            caption.innerHTML = value;
-        }
+//        const img = document.querySelector("#" + prefix + ' img');
+//        const caption = document.querySelector("#" + prefix + ' figcaption');
+//        if (dataKey == "OBJE.FILE.nfValue" || dataKey == "OBJE.0.FILE.nfValue") {
+//            img.setAttribute("src", value);
+////            const i = document.createElement("img");
+////            i.setAttribute("display", "none");
+////            i.setAttribute("src", value);
+////            document.body.appendChild(i);
+//        }
+//        if (dataKey == "OBJE.TITL.nfValue" || dataKey == "OBJE.0.TITL.nfValue") {
+//            img.setAttribute("alt", value);
+//            caption.innerHTML = value;
+//        }
     }
 }
 
@@ -1617,6 +1638,11 @@ NodeFamily.init = function(path, lang, callback) {
                 const file = inputChangeEvent.target.files[0];
                 if (file) {
                     NodeFamily.fromFile(file);
+                    document.getElementById('gedcomFileInput').disabled = true;
+                    document.getElementById("gedcomFileInput").parentElement.addEventListener('click',
+                    function() {
+                        if (confirm("You clicked to open new GEDCOM file. We are to refresh the page first. You will lose the current tree view.")) document.location.reload(true);
+                    });
                 } else {
                     alert("Failed to load file");
                 }
