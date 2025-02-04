@@ -32,6 +32,9 @@ figure {
   display: inline-block;
   vertical-align: top;
 }
+figure img {
+    width: 60%;
+}
 figcaption .button {
     padding: 1em;
 }
