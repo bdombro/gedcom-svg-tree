@@ -1,7 +1,7 @@
 {
   "homePage-alt": "Strona główna Node.Family",
   "homePage-title": "Strona główna Node.Family",
-  "gedcomFileInputLabel": "Otwórz GEDCOM",
+  "gedcomFileInputLabel": "otwórz GEDCOM",
   "toggleOrientation": "zmień widok",
   "displayOptions": "wyświetl opcje",
   "editData": "dane osoby / związku",
@@ -75,7 +75,7 @@
   "saveGedcom": "Zachowaj GEDCOM",
   "saveSvg": " Zachowaj jako SVG",
   "export": "Eksport",
-  "search-placeholder": "Wyszukuj po tytule, imionach, nicku, zawodzie, datach i miejscach...",
+  "search-placeholder": "\uD83D\uDD0E Wyszukuj po tytule, imionach, nicku, zawodzie, datach i miejscach...",
   "fileNameInput-customValidity": "Nazwa pliku jest wymagana",
   "nonExistentFamily": "Nieistniejący identyfikator rodziny: {value}. Proszę przypisz istniejący lub stwórz najpierw rodzinę.",
   "nonExistentParents": "Nieistniejący identyfikator rodziców: {value}.",
