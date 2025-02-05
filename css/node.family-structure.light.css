@@ -129,7 +129,7 @@ ul {
     font-weight: 900;
     content: '\f121';
 }
-#header .C.C2 .B .button:nth-child(6) {
+#header .C.C2 .B .button:nth-child(7) {
     width: 50%;
 }
 #people, #peopleListSearch {
@@ -188,10 +188,29 @@ p.logo {
     border-width: 0.1em;
     border-style: solid;
 }
+#gedcomFileLabel::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f07c';
+}
 @media only screen and (max-width: 1023px) {
    .R .S, .R .S .C.C1, .R .S .C.C2, .R .S .C.C3{
       width: 100%;
    }
+    #editForm.active, #exportForm.active, #editFamilyForm.active, #personList.active {
+        width: 93%;
+        position: absolute;
+        z-index: 1;
+    }
+    #header .C.C2:first-child {
+      width: 10%;
+    }
+    #header .C.C2:nth-child(2) {
+      width: 90%;
+    }
+    #header .C.C2 .B .button:nth-child(7) {
+      width: 100%;
+    }
 }
 p {
     padding-left: 2em;
@@ -286,7 +305,7 @@ form input[type=checkbox] {
     padding: 1em;
     position: absolute;
     z-index: 1;
-    top: 100%;
+    top: 2.5em;
     left: 50%;
     margin-left: -60px;
     opacity: 1;
@@ -299,7 +318,7 @@ form input[type=checkbox] {
     position: absolute;
     bottom: 100%;
     left: 50%;
-    margin-left: -5px;
+    margin-left: -1.5em;
     border-width: 5px;
 }
 #BIRT-DATE-AND, #DEAT-DATE-AND, #MARR-DATE-AND, #DEAT, #BURI, #personList .buttonsWrapper {
@@ -324,8 +343,9 @@ svg {
     display:none;
 }
 #datalist.active {
-    display:block;
+    display: block;
     position: absolute;
+    z-index: 2;
 }
 #datalist option {
     padding: 0.5em;
