@@ -695,7 +695,7 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
         }
         let rankdir = 'TB';
         if (document.getElementById('orientation').checked) {
-            rankdir = 'LR';
+            rankdir = 'RL';
         }
         this.setGraph({rankdir: rankdir, edgesep: 10, ranksep: 25, nodesep: 10});
         this.visualize(id);
@@ -1526,7 +1526,7 @@ NodeFamily.Tree = function() {
                         node.label += ",<br/>" + value.MARR.PLAC[NF_VALUE];
                     }
                 }
-                if (value.DIV) {
+                if (value.DIV && value.DIV.nfValue != "N") {
                     node.label += "</br>&#9902;";
                 }
             }
