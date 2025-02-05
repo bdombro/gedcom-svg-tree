@@ -141,7 +141,6 @@ input:read-only {
     border-bottom: 0;
 }
 input:hover, select:hover, #personList ul li:hover  {
-    border-radius: 1em;
     color: var(--primary);
     background-color: var(--on-primary);
 }
