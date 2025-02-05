@@ -17,26 +17,35 @@ GEDCOM file (.ged) is the de facto standard for exchanging genealogical data bet
 about individuals and links between them. It's specification is wide and eventually it is not ideal so the various systems expand it on their own.
 You can read more about it on the Internet. We focus on some excerpt of it - the data suitable for visualization on the tree.
 
-The tool makes use of such GEDCOM tags:
-- NAME,
-- TITL,
-- SEX,
-- BIRT,
-- DEAT,
-- HUSB,
-- WIFE,
-- MARR,
-- BURI,
-- FAMC,
-- FAMS,
-- CHIL,
-- SURN,
-- GIVN,
-- NICK,
-- DATE,
-- PLAC
+The tool makes use of such GEDCOM records and tags:
+- INDI: 
+  - BIRT
+    - DATE
+    - PLAC
+  - BURI
+    - PLAC
+  - DEAT
+    - DATE
+    - PLAC
+  - FAMC
+  - FAMS
+  - GIVN
+  - NAME
+  - NICK
+  - OCCU
+  - SEX
+  - SURN
+  - TITL
+- FAM:
+  - CHIL
+  - HUSB
+  - MARR
+    - DATE
+    - PLAC
+  - WIFE
+  - DIV
 
-Its does however try to display all the data from the file.
+It does however try to display all the data of those records.
 
 ### Output
 SVG is a universal format of two-dimensional vector graphics, which was created for use on WWW.
