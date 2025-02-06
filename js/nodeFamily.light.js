@@ -1105,6 +1105,7 @@ NodeFamily.form.fillPhoto = function(prefix, dataKey, value) {
                 document.body.appendChild(img);
             }
             figure.insertBefore(document.getElementById(value), figure.firstChild);
+            document.getElementById(value).style.display = "";
         }
         if (dataKey == "OBJE.TITL.nfValue" || dataKey == "OBJE.0.TITL.nfValue") {
             const caption = document.querySelector("#" + prefix + " figcaption");
