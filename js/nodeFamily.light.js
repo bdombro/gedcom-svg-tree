@@ -1199,8 +1199,7 @@ NodeFamily.FamilyForm = function(presenter, formSection) {
             fieldset.removeChild(fieldset.children[1]);
         }
         const img = _formSection.querySelector('figure img');
-        img.setAttribute("src", "");
-        img.setAttribute("alt", "");
+        img.style.display = "none";
         const caption = _formSection.querySelector('figure figcaption');
         caption.innerHTML = "";
         const wifeName = _formSection.querySelector("#wifeName");
