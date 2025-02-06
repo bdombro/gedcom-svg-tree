@@ -57,9 +57,9 @@ The tool uses SVG to visualize the tree and allows to save the generated graphic
 - or just [download lastest version](https://github.com/ameros/gedcom-svg-tree/releases/latest) and open with your browser
 
 ### EXAMPLES
-- [Piast Dynasty](https://ameros.github.io/gedcom-svg-tree/?lang=pl&ged)
+- [Piast Dynasty](https://ameros.github.io/gedcom-svg-tree/?lang=pl&ged) - with `lang=pl`
+- [USA Presidents](https://ameros.github.io/gedcom-svg-tree/?ged=usa&id=1604) - showing images from relative path _(data folder)_
 - [British Royal Family](https://ameros.github.io/gedcom-svg-tree/?ged=royals)
-- [USA Presidents](https://ameros.github.io/gedcom-svg-tree/?ged=usa)
 
 ## Dependencies and Credits
 After some research:
