@@ -36,6 +36,10 @@ let lang = "en";
 if (params.has("lang")) {
     lang = params.get("lang");
 }
+let id = "I1";
+if (params.has("id")) {
+    id = params.get("id");
+}
 if (params.has("ged")) {
     let file = "ged/Krolowie-Polscy-Dynastia-Piastow2020-04-27.ged";
     if (params.get("ged") == "royals") {
@@ -49,7 +53,7 @@ if (params.has("ged")) {
         fetch(file)
             .then(response => response.text())
             .then((data) => {
-                    NodeFamily.fromData(data, "I1",
+                    NodeFamily.fromData(data, id,
                         {rankdir: "TB", edgesep: 10, ranksep: 25, nodesep: 10});
                     document.getElementById('gedcomFileInput').disabled = true;
                     document.getElementById("gedcomFileInput").parentElement.addEventListener('click',
