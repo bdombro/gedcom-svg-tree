@@ -1,11 +1,11 @@
 'use strict'
 /**
- * nodeFamily.light v1.1.0 | (c) 2025 Michał Amerek, Node.Family
+ * nodeFamily.light v1.1.3 | (c) 2025 Michał Amerek, nodeFamily
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this file and associated files (the "Software"), unless otherwise specified,
  * to deal in the Software only for personal and archiving purposes, as a part
- * of a family tree visualized by or downloaded from Node.Family website.
+ * of a family tree visualized by or downloaded from the Internet.
  *
  * The Software may not be distributed or copied for any other purpose. You are
  * not permitted to modify, merge, publish, sublicense, rent, sell, lease,
@@ -1096,32 +1096,24 @@ NodeFamily.form.fillPhoto = function(prefix, dataKey, value) {
     }
     const inputElement = document.querySelector("input[name='" + dataKey + "']");
     if (inputElement) {
+        const figure = document.getElementById(prefix);
         if (dataKey == "OBJE.FILE.nfValue" || dataKey == "OBJE.0.FILE.nfValue") {
             if (!document.getElementById(value)) {
                 const img = document.createElement("img");
                 img.setAttribute("src", value);
                 img.setAttribute("id", value);
-//                img.setAttribute("display", "none");
                 document.body.appendChild(img);
             }
-            const photo = document.getElementById("photo");
-            photo.insertBefore(document.getElementById(value), photo.firstChild);
-            document.getElementById(value).style.display = "inline-block";
-//            photo.appendChild(document.getElementById(value));
+            figure.insertBefore(document.getElementById(value), figure.firstChild);
         }
-//        const img = document.querySelector("#" + prefix + ' img');
-//        const caption = document.querySelector("#" + prefix + ' figcaption');
-//        if (dataKey == "OBJE.FILE.nfValue" || dataKey == "OBJE.0.FILE.nfValue") {
-//            img.setAttribute("src", value);
-////            const i = document.createElement("img");
-////            i.setAttribute("display", "none");
-////            i.setAttribute("src", value);
-////            document.body.appendChild(i);
-//        }
-//        if (dataKey == "OBJE.TITL.nfValue" || dataKey == "OBJE.0.TITL.nfValue") {
-//            img.setAttribute("alt", value);
-//            caption.innerHTML = value;
-//        }
+        if (dataKey == "OBJE.TITL.nfValue" || dataKey == "OBJE.0.TITL.nfValue") {
+            const caption = document.querySelector("#" + prefix + " figcaption");
+            const img = document.querySelector("#" + prefix + ' img');
+            if (img) {
+                img.setAttribute("alt", value);
+                caption.innerHTML = value;
+            }
+        }
     }
 }
 
@@ -1235,8 +1227,8 @@ NodeFamily.FamilyForm = function(presenter, formSection) {
             }
             if (typeof value === 'string' || value instanceof String) {
                 let inputElement = _form[inputName];
-                NodeFamily.form.fillPhoto("photoFamily", inputName, value);
                 if (inputElement) {
+                    NodeFamily.form.fillPhoto("photoFamily", inputName, value);
                     inputElement.value = value;
                     if (inputName == "HUSB.nfValue") {
                         const husbandName = _formSection.querySelector('#husbandName')
