@@ -12937,7 +12937,7 @@
 1 FAMS @F799@
 1 FAMC @F800@
 1 OBJE
-2 FILE https://upload.wikimedia.org/wikipedia/commons/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg
+2 FILE data/usa-presidents/indi/Kennedy-John-1604/John_F._Kennedy,_White_House_color_photo_portrait.jpg
 2 TITL John F Kennedy / Cecil Stoughton, White House / public domain
 1 WWW https://en.wikipedia.org/wiki/John_F._Kennedy
 1 DEAT Y
@@ -22842,6 +22842,10 @@
 1 MARR
 2 DATE 12 SEP 1953
 2 PLAC Newport, Rhode Island
+1 OBJE
+2 FILE data/usa-presidents/fam/Kennedy-John-Jacqueline-799/JFK_and_family_in_Hyannis_Port,_04_August_1962.jpg
+2 TITL JFK and family in Hyannis Port, 04 August 1962 / Cecil W. Stoughon, Public domain, via Wikimedia Commons
+1 WWW https://en.wikipedia.org/wiki/John_F._Kennedy
 0 @F800@ FAM
 1 HUSB @I1612@
 1 WIFE @I1613@
