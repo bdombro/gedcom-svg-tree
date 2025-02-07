@@ -63,20 +63,18 @@ ul {
 #header .C.C2:first-child {
     width: 33%;
 }
-#header .C.C2:nth-child(2) {
-    width: 67%;
-}
 .B {
     padding-bottom: 1em;
 }
 .B H1, .B H2, .B H3, .B H4, .B P{
     padding-left: 1em;
 }
-#header .C.C2 .B {
-     padding-top: 1em;
-     padding-left: 0px;
-     paddinng-right: 0px;
-     padding-bottom: 0px;
+#header .C.C3 .B, #header .C.C2 .B {
+    padding-top: 1em;
+    padding-left: 0px;
+    paddinng-right: 0px;
+    padding-bottom: 0px;
+    line-height: 2.5em;
 }
 #header .C.C2 .B .button {
     display: inline-block;
@@ -111,9 +109,6 @@ ul {
     border: 1px solid transparent;
     border-radius: 1em;
 }
-.B#controls DIV {
-    display: inline-block;
-}
 #toggleControls:before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -134,6 +129,7 @@ ul {
 }
 #people, #peopleListSearch {
     width: 100%;
+    margin-left: 0.3em;
 }
 #footer .C.C3:first-child {
     width: 23%;
@@ -151,9 +147,6 @@ ul {
 }
 .R .S {
     height: 100%;
-}
-.R .C.C2 {
-    width: 50%;
 }
 .R .C.C1 {
     width: 100%;
@@ -173,10 +166,9 @@ p.logo {
     padding: 0;
 }
 #header p.logo img {
-    width: 36px;
-    vertical-align: sub;
-    border-width: 0.1em;
-    border-style: solid;
+    height: 38px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 #footer p.logo {
     padding-top: 1.9em;
@@ -259,7 +251,7 @@ div.buttonsWrapper .button {
     content: '\f205';
 }
 input[type="search"] {
-    line-height: 3.1em;
+    line-height: 2.5em;
     border-radius: 2em;
     padding-left: 2em;
    -moz-appearance: none;/* older firefox */
