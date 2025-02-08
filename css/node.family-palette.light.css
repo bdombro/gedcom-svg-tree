@@ -2,14 +2,14 @@
   --primary: #5ea40c;
   --on-primary: #fff;
   --inverse-primary: #c3d500;
-  --filling: #fdfdf9;
-  --on-filling: #333;
-  --filling2: #eee;
+  --filling: #fff;
+  --on-filling: #000;
+  --filling2: #ecf2b1;
   --on-filling2: #333;
   --filling3: #fff;
   --outline: #eee;
-  --accent: #e7294eff;
-  --accent-container: #ffebee;
+  --accent: #000;
+  --accent-container: #ecf2b1;
   --header-shadow: #b3aca78c;
   --arrow-stroke: #ddd;
   --arrow-fill: #aaa;
@@ -27,11 +27,8 @@ button, .button a, .button label {
     background-color: var(--accent-container);
     border: 1px solid var(--outline);
 }
-.node:hover {
-    color: var(--filling) !important;
-}
 .node:hover rect, .node:hover circle {
-    fill: var(--primary) !important;
+    stroke: var(--primary) !important;
 }
 #editForm .fa-times::before, #exportForm .fa-times::before, #editFamilyForm .fa-times::before, #personList .fa-times::before {
     color: var(--primary);
