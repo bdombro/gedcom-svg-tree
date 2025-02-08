@@ -1524,18 +1524,18 @@ NodeFamily.Tree = function() {
             }
             node.rx = node.ry = 10;
             if (value.SEX && value.SEX[NF_VALUE] == "M") {
-                node.style = "fill: " + COLOR_MALE;
+                node.style = "fill: #fff;stroke: " + COLOR_MALE + "; stroke-width: 2px";
             } else if (value.SEX && value.SEX[NF_VALUE] == "F") {
-                node.style = "fill: " + COLOR_FEMALE;
+                node.style = "fill: #fff;stroke: " + COLOR_FEMALE + "; stroke-width: 2px";;
             } else {
                 node.style = "fill: #fff";
             }
             if (id == startPoint) {
-                node.style = "fill: " + COLOR_SELECTED;
+                node.style = "fill: #fff;stroke: " + COLOR_SELECTED + "; stroke-width: 2px";
             }
             if (!isPerson) {
                 node.shape = "circle";
-                node.style = "fill: " + COLOR_FAMILY;
+                node.style = "fill: #fff;stroke: " + COLOR_FAMILY + "; stroke-width: 2px";
             }
             graphlib.setNode(id, node);
         });
