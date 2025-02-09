@@ -189,13 +189,21 @@ p.logo {
         z-index: 1;
     }
     #header .C.C1 {
+      width: 40%;
+    }
+    #header .C.C2 {
+      width: 60%;
+    }
+}
+@media only screen and (orientation: portrait) {
+   .R .S, .R .S .C.C1, .R .S .C.C2, .R .S .C.C3{
+      width: 100%;
+   }
+    #header .C.C1 {
       width: 10%;
     }
     #header .C.C2 {
       width: 90%;
-    }
-    #header .C.C2 .B .button:nth-child(7) {
-      width: 100%;
     }
 }
 p {
