@@ -291,16 +291,17 @@ form input[type=checkbox] {
 }
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 90px;
     text-align: center;
     border-radius: 6px;
-    padding: 1em;
+    padding: 0.5em;
     position: absolute;
     z-index: 1;
-    top: 3em;
+    top: 3.5em;
     right: 0px;
     margin-left: -60px;
     opacity: 1;
+    font-size: smaller;
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
