@@ -41,10 +41,10 @@ text {
 h1, h2, h3, .R#credits, .R#credits h2, figcaption, .label, .B h3, .enhanced .B, div.buttonsWrapper, #aboutPage h1, #aboutPage h2  {
     text-align: center;
 }
-#header .C.C2, #footer .C.C3:first-child  {
+#header .C.C1, #footer .C.C3:first-child  {
     text-align: center;
 }
-#header .C.C2:nth-child(2) {
+#header .C.C2 {
     text-align: right;
 }
 button {
