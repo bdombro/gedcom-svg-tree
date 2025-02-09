@@ -347,3 +347,6 @@ svg {
 .legend {
     padding-bottom: 1em;
 }
+#orientation {
+    display: none;
+}
