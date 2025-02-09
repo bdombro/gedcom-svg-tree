@@ -1,5 +1,5 @@
 body {
-    font-family: 'open_sanslight', sans-serif;
+    font-family: "Poppins";
     font-size: 14px;
 }
 
@@ -56,7 +56,6 @@ form button {
 }
 a, a:hover, a:visited, .button a, .button label, #footer a:hover {
     text-decoration:none;
-    font-weight: bold;
     text-transform: uppercase;
 }
 ul {
@@ -165,7 +164,7 @@ svg {
 input[type=text], textarea {
     font-size: 1em;
     border-radius: 1em;
-    font-family: monospace;
+    font-family: "Poppins";
 }
 form label {
     font-size: 0.75em;
