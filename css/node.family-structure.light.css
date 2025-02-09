@@ -129,7 +129,6 @@ ul {
 }
 #people, #peopleListSearch {
     width: 100%;
-    margin-left: 0.3em;
 }
 #footer .C.C3:first-child {
     width: 23%;
@@ -167,8 +166,7 @@ p.logo {
 }
 #header p.logo img {
     height: 38px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 10px;
 }
 #footer p.logo {
     padding-top: 1.9em;
