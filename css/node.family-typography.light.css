@@ -126,7 +126,7 @@ svg {
         left: 95%;
     }
     .logo::after {
-        content: '';
+        display: none;
     }
 }
 #editForm::before, #editFamilyForm::before, #exportForm::before, #personList::before {
