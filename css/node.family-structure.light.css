@@ -297,8 +297,8 @@ form input[type=checkbox] {
     padding: 1em;
     position: absolute;
     z-index: 1;
-    top: 2.5em;
-    left: 50%;
+    top: 3em;
+    right: 0px;
     margin-left: -60px;
     opacity: 1;
 }
@@ -309,8 +309,7 @@ form input[type=checkbox] {
     content: " ";
     position: absolute;
     bottom: 100%;
-    left: 50%;
-    margin-left: -1.5em;
+    right: 0.7em;
     border-width: 5px;
 }
 #BIRT-DATE-AND, #DEAT-DATE-AND, #MARR-DATE-AND, #DEAT, #BURI, #personList .buttonsWrapper {
