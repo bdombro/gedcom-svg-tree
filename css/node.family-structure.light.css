@@ -301,7 +301,6 @@ form input[type=checkbox] {
     z-index: 1;
     top: 3.5em;
     right: 0px;
-    margin-left: -60px;
     opacity: 1;
     font-size: smaller;
 }
