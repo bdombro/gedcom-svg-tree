@@ -69,10 +69,10 @@ ul {
 .B H1, .B H2, .B H3, .B H4, .B P{
     padding-left: 1em;
 }
-#header .C.C3 .B, #header .C.C2 .B {
+#header .C.C1 .B, #header .C.C2 .B, #header .C.C3 .B {
     padding-top: 1em;
     padding-left: 0px;
-    paddinng-right: 0px;
+    padding-right: 0px;
     padding-bottom: 0px;
     line-height: 2.5em;
 }
@@ -147,10 +147,7 @@ ul {
 .R .S {
     height: 100%;
 }
-.R .C.C1 {
-    width: 100%;
-    padding-top: 3em;
-}
+
 .R.enhanced {
     line-height: 1.75em;
 }
@@ -191,10 +188,10 @@ p.logo {
         position: absolute;
         z-index: 1;
     }
-    #header .C.C2:first-child {
+    #header .C.C1 {
       width: 10%;
     }
-    #header .C.C2:nth-child(2) {
+    #header .C.C2 {
       width: 90%;
     }
     #header .C.C2 .B .button:nth-child(7) {
