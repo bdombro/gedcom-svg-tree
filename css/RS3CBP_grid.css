@@ -45,19 +45,7 @@ HTML, BODY {
    float: left;
    width: 33.3%;
 }
-@media only screen and (orientation: portrait) {
-   body {
-      position: absolute;
-   }
-   .R .S .C {
-      width: 100%;
-   }
-}
-@media only screen and (max-width: 1024px) {
-   body {
-      position: absolute;
-   }
-}
+
 /* Block level elements within Box
 ----------------------------------------------- */
 .B P, .B H1, .B H2, .B H3, .B H4, .B H5, .B H6,
