@@ -61,7 +61,7 @@ fieldset {
 }
 #editForm::before, #editFamilyForm::before, #exportForm::before, #personList::before {
     color: var(--on-filling);
-    opacity: 30%;
+    opacity: 15%;
 }
 .button a:hover, .button label:hover,   button:hover {
     background-color: var(--inverse-primary);
@@ -146,7 +146,7 @@ input:hover, select:hover, #personList ul li:hover  {
 }
 .fa-tags {
     color: var(--on-filling);
-    opacity: 30%;
+    opacity: 15%;
 }
 select {
     border-image: none;
