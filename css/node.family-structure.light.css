@@ -283,14 +283,14 @@ form input[type=checkbox] {
     display: inline-block;
 }
 #familyName:hover ~ .tooltiptext {
-    visibility: visible;
+    display: visible;
 }
 .tooltip {
     position: relative;
     display: inline-block;
 }
 .tooltip .tooltiptext {
-    visibility: hidden;
+    display: none;
     width: 90px;
     text-align: center;
     border-radius: 6px;
@@ -304,7 +304,7 @@ form input[type=checkbox] {
     font-size: smaller;
 }
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+    display: block;
 }
 .tooltip .tooltiptext::after {
     content: " ";
