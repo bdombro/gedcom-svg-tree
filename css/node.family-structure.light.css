@@ -46,8 +46,7 @@ figcaption .button {
   pointer-events: none;
 }
 input[type="file"] {
-  opacity: 0;
-  width: 0;
+    display: none;
 }
 button, .button label {
     padding: 0.6em;
