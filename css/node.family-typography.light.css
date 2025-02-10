@@ -92,7 +92,7 @@ svg {
 #toggleForm:before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    content: '\f4ff';
+    content: '\f2c2';
 }
 #children div, #spouses div {
     padding-left:30%;
@@ -103,7 +103,7 @@ svg {
 #toggleExportForm:before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    content: '\f56d';
+    content: '\f019';
 }
 #togglePersonList:before {
     font-family: 'Font Awesome 5 Free';
@@ -144,6 +144,9 @@ svg {
 }
 #editForm::before {
     content: "\f4ff";
+}
+#people::before {
+    content: "\f002";
 }
 #editForm figure figcaption {
     font-style: italic;
