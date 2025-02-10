@@ -1,6 +1,6 @@
 'use strict'
 /**
- * nodeFamily.light v1.1.3 | (c) 2025 Michał Amerek, nodeFamily
+ * nodeFamily.light v1.1.4 | (c) 2025 Michał Amerek, nodeFamily
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this file and associated files (the "Software"), unless otherwise specified,
