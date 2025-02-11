@@ -441,32 +441,45 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
         _personList.fill(0);
     }
 
-    this.togglePersonForm = function() {
-        _personForm.toggle();
-        _exportForm.hide();
-        _familyForm.hide();
-        _personList.hide();
+    this.openDataCard = function() {
+        if (!_personForm.isActive() && !_familyForm.isActive()) {
+            _exportForm.hide();
+            _familyForm.hide();
+            _personList.hide();
+            _personForm.show();
+        }
     }
 
-    this.toggleExportForm = function() {
-        _exportForm.toggle();
-        _personForm.hide();
-        _familyForm.hide();
-        _personList.hide();
+    this.togglePersonForm = function() {
+        if (_familyForm.isActive()) {
+            _familyForm.hide();
+            _exportForm.hide();
+            _personList.hide();
+            _personForm.show();
+        }
     }
 
     this.toggleFamilyForm = function() {
+        if (_personForm.isActive()) {
+            _personForm.hide();
+            _exportForm.hide();
+            _personList.hide();
+            _familyForm.show();
+        }
+    }
+
+    this.toggleExportForm = function() {
         _personForm.hide();
-        _exportForm.hide();
+        _familyForm.hide();
         _personList.hide();
-        _familyForm.show();
+        _exportForm.show();
     }
 
     this.togglePersonList = function() {
         _exportForm.hide();
         _personForm.hide();
         _familyForm.hide();
-        _personList.toggle();
+        _personList.show();
     }
 
     this.setGraph = function(dagreD3GraphConfig) {
@@ -502,9 +515,9 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
             }
             return;
         }
-        if (_familyForm) {
-            _familyForm.hide();
-        }
+//        if (_familyForm) {
+//            _familyForm.hide();
+//        }
         if (startPoint) {
             _startPersonId = startPoint;
         }
@@ -514,7 +527,7 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
         _svg.call(_zoom.transform, _d3.zoomIdentity.scale(1));
         _subTree.removeNodes(_graphlib);
         _personForm.reset();
-
+        this.togglePersonForm();
         let tree = new NodeFamily.Tree();
         tree.pushNode(start);
         NodeFamily.addChildren(_familyData, start, _config, tree);
@@ -747,12 +760,16 @@ NodeFamily.PersonForm = function(presenter, formSection) {
     const _form = _formSection.querySelector("form[name = 'personForm']");
     _presenter.subscribePersonForm(this);
 
-    this.toggle = function() {
-        _formSection.classList.toggle("active");
+    this.show = function() {
+        _formSection.classList.add("active");
     }
 
     this.hide = function() {
         _formSection.classList.remove("active");
+    }
+
+    this.isActive = function() {
+        return _formSection.classList.contains("active");
     }
 
     this.changeIsLiving = function(event) {
@@ -925,8 +942,8 @@ NodeFamily.PersonList = function(presenter, personListSection) {
     let _allPersons;
     let _familyData;
 
-    this.toggle = function() {
-        _personListSection.classList.toggle("active");
+    this.show = function() {
+        _personListSection.classList.add("active");
     }
 
     this.hide = function() {
@@ -1153,12 +1170,12 @@ NodeFamily.ExportForm = function(presenter, formSection) {
     const _form = document.querySelector('form[name="exportForm"]');
     _presenter.subscribeExportForm(this);
 
-    this.hide = function() {
-        _formSection.classList.remove("active");
+    this.show = function() {
+        _formSection.classList.add("active");
     }
 
-    this.toggle = function() {
-        _formSection.classList.toggle("active");
+    this.hide = function() {
+        _formSection.classList.remove("active");
     }
 
     this.fill = function(head) {
@@ -1177,12 +1194,16 @@ NodeFamily.FamilyForm = function(presenter, formSection) {
     const _form = _formSection.querySelector("form[name = 'familyForm']");
     _presenter.subscribeFamilyForm(this);
 
+    this.show = function() {
+        _formSection.classList.add("active");
+    }
+
     this.hide = function() {
         _formSection.classList.remove("active");
     }
 
-    this.show = function() {
-        _formSection.classList.add("active");
+    this.isActive = function() {
+        return _formSection.classList.contains("active");
     }
 
     this.reset = function() {
@@ -1585,7 +1606,7 @@ NodeFamily.fromData = function(data, id, graphConfig, config) {
     const familyForm = new NodeFamily.FamilyForm(nodeFamily, document.getElementById('editFamilyForm'));
     const exportForm = new NodeFamily.ExportForm(nodeFamily, document.getElementById('exportForm'));
     const personList = new NodeFamily.PersonList(nodeFamily, document.getElementById('personList'));
-    document.querySelector('#toggleForm').addEventListener('click', nodeFamily.togglePersonForm, true);
+    document.querySelector('#toggleForm').addEventListener('click', nodeFamily.openDataCard, true);
     document.querySelector('#toggleExportForm').addEventListener('click', nodeFamily.toggleExportForm, true);
     document.querySelector('#togglePersonList').addEventListener('click', nodeFamily.togglePersonList, true);
     document.getElementById("intro").style.display = "none";
