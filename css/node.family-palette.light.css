@@ -130,15 +130,17 @@ input[type="search"] {
 .legend {
     background-color: var(--accent-container);
 }
-input, #personList ul li {
+#personList ul li {
     border-bottom: 1px dashed var(--on-primary);
+}
+input, textarea {
+    border: 0px;
 }
 input:read-only {
     color: var(--on-filling);
     border-bottom: 0;
 }
 input:hover, select:hover, #personList ul li:hover  {
-    color: var(--primary);
     background-color: var(--on-primary);
 }
 #editForm h3, #exportForm h3, #editFamilyForm h3, #personList h3 {

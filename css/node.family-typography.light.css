@@ -105,6 +105,11 @@ svg {
     font-weight: 900;
     content: '\f019';
 }
+#toggleSearch:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f002';
+}
 #togglePersonList:before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -128,7 +133,7 @@ svg {
 }
 @media only screen and (orientation: portrait) {
     .logo::after {
-        display: none;
+        content: 'GST';
     }
 }
 #editForm::before, #editFamilyForm::before, #exportForm::before, #personList::before {
@@ -171,7 +176,7 @@ input[type=text], textarea {
     border-radius: 1em;
     font-family: "Poppins";
 }
-form label {
+form label, legend {
     font-size: 0.75em;
 }
 #personList ul li {
@@ -186,8 +191,5 @@ form label {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     content: "\f0eb";
-}
-#familyName.filled, #husbandName.filled, #wifeName.filled, .spouse, .child {
-    font-family: monospace;
 }
 

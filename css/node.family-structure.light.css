@@ -68,12 +68,23 @@ ul {
 .B H1, .B H2, .B H3, .B H4, .B P{
     padding-left: 1em;
 }
-#header .C.C1 .B, #header .C.C2 .B, #header .C.C3 .B {
+#header .C.C1 .B, #header .C.C2 .B {
     padding-top: 1em;
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    line-height: 2.5em;
+}
+#header .C.C2 .B {
+    padding-top: 1.5em;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+#header .C.C3 .B {
+    padding-top: 0.9em;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
 }
 #header .C.C2 .B .button {
     display: inline-block;
@@ -96,7 +107,7 @@ ul {
     margin: 0px;
     margin-bottom: 1em;
 }
-.B#controls.active  {
+.B#controls.active, .B#search.active  {
     display: block;
 }
 #editForm.active, #exportForm.active, #editFamilyForm.active, #personList.active {
@@ -123,8 +134,8 @@ ul {
     font-weight: 900;
     content: '\f121';
 }
-#header .C.C2 .B .button:nth-child(7) {
-    width: 50%;
+#toggleSearch {
+    display: none;
 }
 #people, #peopleListSearch {
     width: 100%;
@@ -182,7 +193,7 @@ p.logo {
    .R .S, .R .S .C.C1, .R .S .C.C2, .R .S .C.C3{
       width: 100%;
    }
-    #editForm.active, #exportForm.active, #editFamilyForm.active, #personList.active {
+   #editForm.active, #exportForm.active, #editFamilyForm.active, #personList.active {
         width: 93%;
         position: absolute;
         z-index: 1;
@@ -193,16 +204,25 @@ p.logo {
     #header .C.C2 {
       width: 60%;
     }
+    #toggleSearch {
+        display: inline-block;
+    }
+    .B#search {
+        display: none;
+    }
+    #header .C.C2 .B {
+      padding-top: 1em;
+    }
 }
 @media only screen and (orientation: portrait) {
    .R .S, .R .S .C.C1, .R .S .C.C2, .R .S .C.C3{
       width: 100%;
    }
     #header .C.C1 {
-      width: 10%;
+      width: 25%;
     }
     #header .C.C2 {
-      width: 90%;
+      width: 75%;
     }
 }
 p {
@@ -252,17 +272,17 @@ div.buttonsWrapper .button {
     content: '\f205';
 }
 input[type="search"] {
-    line-height: 2.5em;
+    line-height: 1.75em;
     border-radius: 2em;
     padding-left: 2em;
    -moz-appearance: none;/* older firefox */
    -webkit-appearance: none; /* safari, chrome, edge and ie mobile */
    appearance: none; /* rest */
 }
-input[type=text], textarea {
+input, textarea {
     width: 68%;
     display: inline-block;
-    padding: 0.5em 0.5em;
+    padding: 1%;
     border-left: 0px;
     border-top: 0px;
     border-right: 0px;
@@ -272,7 +292,7 @@ textarea {
     resize: vertical;
 }
 form input[type=checkbox] {
-    width: 60%;
+    width: auto;
 }
 
 #familyName ~ .tooltiptext {
@@ -298,7 +318,7 @@ form input[type=checkbox] {
     padding: 0.5em;
     position: absolute;
     z-index: 1;
-    top: 3.5em;
+    top: 3em;
     right: 0px;
     opacity: 1;
     font-size: smaller;
@@ -320,8 +340,11 @@ form input[type=checkbox] {
     display:block;
 }
 #editForm form label, #editFamilyForm form label, #exportForm form label{
-  display: inline-block;
-  width: 30%;
+    display: inline-block;
+    width: 30%;
+    float: left;
+    text-align: right;
+    padding: 1%;
 }
 .R.workspace .C {
     max-height: 100%;

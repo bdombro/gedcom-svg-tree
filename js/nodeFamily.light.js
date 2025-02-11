@@ -770,10 +770,10 @@ NodeFamily.PersonForm = function(presenter, formSection) {
             input.checked = false;
             input.value = "Y";
             deatSection.classList.add('active');
-            _form['DEAT.DATE.nfValue'].disabled = false;
-            _form['DEAT.PLAC.nfValue'].disabled = false;
-            _form['BURI.nfValue'].disabled = false;
-            _form['BURI.PLAC.nfValue'].disabled = false;
+//            _form['DEAT.DATE.nfValue'].disabled = false;
+//            _form['DEAT.PLAC.nfValue'].disabled = false;
+//            _form['BURI.nfValue'].disabled = false;
+//            _form['BURI.PLAC.nfValue'].disabled = false;
         }
     }
 
@@ -789,8 +789,8 @@ NodeFamily.PersonForm = function(presenter, formSection) {
             input.checked = true;
             input.value = "Y";
             buriSection.classList.add('active');
-            _form['BURI.nfValue'].disabled = false;
-            _form['BURI.PLAC.nfValue'].disabled = false;
+//            _form['BURI.nfValue'].disabled = false;
+//            _form['BURI.PLAC.nfValue'].disabled = false;
         }
     }
 
@@ -848,7 +848,7 @@ NodeFamily.PersonForm = function(presenter, formSection) {
                           NodeFamily.form.fillDatePhrase("BIRT.DATE", value);
                     }
                     if (inputName == "WWW.nfValue" && value && value.trim() != "") {
-                        _formSection.querySelector('#personWww').setAttribute("href", value);
+//                        _formSection.querySelector('#personWww').setAttribute("href", value);
                     }
                     if (inputName == "DEAT.nfValue") {
                         const el = _form['DEAT.nfValue'];
@@ -1247,10 +1247,10 @@ NodeFamily.FamilyForm = function(presenter, formSection) {
                     if (inputName.indexOf("CHIL.") != -1 && inputName.split('.').length < 4) {
                         let div = document.createElement("div");
                         let extraInput = document.createElement("input");
-                        extraInput.setAttribute("type", "text");
+                        extraInput.setAttribute("type", "hidden");
                         extraInput.setAttribute("name", inputName);
                         extraInput.setAttribute("class", "data");
-                        extraInput.setAttribute("size", "5");
+                        extraInput.setAttribute("size", "1");
                         extraInput.setAttribute("style", "width:auto");
                         extraInput.value = value;
                         div.appendChild(extraInput);
@@ -1560,7 +1560,9 @@ NodeFamily.Tree.changeDate = function(date) {
 NodeFamily.toggleControls = function(event) {
     event.target.parentNode.querySelector(".tooltiptext").style.visibility = "hidden";
     document.getElementById("controls").classList.toggle("active");
-    document.getElementById("toggleControls").classList.toggle("collapse");
+}
+NodeFamily.toggleSearch = function(event) {
+    document.getElementById("search").classList.toggle("active");
 }
 NodeFamily.fromFile = function(file) {
     const fileReader = new FileReader();
@@ -1641,6 +1643,7 @@ NodeFamily.init = function(path, lang, callback) {
             }
             document.getElementById('gedcomFileInput').addEventListener('change', handleGedcom, false);
             document.getElementById('toggleControls').addEventListener('click', NodeFamily.toggleControls, true);
+            document.getElementById('toggleSearch').addEventListener('click', NodeFamily.toggleSearch, true);
             if (callback) {
                 callback();
             }
