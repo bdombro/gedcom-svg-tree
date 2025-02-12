@@ -81,7 +81,7 @@
   "nonExistentHusband": "Non-existent husband ID: {value}. Please assign an existing one.",
   "nonExistentWife": "Non-existent wife ID: {value}. Please assign an existing one.",
   "nonExistentChild": "Non-existent child ID: {value}. Please assign an existing one.",
-  "visualizeTree": "Draw your tree",
+  "visualizeTree": "Visualize your tree",
   "clickToBuild": "&#9758 click <button id=\"buildTreeButton\">here</button> to start building your tree",
   "clickToLoadGedcom": "&#9758 open GEDCOM file",
   "clickToExpand": "&#9758 click on any person node to expand a tree view",

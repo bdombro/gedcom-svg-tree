@@ -6,7 +6,6 @@
   --on-filling: #000;
   --filling2: #ecf2b1;
   --on-filling2: #333;
-  --filling3: #fff;
   --outline: #eee;
   --accent: #000;
   --accent-container: #ecf2b1;
@@ -84,7 +83,7 @@ fieldset {
 }
 
 .R, .R#faq, #footer p.logo img {
-    background-color: var(--filling3);
+    background-color: var(--filling);
 }
 
 .R#about, .R.mono {
@@ -101,7 +100,7 @@ fieldset {
     background-color: vae(--filling);
 }
 .slider:before {
-    background-color: var(--filling3);
+    background-color: var(--filling);
 }
 input:checked + .slider {
     background-color: #ccc;
@@ -117,14 +116,14 @@ input:checked + .slider {
 
 }
 #header p.logo img, #footer p.logo img {
-    border-color: var(--filling3);
+    border-color: var(--filling);
 }
 .edgePath path {
     stroke: var(--arrow-stroke);
     fill: var(--arrow-fill);
 }
 input[type="search"] {
-    background-color: var(--filling3);
+    background-color: var(--filling);
     border: 1px solid var(--outline);
 }
 .legend {
