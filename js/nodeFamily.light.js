@@ -515,9 +515,6 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
             }
             return;
         }
-//        if (_familyForm) {
-//            _familyForm.hide();
-//        }
         if (startPoint) {
             _startPersonId = startPoint;
         }
@@ -748,6 +745,10 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
     numberOfOtherGens.replaceWith(numberOfOtherGens.cloneNode(true));
     document.getElementById('numberOfOtherGens').addEventListener('change', changeConfig.bind(this), true);
 
+    document.getElementById("familyName").addEventListener('click', this.editNode.bind(this), true);
+    document.getElementById("wifeName").addEventListener('click', this.editNode.bind(this), true);
+    document.getElementById("husbandName").addEventListener('click', this.editNode.bind(this), true);
+
     const svgButton = document.getElementById('exportSvg');
     if (svgButton) {
         svgButton.addEventListener('click', exportSvg.bind(this), true);
@@ -890,6 +891,7 @@ NodeFamily.PersonForm = function(presenter, formSection) {
                         const familyName = _formSection.querySelector("#familyName");
                         familyName.innerHTML = _presenter.getFamilyNames(value);
                         familyName.classList.add("filled");
+                        familyName.setAttribute("data-id", value);
                     }
                 } else if(value.trim() != "") {
                     if (inputName.indexOf("FAMS.") != -1 && inputName.split('.').length < 4) {
@@ -1254,12 +1256,14 @@ NodeFamily.FamilyForm = function(presenter, formSection) {
                     if (inputName == "HUSB.nfValue") {
                         const husbandName = _formSection.querySelector('#husbandName')
                         husbandName.innerHTML = _presenter.getName(value);
-                        husbandName.classList.add("filled");
+                        husbandName.classList.add("filled")
+                        husbandName.setAttribute("data-id", value);
                     }
                     if (inputName == "WIFE.nfValue") {
                         const wifeName = _formSection.querySelector('#wifeName')
                         wifeName.innerHTML = _presenter.getName(value);
                         wifeName.classList.add("filled");
+                        wifeName.setAttribute("data-id", value);
                     }
                     if (inputName == "MARR.DATE.nfValue") {
                           NodeFamily.form.fillDatePhrase("MARR.DATE", value);
