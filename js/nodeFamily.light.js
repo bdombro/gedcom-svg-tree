@@ -1,6 +1,6 @@
 'use strict'
 /**
- * nodeFamily.light v1.2.0 | (c) 2025 Michał Amerek, nodeFamily
+ * nodeFamily.light v1.3.0 | (c) 2025 Michał Amerek, nodeFamily
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this file and associated files (the "Software"), unless otherwise specified,
@@ -45,13 +45,10 @@ const Gedcom = function(gedcomData) {
 
 }
 
-Gedcom.download = function(contents, tsv) {
+Gedcom.download = function(contents, ext) {
   var element = document.createElement('a');
   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(contents));
-  let extension = new Date().toLocaleDateString().split("/").reverse().join('-') + ".ged";
-  if (tsv) {
-    extension = ".tsv";
-  }
+  let extension = ext || ".ged"
   element.setAttribute('download', document.exportForm.elements['FILE.nfValue'].value.replace(/\s/g, '-') + extension);
   element.style.display = 'none';
   document.body.appendChild(element);
@@ -59,7 +56,7 @@ Gedcom.download = function(contents, tsv) {
   document.body.removeChild(element);
 }
 
-Gedcom.buildFromJson = function(json, tsv) {
+Gedcom.buildFromJson = function(json, ext) {
     let contents = "";
     for (const [key, value] of Object.entries(json)) {
         if (NF_KEYS.includes(key)) {
@@ -67,18 +64,18 @@ Gedcom.buildFromJson = function(json, tsv) {
         }
         if (value[NF_RECORD]) {
             let record = value[NF_RECORD];
-            if (tsv) {
+            if (ext == ".tsv") {
                 record = record.replace(" ", "\t").replace(" ", "\t");
             }
             contents += record + "\r\n";
         }
-        contents += Gedcom.buildFromJson(value, tsv);
+        contents += Gedcom.buildFromJson(value, ext);
     }
     return contents;
 }
 
-Gedcom.fromJson = function(json, tsv) {
-    let contents = Gedcom.buildFromJson(json, tsv);
+Gedcom.fromJson = function(json, ext) {
+    let contents = Gedcom.buildFromJson(json, ext);
     contents += "0 TRLR";
     return contents;
 }
@@ -676,8 +673,20 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
             fileName.setCustomValidity('File name is required');
             return;
         }
-        const contents = Gedcom.fromJson(_familyData, true);
-        Gedcom.download(contents, true);
+        const contents = Gedcom.fromJson(_familyData, ".tsv");
+        Gedcom.download(contents, ".tsv");
+        return false;
+    }
+
+    const exportJson = function(event) {
+        event.preventDefault();
+        let fileName = document.exportForm.elements['FILE.nfValue'];
+        if (fileName.value.trim() == ""){
+            fileName.setCustomValidity('File name is required');
+            return;
+        }
+        const contents = JSON.stringify(_familyData, null, 2);
+        Gedcom.download(contents, ".json");
         return false;
     }
 
@@ -726,12 +735,13 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
         fileName = fileName.value.replace(/\s/g, '-') + "-" + new Date().toLocaleDateString().split("/").reverse().join('-') + ".ged"
 
         _familyData.HEAD.FILE[NF_RECORD] = "1 FILE " + fileName;
-        const contents = Gedcom.fromJson(_familyData, false);
-        Gedcom.download(contents, false);
+        const contents = Gedcom.fromJson(_familyData);
+        Gedcom.download(contents);
         return false;
     }
 
-    const exportSvg = function() {
+    const exportSvg = function(event) {
+        event.preventDefault();
         document.getElementById("exportForm").classList.toggle("active");
 
         setTimeout(() => {
@@ -743,7 +753,7 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
             for (let i = 0; i < labels.length; i++) {
                 let el = labels[i];
                 el.style.textAlign = "center";
-                el.style.fontFamily = "open_sanslight";
+                el.style.fontFamily = "poppins";
                 el.style.fontSize = "14px";
              }
 
@@ -829,14 +839,17 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
     document.getElementById("wifeName").addEventListener('click', this.editNode.bind(this), true);
     document.getElementById("husbandName").addEventListener('click', this.editNode.bind(this), true);
 
-    const tsvButton = document.getElementById('exportTsv');
-    if (tsvButton) {
-        tsvButton.replaceWith(tsvButton.cloneNode(true));
-        document.exportForm.addEventListener('submit', exportTsv.bind(this), true);
-    }
     const svgButton = document.getElementById('exportSvg');
     if (svgButton) {
         svgButton.addEventListener('click', exportSvg.bind(this), true);
+    }
+    const tsvButton = document.getElementById('exportTsv');
+    if (tsvButton) {
+        tsvButton.addEventListener('click', exportTsv.bind(this), true);
+    }
+    const jsonButton = document.getElementById('exportJson');
+    if (jsonButton) {
+        jsonButton.addEventListener('click', exportJson.bind(this), true);
     }
 
 

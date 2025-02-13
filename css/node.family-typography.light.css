@@ -9,7 +9,11 @@ body, h1, h2, text, .B h3, h4 {
 h1 {
     font-size: 3em;
 }
-h2, .B h2, .B h3, p.logo {
+h2, .B h2, .B h3 {
+    font-size: 1.75em;
+    text-transform: none;
+}
+p.logo {
     font-size: 2em;
     text-transform: none;
 }

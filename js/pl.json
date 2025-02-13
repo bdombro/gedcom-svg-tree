@@ -77,6 +77,8 @@
   "saveTsvDesc": "pod arkusz kalkulacyjny; cały GEDCOM",
   "saveSvg": " Zachowaj jako .svg",
   "saveSvgDesc": "plik graficzny; wyświetlony fragment",
+  "saveJson": " Zachowaj jako JSON",
+  "saveJsonDesc": "przyjazny dla programisty",
   "export": "Eksport",
   "search-placeholder": "\uD83D\uDD0E Wyszukuj po tytule, imionach, nicku, zawodzie, datach i miejscach...",
   "fileNameInput-customValidity": "Nazwa pliku jest wymagana",

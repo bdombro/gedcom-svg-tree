@@ -75,6 +75,8 @@
   "saveTsvDesc": "for spreadsheet; the whole GEDCOM",
   "saveSvg": " Save as .svg",
   "saveSvgDesc": "image file; displayed fragment",
+  "saveJson": " Save as JSON",
+  "saveJsonDesc": "developer's friendly",
   "export": "Export",
   "submitterNameInput-customValidity": "Submitter name is required",
   "search-placeholder": "\uD83D\uDD0E Search by title, names, nick, occupation, dates or places...",
