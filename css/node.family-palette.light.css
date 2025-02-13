@@ -24,7 +24,7 @@ button, .button a, .button label {
 }
 .tooltip .tooltiptext, #familyName ~ .tooltiptext {
     background-color: var(--accent-container);
-    border: 1px solid var(--outline);
+    border: 1px solid var(--primary);
 }
 .node:hover rect, .node:hover circle {
     stroke: var(--primary) !important;

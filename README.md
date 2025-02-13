@@ -48,9 +48,14 @@ The tool makes use of such GEDCOM records and tags:
 It does however try to display all the data of those records.
 
 ### Output
+
+#### SVG
 SVG is a universal format of two-dimensional vector graphics, which was created for use on WWW.
 
 The tool uses SVG to visualize the tree and allows to save the generated graphics as a .svg file so that the user can freely use it.
+
+#### TSV
+TSV is a tab-separated values file, convenient for a spreadsheet use. The GEDCOM records are separated by tab characters.  
 
 ## HOW TO USE IT
 - Just go to [live version](https://ameros.github.io/gedcom-svg-tree/) (or choose [its polish version](https://ameros.github.io/gedcom-svg-tree/?lang=pl)) and open the GEDCOM file

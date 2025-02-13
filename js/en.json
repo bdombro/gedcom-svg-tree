@@ -69,9 +69,12 @@
   "husband": "Husband: ",
   "extraTags": "Extra tags <span class=\"fas fa-tags\"></span>",
   "submitterName": "Submitter name (you ?)",
-  "fileName": "File name",
+  "fileName": "File name:",
   "saveGedcom": "Save GEDCOM",
-  "saveSvg": " Save as SVG",
+  "saveTsv": "Save as .tsv",
+  "saveTsvDesc": "for spreadsheet; the whole GEDCOM",
+  "saveSvg": " Save as .svg",
+  "saveSvgDesc": "image file; displayed fragment",
   "export": "Export",
   "submitterNameInput-customValidity": "Submitter name is required",
   "search-placeholder": "\uD83D\uDD0E Search by title, names, nick, occupation, dates or places...",
@@ -87,5 +90,5 @@
   "clickToExpand": "&#9758 click on any person node to expand a tree view",
   "clickToZoom": "&#9758 zoom in and zoom out to scale a view",
   "useOptions":  "&#9758 use options in top bar to find a person or change a view",
-  "saveBack":  "&#9758 finally, save a tree back as a SVG file"
+  "saveBack":  "&#9758 finally, save a tree back as a web image (.SVG) or for spreadsheet (.TSV)"
 }

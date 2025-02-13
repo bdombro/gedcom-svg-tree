@@ -129,11 +129,6 @@ ul {
     font-weight: 900;
     content: '\f030';
 }
-#exportSvg:before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    content: '\f121';
-}
 #toggleSearch {
     display: none;
 }
@@ -309,7 +304,7 @@ form input[type=checkbox] {
 }
 .tooltip .tooltiptext {
     display: none;
-    width: 90px;
+    width: 120px;
     text-align: center;
     border-radius: 6px;
     padding: 0.5em;

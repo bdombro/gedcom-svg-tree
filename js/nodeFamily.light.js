@@ -1,6 +1,6 @@
 'use strict'
 /**
- * nodeFamily.light v1.1.5 | (c) 2025 Michał Amerek, nodeFamily
+ * nodeFamily.light v1.2.0 | (c) 2025 Michał Amerek, nodeFamily
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this file and associated files (the "Software"), unless otherwise specified,
@@ -45,22 +45,40 @@ const Gedcom = function(gedcomData) {
 
 }
 
-Gedcom.buildFromJson = function(json, cnt) {
-    let contents = cnt || "";
+Gedcom.download = function(contents, tsv) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(contents));
+  let extension = ".ged";
+  if (tsv) {
+    extension = ".tsv";
+  }
+  element.setAttribute('download', document.exportForm.elements['FILE.nfValue'].value.replace(/\s/g, '-') + new Date().toLocaleDateString().split("/").reverse().join('-') + extension);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
+
+Gedcom.buildFromJson = function(json, tsv) {
+    let contents = "";
     for (const [key, value] of Object.entries(json)) {
         if (NF_KEYS.includes(key)) {
             continue;
         }
         if (value[NF_RECORD]) {
-            contents += value[NF_RECORD] + "\r\n";
+            let record = value[NF_RECORD];
+            if (tsv) {
+                record = record.replace(" ", "\t").replace(" ", "\t");
+            }
+            contents += record + "\r\n";
         }
-        contents += Gedcom.buildFromJson(value);
+        contents += Gedcom.buildFromJson(value, tsv);
     }
     return contents;
 }
 
-Gedcom.fromJson = function(json, cnt) {
-    let contents = Gedcom.buildFromJson(json);
+Gedcom.fromJson = function(json, tsv) {
+    let contents = Gedcom.buildFromJson(json, tsv);
     contents += "0 TRLR";
     return contents;
 }
@@ -651,6 +669,68 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
         });
     };
 
+    const exportTsv = function(event) {
+        event.preventDefault();
+        let fileName = document.exportForm.elements['FILE.nfValue'];
+        if (fileName.value.trim() == ""){
+            fileName.setCustomValidity('File name is required');
+            return;
+        }
+        const contents = Gedcom.fromJson(_familyData, true);
+        Gedcom.download(contents, true);
+        return false;
+    }
+
+    const exportGedcom = function(event) {
+        event.preventDefault();
+        let fileName = document.exportForm.elements['FILE.nfValue'];
+        let submitterName = document.exportForm.elements['SUBM.NAME.nfValue'];
+        if (submitterName.value.trim() == "") {
+            submitterName.setCustomValidity('Submitter name is required');
+            return;
+        }
+        if (fileName.value.trim() == ""){
+            fileName.setCustomValidity('File name is required');
+            return;
+        }
+        _familyData.HEAD = {};
+        _familyData.HEAD[NF_RECORD] = "0 HEAD";
+        _familyData.HEAD.SOUR = {};
+        _familyData.HEAD.SOUR[NF_RECORD] = "1 SOUR NODE.FAMILY";
+        _familyData.HEAD.SOUR.NAME = {};
+        _familyData.HEAD.SOUR.NAME[NF_RECORD] = "2 NAME Node.Family";
+        _familyData.HEAD.SOUR.VERS = {};
+        _familyData.HEAD.SOUR.VERS[NF_RECORD] = "2 VERS 0.9.3";
+        _familyData.HEAD.SOUR.WWW = {};
+        _familyData.HEAD.SOUR.WWW[NF_RECORD] = "2 WWW https://node.family";
+        _familyData.HEAD.GEDC = {};
+        _familyData.HEAD.GEDC[NF_RECORD] = "1 GEDC";
+        _familyData.HEAD.GEDC.VERS = {};
+        _familyData.HEAD.GEDC.VERS[NF_RECORD] = "2 VERS 5.5.1";
+        _familyData.HEAD.GEDC.FORM = {};
+        _familyData.HEAD.GEDC.FORM[NF_RECORD] = "2 FORM LINEAGE-LINKED";
+        _familyData.HEAD.CHAR = {};
+        _familyData.HEAD.CHAR[NF_RECORD] = "1 CHAR UTF-8";
+        _familyData.HEAD.DATE = {};
+        _familyData.HEAD.DATE[NF_RECORD] = "1 DATE " + new Date().toLocaleString('default', { year: 'numeric', month: 'short', day: 'numeric'});
+        _familyData.HEAD.SUBM = {};
+        _familyData.HEAD.SUBM[NF_RECORD] = "1 SUBM";
+        const submitterId = document.exportForm.elements['SUBM.nfValue'];
+        if (submitterId) {
+            _familyData.HEAD.SUBM[NF_RECORD] += " " + submitterId.value;
+        }
+        _familyData.HEAD.SUBM.NAME = {};
+        _familyData.HEAD.SUBM.NAME[NF_RECORD] = "2 NAME " + submitterName.value;
+        _familyData.HEAD.FILE = {};
+
+        fileName = fileName.value.replace(/\s/g, '-') + "-" + new Date().toLocaleDateString().split("/").reverse().join('-') + ".ged"
+
+        _familyData.HEAD.FILE[NF_RECORD] = "1 FILE " + fileName;
+        const contents = Gedcom.fromJson(_familyData, false);
+        Gedcom.download(contents, false);
+        return false;
+    }
+
     const exportSvg = function() {
         document.getElementById("exportForm").classList.toggle("active");
 
@@ -749,10 +829,16 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
     document.getElementById("wifeName").addEventListener('click', this.editNode.bind(this), true);
     document.getElementById("husbandName").addEventListener('click', this.editNode.bind(this), true);
 
+    const tsvButton = document.getElementById('exportTsv');
+    if (tsvButton) {
+        tsvButton.replaceWith(tsvButton.cloneNode(true));
+        document.exportForm.addEventListener('submit', exportTsv.bind(this), true);
+    }
     const svgButton = document.getElementById('exportSvg');
     if (svgButton) {
         svgButton.addEventListener('click', exportSvg.bind(this), true);
     }
+
 
 }
 NodeFamily.PersonForm = function(presenter, formSection) {

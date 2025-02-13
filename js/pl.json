@@ -71,9 +71,12 @@
   "husband": "Mąż: ",
   "extraTags": "Dodatkowe tagi <span class=\"fas fa-tags\"></span>",
   "submitterName": "Nazwisko osoby zgłaszającej (Ty ?)",
-  "fileName": "Nazwa pliku",
+  "fileName": "Nazwa pliku:",
   "saveGedcom": "Zachowaj GEDCOM",
-  "saveSvg": " Zachowaj jako SVG",
+  "saveTsv": "Zachowaj jako .tsv",
+  "saveTsvDesc": "pod arkusz kalkulacyjny; cały GEDCOM",
+  "saveSvg": " Zachowaj jako .svg",
+  "saveSvgDesc": "plik graficzny; wyświetlony fragment",
   "export": "Eksport",
   "search-placeholder": "\uD83D\uDD0E Wyszukuj po tytule, imionach, nicku, zawodzie, datach i miejscach...",
   "fileNameInput-customValidity": "Nazwa pliku jest wymagana",
@@ -88,5 +91,5 @@
   "clickToExpand": "&#9758 klikaj na dowolną osobę by rozszerzać widok drzewa",
   "clickToZoom": "&#9758 zbliżaj, oddalaj, żeby przeskalowywać widok",
   "useOptions":  "&#9758 wykorzystuj opcje z górnego paska by na przykład znaleźć osobę lub zmienić kontekst widoku",
-  "saveBack":  "&#9758 w końcu, zachowaj drzewo w postaci pliku SVG"
+  "saveBack":  "&#9758 w końcu, zachowaj drzewo jako obrazek web (.SVG) lub pod arkusz kalkulacyjny (.TSV)"
 }
