@@ -48,11 +48,11 @@ const Gedcom = function(gedcomData) {
 Gedcom.download = function(contents, tsv) {
   var element = document.createElement('a');
   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(contents));
-  let extension = ".ged";
+  let extension = new Date().toLocaleDateString().split("/").reverse().join('-') + ".ged";
   if (tsv) {
     extension = ".tsv";
   }
-  element.setAttribute('download', document.exportForm.elements['FILE.nfValue'].value.replace(/\s/g, '-') + new Date().toLocaleDateString().split("/").reverse().join('-') + extension);
+  element.setAttribute('download', document.exportForm.elements['FILE.nfValue'].value.replace(/\s/g, '-') + extension);
   element.style.display = 'none';
   document.body.appendChild(element);
   element.click();
