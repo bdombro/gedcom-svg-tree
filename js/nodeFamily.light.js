@@ -1,6 +1,6 @@
 'use strict'
 /**
- * nodeFamily.light v1.3.0 | (c) 2025 Michał Amerek, nodeFamily
+ * nodeFamily.light v1.3.1 | (c) 2025 Michał Amerek, nodeFamily
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this file and associated files (the "Software"), unless otherwise specified,
@@ -1440,11 +1440,13 @@ NodeFamily.addSiblings = function(data, parentsId, startPoint, config, tree) {
 }
 
 NodeFamily.addFamily = function(family, spouseId, tree) {
-    if (family.HUSB) {
-        NodeFamily.addVectorWithFrom(family.HUSB[NF_VALUE], spouseId, tree);
-    }
-    if (family.WIFE) {
-        NodeFamily.addVectorWithFrom(family.WIFE[NF_VALUE], spouseId, tree);
+    if (family) {
+        if (family.HUSB) {
+            NodeFamily.addVectorWithFrom(family.HUSB[NF_VALUE], spouseId, tree);
+        }
+        if (family.WIFE) {
+            NodeFamily.addVectorWithFrom(family.WIFE[NF_VALUE], spouseId, tree);
+        }
     }
 }
 
