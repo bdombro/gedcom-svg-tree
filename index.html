@@ -33,6 +33,9 @@
 </head>
 <body>
 <script>
+window.addEventListener('error', e => {
+    alert("Some unexpected error occurred. It has been logged for further reference and fixing. Please refer to https://github.com/ameros/gedcom-svg-tree/deployments");
+});
 const COLOR_MALE = "#99e6ff";
 const COLOR_FEMALE = "#ffaaa6";
 const COLOR_FAMILY = "#f9d700";
