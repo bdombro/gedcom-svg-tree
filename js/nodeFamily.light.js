@@ -1,6 +1,6 @@
 'use strict'
 /**
- * nodeFamily.light v1.3.2 | (c) 2025 Michał Amerek, nodeFamily
+ * nodeFamily.light v1.3.3 | (c) 2025 Michał Amerek, nodeFamily
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this file and associated files (the "Software"), unless otherwise specified,
@@ -1657,7 +1657,7 @@ NodeFamily.Tree = function() {
                 node.style = "fill: #fff";
             }
             if (id == startPoint) {
-                node.style = "fill: #fff;stroke: " + COLOR_SELECTED + "; stroke-width: 2px";
+                node.style = "fill: #fff;fill: " + COLOR_SELECTED;
             }
             if (!isPerson) {
                 node.shape = "circle";
