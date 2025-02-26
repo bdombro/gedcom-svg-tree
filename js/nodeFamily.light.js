@@ -1,6 +1,6 @@
 'use strict'
 /**
- * nodeFamily.light v1.3.3 | (c) 2025 Michał Amerek, nodeFamily
+ * nodeFamily.light v1.3.4 | (c) 2025 Michał Amerek, nodeFamily
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this file and associated files (the "Software"), unless otherwise specified,
@@ -1652,12 +1652,12 @@ NodeFamily.Tree = function() {
             if (value.SEX && value.SEX[NF_VALUE] == "M") {
                 node.style = "fill: #fff;stroke: " + COLOR_MALE + "; stroke-width: 2px";
             } else if (value.SEX && value.SEX[NF_VALUE] == "F") {
-                node.style = "fill: #fff;stroke: " + COLOR_FEMALE + "; stroke-width: 2px";;
+                node.style = "fill: #fff;stroke: " + COLOR_FEMALE + "; stroke-width: 2px";
             } else {
                 node.style = "fill: #fff";
             }
             if (id == startPoint) {
-                node.style = "fill: #fff;fill: " + COLOR_SELECTED;
+                node.style = "fill: " + COLOR_SELECTED + "; stroke-width: 2px";
             }
             if (!isPerson) {
                 node.shape = "circle";
@@ -1669,9 +1669,9 @@ NodeFamily.Tree = function() {
 }
 
 NodeFamily.Tree.changeDate = function(date) {
-    const lang = document.querySelector("html").getAttribute("lang");
+    const lang = params.get("lang");
     let newDate = date;
-    if (lang != "en") {
+    if (lang && lang != "en") {
         const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
         months.forEach(function(month, idx) {
             if (date.indexOf(month) != -1) {

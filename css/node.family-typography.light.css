@@ -175,8 +175,8 @@ svg {
     font-weight: 900;
     content: "\f360";
 }
-input[type=text], textarea {
-    font-size: 1em;
+input[type=text], textarea, select:disabled {
+    font-size: 1.2em;
     border-radius: 1em;
     font-family: "Poppins";
 }
