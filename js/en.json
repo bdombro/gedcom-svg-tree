@@ -47,7 +47,7 @@
   "oct": "October",
   "nov": "November",
   "dec": "December",
-  "and": "and",
+  "and": " And: ",
   "birthPlace": "Birth place: ",
   "isLiving": "is living ?",
   "deathDate": "Death date: ",
@@ -92,5 +92,7 @@
   "clickToExpand": "&#9758 click on any person node to expand a tree view",
   "clickToZoom": "&#9758 zoom in and zoom out to scale a view",
   "useOptions":  "&#9758 use options in top bar to find a person or change a view",
-  "saveBack":  "&#9758 finally, save a tree back as a web image (.SVG) or for spreadsheet (.TSV)"
+  "saveBack":  "&#9758 finally, save a tree back as a web image (.SVG) or for spreadsheet (.TSV)",
+  "no": "no",
+  "yes": "yes"
 }

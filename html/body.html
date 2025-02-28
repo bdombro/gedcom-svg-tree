@@ -103,7 +103,6 @@
                 </div>
             </div>
         </div>
-        <!--        <div class="C C2" style="z-index:1; flex-direction:column" id="editForm">-->
         <aside class="C C2" id="editForm">
             <div class="B">
                 <span class="fas fa-times" onclick='document.getElementById("editForm").classList.toggle("active")'>&nbsp;</span>
@@ -114,27 +113,34 @@
                         <figcaption></figcaption>
                     </figure>
                 </div>
-                <form name="personForm" style="padding:1em; line-height:1.5em">
+            </div>
+            <form name="personForm" style="padding:1em; line-height:1.5em">
+            <div class="B">
                     <label class="t9n" t9n-key="ID"></label>
-                    <input type="text" name="id" readonly/>
-
+                    <input type="text" name="id" readonly class="active"/>
                     <input type="hidden" name="nfType"/>
-
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="title"></label>
                     <input class="data" type="text" name="TITL.nfValue" readonly/>
-
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="name"></label>
                     <input class="data" type="text" name="NAME.nfValue" readonly/>
-
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="given"></label>
                     <input class="data" type="text" name="NAME.GIVN.nfValue" readonly/>
-
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="surname"></label>
                     <input class="data" type="text" name="NAME.SURN.nfValue" readonly/>
-
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="nick"></label>
                     <input class="data" type="text" name="NAME.NICK.nfValue" readonly/>
-
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="sex">Sex</label>
                     <div style="display:inline-block; width:66%; float:left; padding: 1%">
                         <select id="SEX" disabled>
@@ -144,7 +150,8 @@
                         </select>
                         <input class="data" type="hidden" name="SEX.nfValue"/>
                     </div>
-
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="birthDate"></label>
                     <div style="display:inline-block; width:66%; float:left; padding: 1%">
                         <select id="BIRT.DATE.ACCU" onchange="NodeFamily.form.changeDate('BIRT.DATE')" disabled>
@@ -175,131 +182,161 @@
                         </select>
                         <input id="BIRT.DATE.YYYY" name="BIRT-DATE-YYYY" type="text" maxlength="4" size="4" placeholder="YYYY" style="width:auto"
                                onchange="NodeFamily.form.changeDate('BIRT.DATE')">
-                        <div id="BIRT-DATE-AND">
-                            <label class="t9n" t9n-key="and"></label>
-                            <input id="BIRT.DATE.AND.DD" name="BIRT-DATE-AND-DD" type="text" maxlength="2" size="2" placeholder="dd" style="width:auto"
-                                   onchange="NodeFamily.form.changeDate('BIRT.DATE')" readonly>
-                            <select id="BIRT.DATE.AND.MM" onchange="NodeFamily.form.changeDate('BIRT.DATE')" disabled>
-                                <option value=""></option>
-                                <option value="JAN" class="t9n" t9n-key="jan"></option>
-                                <option value="FEB" class="t9n" t9n-key="feb"></option>
-                                <option value="MAR" class="t9n" t9n-key="mar"></option>
-                                <option value="APR" class="t9n" t9n-key="apr"></option>
-                                <option value="MAY" class="t9n" t9n-key="may"></option>
-                                <option value="JUN" class="t9n" t9n-key="jun"></option>
-                                <option value="JUL" class="t9n" t9n-key="jul"></option>
-                                <option value="AUG" class="t9n" t9n-key="aug"></option>
-                                <option value="SEP" class="t9n" t9n-key="sep"></option>
-                                <option value="OCT" class="t9n" t9n-key="oct"></option>
-                                <option value="NOV" class="t9n" t9n-key="nov"></option>
-                                <option value="DEC" class="t9n" t9n-key="dec"></option>
-                            </select>
-                            <input id="BIRT.DATE.AND.YYYY" name="BIRT-DATE-AND-YYYY" type="text" maxlength="4" size="4" placeholder="YYYY" style="width:auto"
-                                   onchange="NodeFamily.form.changeDate('BIRT.DATE')" readonly>
-                        </div>
                         <input class="data" type="hidden" name="BIRT.DATE.nfValue"/>
                     </div>
+            </div>
+            <div class="B" id="BIRT-DATE-AND">
+                <label class="t9n" t9n-key="and"></label>
+                <input id="BIRT.DATE.AND.DD" name="BIRT-DATE-AND-DD" type="text" maxlength="2" size="2" placeholder="dd" style="width:auto"
+                       onchange="NodeFamily.form.changeDate('BIRT.DATE')" readonly>
+                <select id="BIRT.DATE.AND.MM" onchange="NodeFamily.form.changeDate('BIRT.DATE')" disabled>
+                    <option value=""></option>
+                    <option value="JAN" class="t9n" t9n-key="jan"></option>
+                    <option value="FEB" class="t9n" t9n-key="feb"></option>
+                    <option value="MAR" class="t9n" t9n-key="mar"></option>
+                    <option value="APR" class="t9n" t9n-key="apr"></option>
+                    <option value="MAY" class="t9n" t9n-key="may"></option>
+                    <option value="JUN" class="t9n" t9n-key="jun"></option>
+                    <option value="JUL" class="t9n" t9n-key="jul"></option>
+                    <option value="AUG" class="t9n" t9n-key="aug"></option>
+                    <option value="SEP" class="t9n" t9n-key="sep"></option>
+                    <option value="OCT" class="t9n" t9n-key="oct"></option>
+                    <option value="NOV" class="t9n" t9n-key="nov"></option>
+                    <option value="DEC" class="t9n" t9n-key="dec"></option>
+                </select>
+                <input id="BIRT.DATE.AND.YYYY" name="BIRT-DATE-AND-YYYY" type="text" maxlength="4" size="4" placeholder="YYYY" style="width:auto"
+                       onchange="NodeFamily.form.changeDate('BIRT.DATE')" readonly>
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="birthPlace"></label>
                     <input class="data" type="text" name="BIRT.PLAC.nfValue" readonly/>
-                    <div style="float:left; width:100%">
-                        <label class="t9n" t9n-key="isLiving"></label>
-                        <input class="data" type="checkbox" name="DEAT.nfValue" value="" checked="true" disabled/>
+            </div>
+            <div class="B">
+                <label class="t9n" t9n-key="isLiving"></label>
+                <select id="isDEAT" disabled class="active">
+                  <option value="N" class="t9n" t9n-key="yes"></option>
+                  <option value="Y" class="t9n" t9n-key="no"></option>
+                </select>
+                <input class="data" type="hidden" name="DEAT.nfValue"/>
+            </div>
+            <div id="DEAT" class="B">
+                <div class="B">
+                    <label class="t9n" t9n-key="deathDate"></label>
+                    <div style="width:66%; float:left; padding: 1%">
+                        <select id="DEAT.DATE.ACCU" onchange="NodeFamily.form.changeDate('DEAT.DATE')" disabled>
+                            <option value=""></option>
+                            <option value="ABT" class="t9n" t9n-key="abt"></option>
+                            <option value="BEF" class="t9n" t9n-key="bef"></option>
+                            <option value="AFT" class="t9n" t9n-key="aft"></option>
+                            <option value="CAL" class="t9n" t9n-key="cal"></option>
+                            <option value="EST" class="t9n" t9n-key="est"></option>
+                            <option value="BET" class="t9n" t9n-key="bet"></option>
+                        </select>
+                        <input id="DEAT.DATE.DD" name="DEAT-DATE-DD" type="text" maxlength="2" size="2" placeholder="dd" style="width:auto"
+                               onchange="NodeFamily.form.changeDate('DEAT.DATE')" readonly>
+                        <select id="DEAT.DATE.MM" onchange="NodeFamily.form.changeDate('DEAT.DATE')" disabled>
+                            <option value=""></option>
+                            <option value="JAN" class="t9n" t9n-key="jan"></option>
+                            <option value="FEB" class="t9n" t9n-key="feb"></option>
+                            <option value="MAR" class="t9n" t9n-key="mar"></option>
+                            <option value="APR" class="t9n" t9n-key="apr"></option>
+                            <option value="MAY" class="t9n" t9n-key="may"></option>
+                            <option value="JUN" class="t9n" t9n-key="jun"></option>
+                            <option value="JUL" class="t9n" t9n-key="jul"></option>
+                            <option value="AUG" class="t9n" t9n-key="aug"></option>
+                            <option value="SEP" class="t9n" t9n-key="sep"></option>
+                            <option value="OCT" class="t9n" t9n-key="oct"></option>
+                            <option value="NOV" class="t9n" t9n-key="nov"></option>
+                            <option value="DEC" class="t9n" t9n-key="dec"></option>
+                        </select>
+                        <input id="DEAT.DATE.YYYY" name="DEAT-DATE-YYYY" type="text" maxlength="4" size="4" placeholder="YYYY" style="width:auto"
+                               onchange="NodeFamily.form.changeDate('DEAT.DATE')" readonly>
+                        <input class="data" type="hidden" name="DEAT.DATE.nfValue"/>
                     </div>
-                    <!--                    onchange="NodeFamily.PersonForm.changeIsLiving(this)"/>-->
-                    <div id="DEAT" style="width:100%; float:left">
-                        <label class="t9n" t9n-key="deathDate"></label>
-                        <div style="width:66%; float:left; padding: 1%">
-                            <select id="DEAT.DATE.ACCU" onchange="NodeFamily.form.changeDate('DEAT.DATE')" disabled>
-                                <option value=""></option>
-                                <option value="ABT" class="t9n" t9n-key="abt"></option>
-                                <option value="BEF" class="t9n" t9n-key="bef"></option>
-                                <option value="AFT" class="t9n" t9n-key="aft"></option>
-                                <option value="CAL" class="t9n" t9n-key="cal"></option>
-                                <option value="EST" class="t9n" t9n-key="est"></option>
-                                <option value="BET" class="t9n" t9n-key="bet"></option>
-                            </select>
-                            <input id="DEAT.DATE.DD" name="DEAT-DATE-DD" type="text" maxlength="2" size="2" placeholder="dd" style="width:auto"
-                                   onchange="NodeFamily.form.changeDate('DEAT.DATE')" readonly>
-                            <select id="DEAT.DATE.MM" onchange="NodeFamily.form.changeDate('DEAT.DATE')" disabled>
-                                <option value=""></option>
-                                <option value="JAN" class="t9n" t9n-key="jan"></option>
-                                <option value="FEB" class="t9n" t9n-key="feb"></option>
-                                <option value="MAR" class="t9n" t9n-key="mar"></option>
-                                <option value="APR" class="t9n" t9n-key="apr"></option>
-                                <option value="MAY" class="t9n" t9n-key="may"></option>
-                                <option value="JUN" class="t9n" t9n-key="jun"></option>
-                                <option value="JUL" class="t9n" t9n-key="jul"></option>
-                                <option value="AUG" class="t9n" t9n-key="aug"></option>
-                                <option value="SEP" class="t9n" t9n-key="sep"></option>
-                                <option value="OCT" class="t9n" t9n-key="oct"></option>
-                                <option value="NOV" class="t9n" t9n-key="nov"></option>
-                                <option value="DEC" class="t9n" t9n-key="dec"></option>
-                            </select>
-                            <input id="DEAT.DATE.YYYY" name="DEAT-DATE-YYYY" type="text" maxlength="4" size="4" placeholder="YYYY" style="width:auto"
-                                   onchange="NodeFamily.form.changeDate('DEAT.DATE')" readonly>
-                            <div id="DEAT-DATE-AND">
-                                <label class="t9n" t9n-key="and">and</label>
-                                <input id="DEAT.DATE.AND.DD" name="DEAT-DATE-AND-DD" type="text" maxlength="2" size="2" placeholder="dd" style="width:auto"
-                                       onchange="NodeFamily.form.changeDate('DEAT.DATE')" readonly>
-                                <select id="DEAT.DATE.AND.MM" onchange="NodeFamily.form.changeDate('DEAT.DATE')" disabled>
-                                    <option value=""></option>
-                                    <option value="JAN" class="t9n" t9n-key="jan"></option>
-                                    <option value="FEB" class="t9n" t9n-key="feb"></option>
-                                    <option value="MAR" class="t9n" t9n-key="mar"></option>
-                                    <option value="APR" class="t9n" t9n-key="apr"></option>
-                                    <option value="MAY" class="t9n" t9n-key="may"></option>
-                                    <option value="JUN" class="t9n" t9n-key="jun"></option>
-                                    <option value="JUL" class="t9n" t9n-key="jul"></option>
-                                    <option value="AUG" class="t9n" t9n-key="aug"></option>
-                                    <option value="SEP" class="t9n" t9n-key="sep"></option>
-                                    <option value="OCT" class="t9n" t9n-key="oct"></option>
-                                    <option value="NOV" class="t9n" t9n-key="nov"></option>
-                                    <option value="DEC" class="t9n" t9n-key="dec"></option>
-                                </select>
-                                <input id="DEAT.DATE.AND.YYYY" name="DEAT-DATE-AND-YYYY" type="text" maxlength="4" size="4" placeholder="YYYY" style="width:auto"
-                                       onchange="NodeFamily.form.changeDate('DEAT.DATE')" readonly>
-                            </div>
-                            <input class="data" type="hidden" name="DEAT.DATE.nfValue"/>
-                        </div>
-                        <label class="t9n" t9n-key="deathPlace"></label>
-                        <input class="data" type="text" name="DEAT.PLAC.nfValue" readonly/>
-                        <label class="t9n" t9n-key="buried"></label>
-                        <input class="data" type="checkbox" name="BURI.nfValue" value="" disabled/>
-                        <div id="BURI" style="width:100%; float:left; padding: 1%">
-                            <label class="t9n" t9n-key="burialPlace"></label>
-                            <input class="data" type="text" name="BURI.PLAC.nfValue" readonly/>
-                        </div>
+                </div>
+                <div class="B" id="DEAT-DATE-AND">
+                        <label class="t9n" t9n-key="and">and</label>
+                        <input id="DEAT.DATE.AND.DD" name="DEAT-DATE-AND-DD" type="text" maxlength="2" size="2" placeholder="dd" style="width:auto"
+                               onchange="NodeFamily.form.changeDate('DEAT.DATE')" readonly>
+                        <select id="DEAT.DATE.AND.MM" onchange="NodeFamily.form.changeDate('DEAT.DATE')" disabled>
+                            <option value=""></option>
+                            <option value="JAN" class="t9n" t9n-key="jan"></option>
+                            <option value="FEB" class="t9n" t9n-key="feb"></option>
+                            <option value="MAR" class="t9n" t9n-key="mar"></option>
+                            <option value="APR" class="t9n" t9n-key="apr"></option>
+                            <option value="MAY" class="t9n" t9n-key="may"></option>
+                            <option value="JUN" class="t9n" t9n-key="jun"></option>
+                            <option value="JUL" class="t9n" t9n-key="jul"></option>
+                            <option value="AUG" class="t9n" t9n-key="aug"></option>
+                            <option value="SEP" class="t9n" t9n-key="sep"></option>
+                            <option value="OCT" class="t9n" t9n-key="oct"></option>
+                            <option value="NOV" class="t9n" t9n-key="nov"></option>
+                            <option value="DEC" class="t9n" t9n-key="dec"></option>
+                        </select>
+                        <input id="DEAT.DATE.AND.YYYY" name="DEAT-DATE-AND-YYYY" type="text" maxlength="4" size="4" placeholder="YYYY" style="width:auto"
+                               onchange="NodeFamily.form.changeDate('DEAT.DATE')" readonly>
                     </div>
+                <div class="B">
+                    <label class="t9n" t9n-key="deathPlace"></label>
+                    <input class="data" type="text" name="DEAT.PLAC.nfValue" readonly/>
+                </div>
+                <div class="B">
+                    <label class="t9n" t9n-key="buried"></label>
+                    <select id="isBURI" disabled class="active">
+                      <option value="N" class="t9n" t9n-key="no"></option>
+                      <option value="Y" class="t9n" t9n-key="yes"></option>
+                    </select>
+                    <input class="data" type="hidden" name="BURI.nfValue"/>
+                </div>
+                <div class="B" id="BURI" style="width:100%; float:left; padding: 1%">
+                    <label class="t9n" t9n-key="burialPlace"></label>
+                    <input class="data" type="text" name="BURI.PLAC.nfValue" readonly/>
+                </div>
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="occupation"></label>
                     <input class="data" type="text" name="OCCU.nfValue" readonly/>
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="photoFile"></label>
                     <input class="data" type="text" name="OBJE.FILE.nfValue" id="photoFile" readonly/>
                     <input class="data" type="text" name="OBJE.0.FILE.nfValue" id="photoFileColl" style="display: none" readonly/>
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="photoCaption"></label>
                     <input class="data" type="text" name="OBJE.TITL.nfValue" id="photoTitl" readonly/>
                     <input class="data" type="text" name="OBJE.0.TITL.nfValue" id="photoTitlColl" style="display: none" readonly/>
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="www"></label>
                     <input class="data" type="text" name="WWW.nfValue" readonly/>
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="parents">Parents</label>
                     <div style="width:66%; float:left; padding: 1%">
                         <input class="data" type="hidden" name="FAMC.nfValue" size="5" style="width:auto"  placeholder="ID" readonly/>
                         <span id="familyName"> </span>
                     </div>
+            </div>
+            <div class="B">
                     <fieldset id="spouses">
                         <legend class="t9n" t9n-key="spouses"></legend>
                     </fieldset>
+            </div>
+            <div class="B">
                     <fieldset id="extraGedcomFields">
                         <legend class="t9n" t9n-key="extraTags"></legend>
                     </fieldset>
-                    <div><label class="t9n" t9n-key="submitterId"></label>
+            </div>
+            <div class="B">
+                    <label class="t9n" t9n-key="submitterId"></label>
                         <input class="data" type="text" name="SUBM.nfValue" size="10" style="width:auto" readonly/>
                         <span id="submitterName" style="font-size:smaller"></span>
-                    </div>
-                </form>
             </div>
+            </form>
         </aside>
         <!--        </div>-->
-        <div class="C C2" style="z-index:1; flex-direction:column" id="editFamilyForm">
+        <aside class="C C2" style="z-index:1; flex-direction:column" id="editFamilyForm">
             <div class="B">
                 <span class="fas fa-times" onclick='document.getElementById("editFamilyForm").classList.toggle("active")'>&nbsp;</span>
                 <h3 class="t9n" t9n-key="family"></h3>
@@ -307,9 +344,13 @@
                     <img src=""  width="60%"/>
                     <figcaption></figcaption>
                 </figure>
-                <form name="familyForm" style="padding:1em; line-height:1.5em">
+            </div>
+            <form name="familyForm" style="padding:1em; line-height:1.5em">
+            <div class="B">
                     <label class="t9n" t9n-key="ID"></label>
-                    <input type="text" name="id" readonly/>
+                    <input type="text" name="id" readonly class="active"/>
+            </div>
+            <div class="B">
                     <input type="hidden" name="nfType"/>
                     <label class="t9n" t9n-key="marriageDate"></label>
                     <div style="display:inline-block; width:66%; float:left; padding: 1%">
@@ -341,60 +382,71 @@
                         </select>
                         <input id="MARR.DATE.YYYY" name="MARR-DATE-YYYY" type="text" maxlength="4" size="4" placeholder="YYYY" style="width:auto"
                                onchange="NodeFamily.form.changeDate('MARR.DATE')">
-                        <div id="MARR-DATE-AND">
-                            <label class="t9n" t9n-key="and"></label>
-                            <input id="MARR.DATE.AND.DD" name="MARR-DATE-AND-DD" type="text" maxlength="2" size="2" placeholder="dd" style="width:auto"
-                                   onchange="NodeFamily.form.changeDate('MARR.DATE')">
-                            <select id="MARR.DATE.AND.MM" onchange="NodeFamily.form.changeDate('MARR.DATE')" disabled>
-                                <option value=""></option>
-                                <option value="JAN" class="t9n" t9n-key="jan"></option>
-                                <option value="FEB" class="t9n" t9n-key="feb"></option>
-                                <option value="MAR" class="t9n" t9n-key="mar"></option>
-                                <option value="APR" class="t9n" t9n-key="apr"></option>
-                                <option value="MAY" class="t9n" t9n-key="may"></option>
-                                <option value="JUN" class="t9n" t9n-key="jun"></option>
-                                <option value="JUL" class="t9n" t9n-key="jul"></option>
-                                <option value="AUG" class="t9n" t9n-key="aug"></option>
-                                <option value="SEP" class="t9n" t9n-key="sep"></option>
-                                <option value="OCT" class="t9n" t9n-key="oct"></option>
-                                <option value="NOV" class="t9n" t9n-key="nov"></option>
-                                <option value="DEC" class="t9n" t9n-key="dec"></option>
-                            </select>
-                            <input id="MARR.DATE.AND.YYYY" name="MARR-DATE-AND-YYYY" type="text" maxlength="4" size="4" placeholder="YYYY" style="width:auto"
-                                   onchange="NodeFamily.form.changeDate('MARR.DATE')">
-                        </div>
                         <input class="data" type="hidden" name="MARR.DATE.nfValue"/>
                     </div>
+            </div>
+            <div class="B" id="MARR-DATE-AND">
+                <label class="t9n" t9n-key="and"></label>
+                <input id="MARR.DATE.AND.DD" name="MARR-DATE-AND-DD" type="text" maxlength="2" size="2" placeholder="dd" style="width:auto"
+                       onchange="NodeFamily.form.changeDate('MARR.DATE')">
+                <select id="MARR.DATE.AND.MM" onchange="NodeFamily.form.changeDate('MARR.DATE')" disabled>
+                  <option value=""></option>
+                  <option value="JAN" class="t9n" t9n-key="jan"></option>
+                  <option value="FEB" class="t9n" t9n-key="feb"></option>
+                  <option value="MAR" class="t9n" t9n-key="mar"></option>
+                  <option value="APR" class="t9n" t9n-key="apr"></option>
+                  <option value="MAY" class="t9n" t9n-key="may"></option>
+                  <option value="JUN" class="t9n" t9n-key="jun"></option>
+                  <option value="JUL" class="t9n" t9n-key="jul"></option>
+                  <option value="AUG" class="t9n" t9n-key="aug"></option>
+                  <option value="SEP" class="t9n" t9n-key="sep"></option>
+                  <option value="OCT" class="t9n" t9n-key="oct"></option>
+                  <option value="NOV" class="t9n" t9n-key="nov"></option>
+                  <option value="DEC" class="t9n" t9n-key="dec"></option>
+                </select>
+                <input id="MARR.DATE.AND.YYYY" name="MARR-DATE-AND-YYYY" type="text" maxlength="4" size="4" placeholder="YYYY" style="width:auto"
+                       onchange="NodeFamily.form.changeDate('MARR.DATE')">
+              </div>
+            <div class="B">
                     <label class="t9n" t9n-key="marriagePlace"></label>
                     <input class="data"  type="text" name="MARR.PLAC.nfValue"/>
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="photoFile"></label>
-                    <div>
-                        <input class="data" type="text" name="OBJE.FILE.nfValue" id="photoFamilyFile" readonly/>
-                        <!--                        <input class="data" type="text" name="OBJE.0.FILE.nfValue" id="photoFamilyFileColl" style="display: none"/>-->
-                        <label class="t9n" t9n-key="photoCaption"></label>
-                        <input class="data" type="text" name="OBJE.TITL.nfValue" id="photoFamilyTitl" readonly/>
-                        <!--                        <input class="data" type="text" name="OBJE.0.TITL.nfValue" id="photoFamilyTitlColl" style="display: none"/>-->
-                    </div>
-                    <!--                    <div>-->
+                    <input class="data" type="text" name="OBJE.FILE.nfValue" id="photoFamilyFile" readonly/>
+                    <!--                        <input class="data" type="text" name="OBJE.0.FILE.nfValue" id="photoFamilyFileColl" style="display: none"/>-->
+            </div>
+            <div class="B">
+                    <label class="t9n" t9n-key="photoCaption"></label>
+                    <input class="data" type="text" name="OBJE.TITL.nfValue" id="photoFamilyTitl" readonly/>
+                    <!--                        <input class="data" type="text" name="OBJE.0.TITL.nfValue" id="photoFamilyTitlColl" style="display: none"/>-->
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="wife"></label>
                     <div style="width:66%; float:left; padding: 1%">
                         <input class="data" type="hidden" name="WIFE.nfValue" size="1" style="width:auto"/>
                         <span id="wifeName"> </span>
                     </div>
+            </div>
+            <div class="B">
                     <label class="t9n" t9n-key="husband"></label>
                     <div style="width:66%; float:left; padding: 1%">
                         <input class="data" type="hidden" name="HUSB.nfValue" size="1" style="width:auto"/>
                         <span id="husbandName"></span>
                     </div>
+            </div>
+            <div class="B">
                     <fieldset id="children">
                         <legend class="t9n" t9n-key="children"></legend>
                     </fieldset>
+            </div>
+            <div class="B">
                     <fieldset id="extraFamilyFields">
                         <legend class="t9n" t9n-key="extraTags"></legend>
                     </fieldset>
-                </form>
             </div>
-        </div>
+            </form>
+        </aside>
         <div class="C C2" style="z-index:1; flex-direction:column" id="exportForm">
             <div class="B">
                 <span class="fas fa-times" onclick='document.getElementById("exportForm").classList.toggle("active")'>&nbsp;</span>

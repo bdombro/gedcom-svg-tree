@@ -49,12 +49,12 @@
   "oct": "październik",
   "nov": "listopad",
   "dec": "grudzień",
-  "and": "a",
+  "and": " A: ",
   "birthPlace": "Miejsce urodzenia: ",
-  "isLiving": "Żyjąca ?",
+  "isLiving": "Żyjąca(y) ?",
   "deathDate": "Data śmierci: ",
   "deathPlace": "Miejsce śmierci: ",
-  "buried": "Pochowana ?",
+  "buried": "Pochowana(y) ?",
   "burialPlace": "Miejsce pochówku: ",
   "occupation": "Zawód: ",
   "photoFile": "Plik zdjęcia (url): ",
@@ -93,5 +93,7 @@
   "clickToExpand": "&#9758 klikaj na dowolną osobę by rozszerzać widok drzewa",
   "clickToZoom": "&#9758 zbliżaj, oddalaj, żeby przeskalowywać widok",
   "useOptions":  "&#9758 wykorzystuj opcje z górnego paska by na przykład znaleźć osobę lub zmienić kontekst widoku",
-  "saveBack":  "&#9758 w końcu, zachowaj drzewo jako obrazek web (.SVG) lub pod arkusz kalkulacyjny (.TSV)"
+  "saveBack":  "&#9758 w końcu, zachowaj drzewo jako obrazek web (.SVG) lub pod arkusz kalkulacyjny (.TSV)",
+  "no": "nie",
+  "yes": "tak"
 }

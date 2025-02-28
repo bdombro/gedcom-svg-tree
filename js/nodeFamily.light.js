@@ -1,6 +1,6 @@
 'use strict'
 /**
- * nodeFamily.light v1.3.4 | (c) 2025 Michał Amerek, nodeFamily
+ * nodeFamily.light v1.3.5 | (c) 2025 Michał Amerek, nodeFamily
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this file and associated files (the "Software"), unless otherwise specified,
@@ -572,7 +572,7 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
         nodes.on('click', function (nodeId) {
             that.visualize(nodeId);
         });
-        const personId = document.querySelector('form[name="personForm"] > input[name="id"]');
+        const personId = document.querySelector('form[name="personForm"] input[name="id"]');
         if (!personId) {
             return;
         }
@@ -878,19 +878,20 @@ NodeFamily.PersonForm = function(presenter, formSection) {
         if (input.value == "Y") {
             input.checked = true;
             input.value = "";
-            deatSection.classList.remove('active');
             _form['DEAT.DATE.nfValue'].disabled = true;
             _form['DEAT.PLAC.nfValue'].disabled = true;
             _form['BURI.nfValue'].disabled = true;
             _form['BURI.PLAC.nfValue'].disabled = true;
+            deatSection.classList.remove('active');
+            _formSection.querySelector('#BURI').classList.remove('active');
         } else {
             input.checked = false;
             input.value = "Y";
-            deatSection.classList.add('active');
 //            _form['DEAT.DATE.nfValue'].disabled = false;
 //            _form['DEAT.PLAC.nfValue'].disabled = false;
 //            _form['BURI.nfValue'].disabled = false;
 //            _form['BURI.PLAC.nfValue'].disabled = false;
+            deatSection.classList.add('active');
         }
     }
 
@@ -959,6 +960,7 @@ NodeFamily.PersonForm = function(presenter, formSection) {
             if (typeof value === 'string' || value instanceof String) {
                 let inputElement = _form[inputName];
                 if (inputElement) {
+                    inputElement.classList.add("active");
                     NodeFamily.form.fillPhoto("photo", inputName, value);
                     inputElement.value = value;
                     if (inputName == "BIRT.DATE.nfValue") {
@@ -971,17 +973,25 @@ NodeFamily.PersonForm = function(presenter, formSection) {
                         const el = _form['DEAT.nfValue'];
                         el.value = "N";
                         el.dispatchEvent(new Event('change'));
+                        _formSection.querySelector("#isDEAT").value = value;
                     }
                     if (inputName == "DEAT.DATE.nfValue") {
                         NodeFamily.form.fillDatePhrase("DEAT.DATE", value);
                     }
-                    if (inputName == "BURI.nfValue" || inputName == "BURI.PLAC.nfValue") {
+                    if (inputName == "BURI.nfValue") {
                         const el = _form['BURI.nfValue'];
                         el.value = "";
                         el.dispatchEvent(new Event('change'));
+                        _formSection.querySelector("#isBURI").value = value;
                     }
+//                    if (inputName == "BURI.PLAC.nfValue") {
+//                        const el = _form['BURI.nfValue'];
+//                        el.value = "";
+//                        el.dispatchEvent(new Event('change'));
+//                    }
                     if (inputName == "SEX.nfValue") {
                         _formSection.querySelector("#SEX").value = value;
+                        _formSection.querySelector("#SEX").classList.add("active");
                     }
                     if (inputName == "SUBM.nfValue") {
                         _formSection.querySelector("#submitterName").innerHTML = _presenter.getName(value.replace(/@/g, ""));
@@ -1010,6 +1020,7 @@ NodeFamily.PersonForm = function(presenter, formSection) {
                         extraInput.setAttribute("readonly", "");
                         extraInput.setAttribute("type", "text");
                         extraInput.setAttribute("name", inputName);
+                        extraInput.setAttribute("class", "active");
                         extraInput.value = value;
                         _formSection.querySelector('#extraGedcomFields').appendChild(extraInput);
                     }
@@ -1240,15 +1251,25 @@ NodeFamily.form.fillDate = function(prefix, value) {
     const dateElements = value.split(" ");
     const month = dateElements.find(el => ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"].includes(el));
     if (month) {
+        document.getElementById(prefix + '.MM').classList.add("active");
         document.getElementById(prefix + '.MM').value = month;
+//        document.getElementById(prefix + '.MM').width =
+    } else {
+        document.getElementById(prefix + '.MM').classList.remove("active");
     }
     const day = dateElements.find(el => el.length <= 2);
     if (day) {
+        document.getElementById(prefix + '.DD').classList.add("active");
         document.getElementById(prefix + '.DD').value = day;
+    } else {
+        document.getElementById(prefix + '.DD').classList.remove("active");
     }
     const year = dateElements.find(el => el.length >= 3 && !isNaN(parseInt(el)));
     if (year) {
+        document.getElementById(prefix + '.YYYY').classList.add("active");
         document.getElementById(prefix + '.YYYY').value = year;
+    } else {
+        document.getElementById(prefix + '.YYYY').classList.remove("active");
     }
 }
 
@@ -1257,11 +1278,17 @@ NodeFamily.form.fillDatePhrase = function(prefix, value) {
     const phrase = dateElements.find(el => ["ABT", "AFT", "BEF", "BET", "CAL", "EST"].includes(el));
     NodeFamily.form.fillDate(prefix, value);
     if (phrase) {
+        document.getElementById(prefix + '.ACCU').classList.add("active");
         document.getElementById(prefix + '.ACCU').value = phrase;
         if (phrase == "BET") {
             document.getElementById(prefix.replace(".", "-") + '-AND').classList.add('active');
             NodeFamily.form.fillDate(prefix + '.AND', value.substr(value.indexOf('AND'), value.length));
+        } else {
+            document.getElementById(prefix.replace(".", "-") + '-AND').classList.remove('active');
         }
+    } else {
+        document.getElementById(prefix + '.ACCU').classList.remove("active");
+        document.getElementById(prefix.replace(".", "-") + '-AND').classList.remove('active');
     }
 }
 
@@ -1352,6 +1379,7 @@ NodeFamily.FamilyForm = function(presenter, formSection) {
                 if (inputElement) {
                     NodeFamily.form.fillPhoto("photoFamily", inputName, value);
                     inputElement.value = value;
+                    inputElement.classList.add("active");
                     if (inputName == "HUSB.nfValue") {
                         const husbandName = _formSection.querySelector('#husbandName')
                         husbandName.innerHTML = _presenter.getName(value);
@@ -1392,6 +1420,7 @@ NodeFamily.FamilyForm = function(presenter, formSection) {
                         let extraInput = document.createElement("input");
                         extraInput.setAttribute("type", "text");
                         extraInput.setAttribute("name", inputName);
+                        extraInput.setAttribute("class", "active");
                         extraInput.value = value;
                         _formSection.querySelector('#extraFamilyFields').appendChild(extraInput);
                     }

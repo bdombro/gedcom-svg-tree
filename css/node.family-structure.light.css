@@ -62,9 +62,6 @@ ul {
 #header .C.C2:first-child {
     width: 33%;
 }
-.B {
-    padding-bottom: 1em;
-}
 .B H1, .B H2, .B H3, .B H4, .B P{
     padding-left: 1em;
 }
@@ -325,11 +322,21 @@ form input[type=checkbox] {
     right: 0.7em;
     border-width: 5px;
 }
+aside input, aside textarea, aside select {
+    display: none;
+    appearance: none;
+}
+aside input.active, aside textarea.active, aside select.active {
+    display: inline-block;
+}
+.B {
+    float: left;
+}
 #BIRT-DATE-AND, #DEAT-DATE-AND, #MARR-DATE-AND, #DEAT, #BURI, #personList .buttonsWrapper {
     display:none;
 }
 #BIRT-DATE-AND.active, #DEAT-DATE-AND.active, #MARR-DATE-AND.active, #DEAT.active, #BURI.active, #personList .buttonsWrapper.active {
-    display:block;
+    display:inline-block;
 }
 #editForm form label, #editFamilyForm form label, #exportForm form label{
     display: inline-block;
