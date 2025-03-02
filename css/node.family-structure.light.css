@@ -62,6 +62,9 @@ ul {
 #header .C.C2:first-child {
     width: 33%;
 }
+.DN {
+    display: none;
+}
 .B H1, .B H2, .B H3, .B H4, .B P{
     padding-left: 1em;
 }
@@ -340,7 +343,7 @@ aside input.active, aside textarea.active, aside select.active {
 }
 #editForm form label, #editFamilyForm form label, #exportForm form label{
     display: inline-block;
-    width: 30%;
+    width: 20%;
     float: left;
     text-align: right;
     padding: 1%;

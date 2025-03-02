@@ -38,11 +38,11 @@
             <div class="B" id="controls">
                 <div>
                     <label class="t9n" t9n-key="parents"></label>
-                    <input type="range" min="1" max="10" value="1" id="numberOfParentGens">
+                    <input type="range" min="1" max="30" value="1" id="numberOfParentGens">
                 </div>
                 <div>
                     <label class="t9n" t9n-key="children"></label>
-                    <input type="range" min="1" max="10" value="1" id="numberOfChildrenGens">
+                    <input type="range" min="1" max="30" value="1" id="numberOfChildrenGens">
                 </div>
                 <div>
                     <label class="t9n" t9n-key="others"></label>
@@ -115,16 +115,11 @@
                 </div>
             </div>
             <form name="personForm" style="padding:1em; line-height:1.5em">
-            <div class="B">
-                    <label class="t9n" t9n-key="ID"></label>
-                    <input type="text" name="id" readonly class="active"/>
-                    <input type="hidden" name="nfType"/>
-            </div>
-            <div class="B">
+            <div class="B DN">
                     <label class="t9n" t9n-key="title"></label>
                     <input class="data" type="text" name="TITL.nfValue" readonly/>
             </div>
-            <div class="B">
+            <div class="B DN">
                     <label class="t9n" t9n-key="name"></label>
                     <input class="data" type="text" name="NAME.nfValue" readonly/>
             </div>
@@ -136,7 +131,7 @@
                     <label class="t9n" t9n-key="surname"></label>
                     <input class="data" type="text" name="NAME.SURN.nfValue" readonly/>
             </div>
-            <div class="B">
+            <div class="B DN">
                     <label class="t9n" t9n-key="nick"></label>
                     <input class="data" type="text" name="NAME.NICK.nfValue" readonly/>
             </div>
@@ -153,7 +148,7 @@
             </div>
             <div class="B">
                     <label class="t9n" t9n-key="birthDate"></label>
-                    <div style="display:inline-block; width:66%; float:left; padding: 1%">
+                    <div>
                         <select id="BIRT.DATE.ACCU" onchange="NodeFamily.form.changeDate('BIRT.DATE')" disabled>
                             <option value=""></option>
                             <option value="ABT" class="t9n" t9n-key="abt"></option>
@@ -211,9 +206,9 @@
                     <label class="t9n" t9n-key="birthPlace"></label>
                     <input class="data" type="text" name="BIRT.PLAC.nfValue" readonly/>
             </div>
-            <div class="B">
+            <div class="B DN">
                 <label class="t9n" t9n-key="isLiving"></label>
-                <select id="isDEAT" disabled class="active">
+                <select id="isDEAT" disabled class="active" style="padding:1%">
                   <option value="N" class="t9n" t9n-key="yes"></option>
                   <option value="Y" class="t9n" t9n-key="no"></option>
                 </select>
@@ -222,7 +217,7 @@
             <div id="DEAT" class="B">
                 <div class="B">
                     <label class="t9n" t9n-key="deathDate"></label>
-                    <div style="width:66%; float:left; padding: 1%">
+                    <div>
                         <select id="DEAT.DATE.ACCU" onchange="NodeFamily.form.changeDate('DEAT.DATE')" disabled>
                             <option value=""></option>
                             <option value="ABT" class="t9n" t9n-key="abt"></option>
@@ -280,7 +275,7 @@
                     <label class="t9n" t9n-key="deathPlace"></label>
                     <input class="data" type="text" name="DEAT.PLAC.nfValue" readonly/>
                 </div>
-                <div class="B">
+                <div class="B DN">
                     <label class="t9n" t9n-key="buried"></label>
                     <select id="isBURI" disabled class="active">
                       <option value="N" class="t9n" t9n-key="no"></option>
@@ -288,47 +283,50 @@
                     </select>
                     <input class="data" type="hidden" name="BURI.nfValue"/>
                 </div>
-                <div class="B" id="BURI" style="width:100%; float:left; padding: 1%">
+                <div class="B" id="BURI">
                     <label class="t9n" t9n-key="burialPlace"></label>
                     <input class="data" type="text" name="BURI.PLAC.nfValue" readonly/>
                 </div>
             </div>
-            <div class="B">
+            <div class="B DN">
                     <label class="t9n" t9n-key="occupation"></label>
                     <input class="data" type="text" name="OCCU.nfValue" readonly/>
             </div>
-            <div class="B">
+            <div class="B DN">
                     <label class="t9n" t9n-key="photoFile"></label>
                     <input class="data" type="text" name="OBJE.FILE.nfValue" id="photoFile" readonly/>
                     <input class="data" type="text" name="OBJE.0.FILE.nfValue" id="photoFileColl" style="display: none" readonly/>
             </div>
-            <div class="B">
+            <div class="B DN">
                     <label class="t9n" t9n-key="photoCaption"></label>
                     <input class="data" type="text" name="OBJE.TITL.nfValue" id="photoTitl" readonly/>
                     <input class="data" type="text" name="OBJE.0.TITL.nfValue" id="photoTitlColl" style="display: none" readonly/>
             </div>
-            <div class="B">
+            <div class="B DN">
                     <label class="t9n" t9n-key="www"></label>
                     <input class="data" type="text" name="WWW.nfValue" readonly/>
             </div>
             <div class="B">
-                    <label class="t9n" t9n-key="parents">Parents</label>
-                    <div style="width:66%; float:left; padding: 1%">
-                        <input class="data" type="hidden" name="FAMC.nfValue" size="5" style="width:auto"  placeholder="ID" readonly/>
-                        <span id="familyName"> </span>
-                    </div>
+                    <label class="t9n" t9n-key="parents" style="margin-right: 6px"></label>
+                    <input class="data" type="hidden" name="FAMC.nfValue" size="5" style="width:auto"  placeholder="ID" readonly/>
+                    <div id="familyName" style="padding: 1%"> </div>
+                
             </div>
             <div class="B">
-                    <fieldset id="spouses">
-                        <legend class="t9n" t9n-key="spouses"></legend>
-                    </fieldset>
+                    <label class="t9n" t9n-key="spouses" style="margin-right: 6px"></label>
+                    <div id="spouses" style="padding: 1%"></div>
             </div>
-            <div class="B">
+            <div class="B DN">
                     <fieldset id="extraGedcomFields">
                         <legend class="t9n" t9n-key="extraTags"></legend>
                     </fieldset>
             </div>
             <div class="B">
+                <label class="t9n" t9n-key="ID"></label>
+                <input type="text" name="id" readonly class="active" style="padding: 1%"/>
+                <input type="hidden" name="nfType"/>
+            </div>
+            <div class="B DN">
                     <label class="t9n" t9n-key="submitterId"></label>
                         <input class="data" type="text" name="SUBM.nfValue" size="10" style="width:auto" readonly/>
                         <span id="submitterName" style="font-size:smaller"></span>
@@ -480,7 +478,7 @@
             </div>
         </div>
         <div class="C C2" style="width:100%">
-            <div class="B" style="padding:0px">
+            <div class="B" style="padding:10px 0 0 0;">
                 <svg width="100%" height="666.25" id="svgId">
                     <defs>
                         <style type="text/css">

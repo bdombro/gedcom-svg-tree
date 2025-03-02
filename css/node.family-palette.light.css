@@ -11,8 +11,8 @@
   --accent: #1f2328;
   --accent-container: #ecf2b1;
   --header-shadow: #b3aca78c;
-  --arrow-stroke: #ddd;
-  --arrow-fill: #aaa;
+  --arrow-stroke: #aaa;
+  --arrow-fill: #777;
 }
 a, a:hover, a:visited {
     color: var(--primary);
@@ -121,6 +121,7 @@ input:checked + .slider {
 }
 .edgePath path {
     stroke: var(--arrow-stroke);
+    stroke-width: 6px;
     fill: var(--arrow-fill);
 }
 input[type="search"] {

@@ -557,7 +557,7 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
         const svgWidth = document.getElementsByTagName('body')[0].offsetWidth - widthToReduce;
         const headerHeight = document.getElementById("header").offsetHeight;
         const svgHeight = clientHeight - headerHeight;
-        let zoomScale = Math.max( Math.min(svgWidth / _graphlib.graph().width, svgHeight / _graphlib.graph().height), 0.5);
+        let zoomScale = Math.max( Math.min(svgWidth / _graphlib.graph().width, svgHeight / _graphlib.graph().height), 0.5)*.9;
         if (Object.entries(_familyData).length < 3) {
             zoomScale = zoomScale * 0.3;
         }
@@ -571,6 +571,11 @@ const NodeFamily = function(jsonFromGedcom, d3, dagreD3, dagreD3GraphConfig) {
         const that = this;
         nodes.on('click', function (nodeId) {
             that.visualize(nodeId);
+            const url = new URL(window.location.href);
+            if (url.searchParams.has('ged')) {
+                url.searchParams.set('id', nodeId);
+                window.history.pushState({}, '', url);
+            }
         });
         const personId = document.querySelector('form[name="personForm"] input[name="id"]');
         if (!personId) {
@@ -1452,7 +1457,7 @@ NodeFamily.addVectorWithTo = function(from, to, tree) {
 }
 
 NodeFamily.addSiblings = function(data, parentsId, startPoint, config, tree) {
-    let siblings =  data[parentsId].CHIL || [];
+    let siblings =  data[parentsId]?.CHIL || [];
     siblings.forEach(function(sibling) {
         if (sibling != startPoint) {
             let numberOfOtherGens = config.numberOfOtherGens;
@@ -1492,10 +1497,10 @@ NodeFamily.addParentsWithSiblings = function(data, startPoint, config, tree) {
             const cfg = Object.assign({}, config);
             cfg.numberOfParentGens = numberOfParentGens - 1;
             cfg.numberOfOtherGens = numberOfOtherGens - 1;
-            if (family.HUSB) {
+            if (family?.HUSB) {
                 NodeFamily.addParentsWithSiblings(data, family.HUSB[NF_VALUE], cfg, tree);
             }
-            if (family.WIFE) {
+            if (family?.WIFE) {
                 NodeFamily.addParentsWithSiblings(data, family.WIFE[NF_VALUE], cfg, tree);
             }
         }
@@ -1571,10 +1576,12 @@ NodeFamily.Tree = function() {
     _tree.edges = [];
 
     this.pushNode = function(node) {
+        if (!node) return;
         _tree.nodes.push(node);
     }
 
     this.pushEdge = function(from, to) {
+        if (!from || !to) return;
         _tree.edges.push({from: from, to: to});
     }
 
@@ -1745,7 +1752,7 @@ NodeFamily.fromData = function(data, id, graphConfig, config) {
     document.querySelector('#togglePersonList').addEventListener('click', nodeFamily.togglePersonList, true);
     document.getElementById("intro").style.display = "none";
     document.getElementById("content").style.display = "block";
-    document.querySelector('#toggleForm').click();
+    // document.querySelector('#toggleForm').click();
     if (id) {
         nodeFamily.visualize(id);
     } else {

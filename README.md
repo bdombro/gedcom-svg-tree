@@ -13,13 +13,13 @@ This is a completely secure tool. Visualization is done on the client (your) sid
 There is no backend that holds, manipulate or process any data. It does not look for, match, examine, track or even collect any person data from your tree.
 
 ## HOW TO USE IT
-- Just go to [live version](https://ameros.github.io/gedcom-svg-tree/) (or choose [its polish version](https://ameros.github.io/gedcom-svg-tree/?lang=pl)) and open the GEDCOM file
-- or just [download lastest version](https://github.com/ameros/gedcom-svg-tree/releases/latest) and open with your browser
+- Just go to [live version](https://bdombro.github.io/gedcom-svg-tree/) (or choose [its polish version](https://bdombro.github.io/gedcom-svg-tree/?lang=pl)) and open the GEDCOM file
+- or just [download lastest version](https://github.com/bdombro/gedcom-svg-tree/releases/latest) and open with your browser
 
 ### EXAMPLES
-- [Piast Dynasty](https://ameros.github.io/gedcom-svg-tree/?lang=pl&ged) - with `lang=pl`
-- [USA Presidents](https://ameros.github.io/gedcom-svg-tree/?ged=usa&id=I1604) - showing images from relative path _(data folder)_
-- [Royal Families](https://ameros.github.io/gedcom-svg-tree/?ged=royals)
+- [Piast Dynasty](https://bdombro.github.io/gedcom-svg-tree/?lang=pl&ged) - with `lang=pl`
+- [USA Presidents](https://bdombro.github.io/gedcom-svg-tree/?ged=usa&id=I1604) - showing images from relative path _(data folder)_
+- [Royal Families](https://bdombro.github.io/gedcom-svg-tree/?ged=royals)
 
 ---
 

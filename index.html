@@ -34,7 +34,7 @@
 <body>
 <script>
 window.addEventListener('error', e => {
-    alert("Some unexpected error occurred. It has been logged for further reference and fixing. Please refer to https://github.com/ameros/gedcom-svg-tree/deployments");
+    alert("An unexpected error occurred.");
 });
 const COLOR_MALE = "#99e6ff";
 const COLOR_FEMALE = "#ffaaa6";
@@ -48,7 +48,7 @@ let lang = "en";
 if (params.has("lang")) {
     lang = params.get("lang");
 }
-let id = "I14";
+let id = "";
 if (params.has("id")) {
     id = params.get("id");
 }
@@ -60,13 +60,16 @@ if (params.has("ged")) {
     if (params.get("ged") == "usa") {
         file = "ged/usa-presidents2020-04-28.ged";
     }
+    if (params.get("ged") == "brian") {
+        file = "ged/brian.ged";
+    }
     NodeFamily.init('', lang, function() {
         document.getElementById("intro").style.display = "none";
         fetch(file)
             .then(response => response.text())
             .then((data) => {
                     NodeFamily.fromData(data, id,
-                        {rankdir: "TB", edgesep: 10, ranksep: 25, nodesep: 10});
+                        {rankdir: "RL", edgesep: 10, ranksep: 25, nodesep: 10});
                     document.getElementById('gedcomFileInput').disabled = true;
                     document.getElementById("gedcomFileInput").parentElement.addEventListener('click',
                     function() {

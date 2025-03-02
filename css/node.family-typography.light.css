@@ -91,7 +91,10 @@ h1 img {
     cursor: context-menu;
 }
 svg {
-    cursor: zoom-in;
+    cursor: grab;
+}
+svg:active {
+    cursor: grabbing;
 }
 #toggleForm:before {
     font-family: 'Font Awesome 5 Free';
@@ -99,7 +102,7 @@ svg {
     content: '\f2c2';
 }
 #children div, #spouses div {
-    padding-left:30%;
+    /* padding-left:30%; */
 }
 #husbandName, #wifeName, #familyName, #spouses legend, #children legend, .spouse, .child {
     cursor: pointer;
